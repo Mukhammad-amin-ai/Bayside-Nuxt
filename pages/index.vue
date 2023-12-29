@@ -1,15 +1,17 @@
 <template>
-  <div>
-    <center>
-      <h1>Hello world</h1>
-    </center>
+  <div class="container">
+      <Header/>
   </div>
 </template>
 
-<script>
+<script setup>
 
 </script>
 
 <style scoped>
-
+  .container{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+  }
 </style>
