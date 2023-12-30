@@ -172,61 +172,61 @@
                     </div> -->
                     <div id="photos_top_slider_thumbnails">
                         <span id="thumb_photos_top_1" class="active visible">
-                            <img src="images/home/gallery_1t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_1t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_2">
-                            <img src="images/home/gallery_2t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_2t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_3">
-                            <img src="images/home/gallery_3t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_3t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_4">
-                            <img src="images/home/gallery_4t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_4t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_5">
-                            <img src="images/home/gallery_5t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_5t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_6">
-                            <img src="images/home/gallery_6t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_6t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_7">
-                            <img src="images/home/gallery_7t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_7t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_8">
-                            <img src="images/home/gallery_8t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_8t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_9">
-                            <img src="images/home/gallery_9t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_9t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_10">
-                            <img src="images/home/gallery_10t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_10t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_11">
-                            <img src="images/home/gallery_11t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_11t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_12">
-                            <img src="images/home/gallery_12t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_12t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_13">
-                            <img src="images/home/gallery_13t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_13t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_14">
-                            <img src="images/home/gallery_14t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_14t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_15">
-                            <img src="images/home/gallery_15t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_15t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_16">
-                            <img src="images/home/gallery_16t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_16t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_17">
-                            <img src="images/home/gallery_17t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_17t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_18">
-                            <img src="images/home/gallery_18t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_18t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_19">
-                            <img src="images/home/gallery_19t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_19t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_20">
-                            <img src="images/home/gallery_20t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_20t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_21">
-                            <img src="images/home/gallery_21t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_21t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_22">
-                            <img src="images/home/gallery_22t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_22t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_23">
-                            <img src="images/home/gallery_23t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_23t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_24">
-                            <img src="images/home/gallery_24t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_24t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_25">
-                            <img src="images/home/gallery_25t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_25t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_26">
-                            <img src="images/home/gallery_26t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_26t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_27">
-                            <img src="images/home/gallery_27t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_27t.jpg" alt="" /></span>
                         <span id="thumb_photos_top_28">
-                            <img src="images/home/gallery_28t.jpg" alt="" /></span>
+                            <img src="~/assets/images/home/gallery_28t.jpg" alt="" /></span>
                     </div>
 
                 </div>
