@@ -1357,7 +1357,7 @@ i {
 
 .modal_houses_header_right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .modal_houses_calendar .icon_calendar {
     font-size: 26px;
@@ -3077,8 +3077,8 @@ i {
 }
 #header_home > div > div:nth-child(2) {
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 #header_home .header_title {
     font-family: "playfair display", serif;
@@ -3698,7 +3698,7 @@ i {
 }
 .houses_table_info > .houses_tags > div {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .houses_table_info > .houses_tags > div > span {
     height: 28px;

@@ -1,15 +1,6 @@
 <template >
     <!-- <div id="plan_section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"
         data-aos-anchor-placement="top-bottom"> -->
-        <div id="t_1" class="info_block">
-            <div class="title">Участок 1</div>
-            <div class="text-grey">13 соток</div>
-            <div class="text-green">СВОБОДЕН<br>2 126 309₽</div>
-            <div>
-
-            </div>
-        </div>
-
 
 
     <div id="plan_section">
@@ -64,7 +55,7 @@
                                             d="M3789.73 1501.95L3775.9 1453.39L3885.54 1422.47L3789.73 1501.95Z"
                                             stroke="white" stroke-miterlimit="10" stroke-linecap="round"
                                             stroke-linejoin="bevel" />
-                                        <g id="g_1" class='land-free selected-free'>
+                                        <g id="g_1" @mouseover='HomeCordinate(1)'>
                                             <path id="l_1"
                                                 d="M326 1781.11L356.5 1711.61L497 1773.11L472 1830.11L453.5 1837.61L326 1781.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -76,7 +67,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_2">
+                                        <g id="g_2" @mouseover='HomeCordinate(2)'>
                                             <path id="l_2"
                                                 d="M363 1696.62L418.5 1571.61L478.5 1596.6L423 1721.61L363 1696.62Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -88,7 +79,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_3">
+                                        <g id="g_3" @mouseover='HomeCordinate(3)'>
                                             <path id="l_3"
                                                 d="M423 1721.61L451 1659.11L532 1695.11L504.5 1758.11L423 1721.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -100,7 +91,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_4">
+                                        <g id="g_4" @mouseover='HomeCordinate(4)'>
                                             <path id="l_4"
                                                 d="M451 1659.11L479 1596.61L559.5 1632.61L532 1695.11L451 1659.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -112,7 +103,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_5">
+                                        <g id="g_5" @mouseover='HomeCordinate(5)'>
                                             <path id="l_5"
                                                 d="M498 1841.11L521 1789.11L589 1819.61L560 1885.11L504.5 1860.61L498 1841.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -124,7 +115,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_6">
+                                        <g id="g_6" @mouseover='HomeCordinate(6)'>
                                             <path id="l_6"
                                                 d="M589 1819.61L521 1789.11L544.5 1736.61L563 1729.11L618 1752.61L589 1819.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -136,7 +127,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_7">
+                                        <g id="g_7" @mouseover='HomeCordinate(7)'>
                                             <path id="l_7"
                                                 d="M560 1885.11L589 1819.61L657 1849.61L625.5 1914.61L560 1885.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -148,7 +139,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_8">
+                                        <g id="g_8" @mouseover='HomeCordinate(8)'>
                                             <path id="l_8"
                                                 d="M589 1819.61L618 1752.61L686.5 1781.61L657 1849.61L589 1819.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -160,7 +151,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_9">
+                                        <g id="g_9" @mouseover='HomeCordinate(9)'>
                                             <path id="l_9"
                                                 d="M626 1915.11L657 1849.61L726.5 1880.61L701 1932.11L681.5 1939.11L626 1915.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -172,7 +163,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_10">
+                                        <g id="g_10" @mouseover='HomeCordinate(10)'>
                                             <path id="l_10"
                                                 d="M657 1849.61L686.5 1781.61L748 1807.11L754.5 1823.11L726.5 1880.61L657 1849.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -4407,7 +4398,6 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-
                                     </svg>
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
@@ -4417,7 +4407,11 @@
                                         </pattern>
                                     </defs>
                                 </svg>
-
+                            </div>
+                            <div id="t_1" class="active" style='margin-left:20px'>
+                                <div class="title">Участок {{uchastok}}</div>
+                                <div class="text-grey">{{sotki}} соток</div>
+                                <div class="text-green">{{stat}}<br>{{price}}</div>
                             </div>
                         </div>
                     </div>
@@ -4448,12 +4442,37 @@
     </div>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import plan from './plan.json'
-const Myplan = ref(plan)
-// console.log(Myplan.value[0]);
-let firstObj = Myplan.value[0]
-console.log(firstObj);
+let data = ref(plan)
+let choosedHomeClass = ref('')
+let uchastok = ref('')
+let sotki = ref('')
+let stat= ref('')
+let priceF= ref('')
+let getHomeId = () => {
+    for (var i = 0; i <= data.value.length; i++) {
+        if (!data.value[i]) continue;
+        // console.log(data.value[i]);
+        let land = document.getElementById('g_' + data.value[i].number);
+        // console.log(land);
+    }   
+}
+
+let HomeCordinate = (id) => {
+    // console.log(id);
+    let catchedData = data.value[id - 1]
+    // console.log(catchedData);
+    if(catchedData !== null){
+        uchastok.value = catchedData.number
+        sotki.value = catchedData.size
+        stat.value = catchedData.status
+        priceF.value = catchedData.price
+    }
+    // let home = document.getElementById(`g_${id}`)
+    // console.log(home);
+}
+
 
 
 
