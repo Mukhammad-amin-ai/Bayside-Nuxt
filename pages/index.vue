@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-      <Header/>
+  <div class="page index--page" style="overflow: hidden">
+    <Header />
   </div>
 </template>
 
@@ -9,9 +9,6 @@
 </script>
 
 <style scoped>
-  .container{
-    width: 100vw;
-    max-width: 100%;
-    height: auto;
-  }
+
+
 </style>

@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'oxygen';
-	src: url(../fonts/oxygen-400.eot);
+	src: url(../assets/fonts/oxygen-400.eot);
 	src: url(../fonts/oxygen-400-1.eot) format('embedded-opentype'),
 	url(../fonts/oxygen-400.woff) format('woff'),
 	url(../fonts/oxygen-400.ttf) format('truetype');
@@ -105,10 +105,10 @@
 
 @font-face {
 	font-family: 'roboto';
-	src: url(../fonts/roboto-500.eot);
-	src: url(../fonts/roboto-500-1.eot) format('embedded-opentype'),
-		 url(../fonts/roboto-500.woff) format('woff'),
-		 url(../fonts/roboto-500.ttf) format('truetype');
+	src: url(../assets/fonts/roboto-500.eot);
+	src: url(../assets/fonts/roboto-500-1.eot) format('embedded-opentype'),
+		 url(../assets/fonts/roboto-500.woff) format('woff'),
+		 url(../assets/fonts/roboto-500.ttf) format('truetype');
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
@@ -129,10 +129,10 @@
 
 @font-face {
 	font-family: 'glyphicons';
-	src: url(../fonts/glyphicons.eot);
-	src: url(../fonts/glyphicons-1.eot) format('embedded-opentype'),
-	url(../fonts/glyphicons.woff) format('woff'),
-	url(../fonts/glyphicons.ttf) format('truetype');
+	src: url(../assets/fonts/glyphicons.eot);
+	src: url(../assets/fonts/glyphicons-1.eot) format('embedded-opentype'),
+	url(../assets/fonts/glyphicons.woff) format('woff'),
+	url(../assets/fonts/glyphicons.ttf) format('truetype');
 	font-style: normal;
 	font-weight: normal;
 	font-display: swap;
