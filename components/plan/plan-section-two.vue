@@ -4413,7 +4413,6 @@
                                 <div class="text-grey">{{ sotki }} соток</div>
                                 <!-- there is cahnge -->
                                 <div class="text-green">{{ stat }}<br>{{ priceF }}</div>
-
                             </div>
                         </div>
                     </div>
@@ -4451,7 +4450,7 @@ let choosedHomeClass = ref('')
 let uchastok = ref('')
 let sotki = ref('')
 let stat = ref('')
-let priceF = ref('')
+let priceF = ref('0')
 let getHomeId = () => {
     for (var i = 0; i <= data.value.length; i++) {
         if (!data.value[i]) continue;
