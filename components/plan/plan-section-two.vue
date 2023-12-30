@@ -4409,9 +4409,9 @@
                                 </svg>
                             </div>
                             <div id="t_1" class="active" style='margin-left:20px'>
-                                <div class="title">Участок {{uchastok}}</div>
-                                <div class="text-grey">{{sotki}} соток</div>
-                                <div class="text-green">{{stat}}<br>{{price}}</div>
+                                <div class="title">Участок {{ uchastok }}</div>
+                                <div class="text-grey">{{ sotki }} соток</div>
+                                <div class="text-green">{{ stat }}<br>{{ priceF }}</div>
                             </div>
                         </div>
                     </div>
@@ -4448,22 +4448,22 @@ let data = ref(plan)
 let choosedHomeClass = ref('')
 let uchastok = ref('')
 let sotki = ref('')
-let stat= ref('')
-let priceF= ref('')
+let stat = ref('')
+let priceF = ref('')
 let getHomeId = () => {
     for (var i = 0; i <= data.value.length; i++) {
         if (!data.value[i]) continue;
         // console.log(data.value[i]);
         let land = document.getElementById('g_' + data.value[i].number);
         // console.log(land);
-    }   
+    }
 }
 
 let HomeCordinate = (id) => {
     // console.log(id);
     let catchedData = data.value[id - 1]
     // console.log(catchedData);
-    if(catchedData !== null){
+    if (catchedData !== null) {
         uchastok.value = catchedData.number
         sotki.value = catchedData.size
         stat.value = catchedData.status
