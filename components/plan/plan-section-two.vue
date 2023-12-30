@@ -4411,7 +4411,9 @@
                             <div id="t_1" class="active" style='margin-left:20px'>
                                 <div class="title">Участок {{ uchastok }}</div>
                                 <div class="text-grey">{{ sotki }} соток</div>
+                                <!-- there is cahnge -->
                                 <div class="text-green">{{ stat }}<br>{{ priceF }}</div>
+
                             </div>
                         </div>
                     </div>
