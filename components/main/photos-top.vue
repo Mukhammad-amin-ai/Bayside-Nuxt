@@ -172,7 +172,7 @@
                     </div> -->
                     <div id="photos_top_slider_thumbnails">
                         <span id="thumb_photos_top_1" class="active visible">
-                            <img src="images/home/gallery_1t.jp" alt="" /></span>
+                            <img src="images/home/gallery_1t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_2">
                             <img src="images/home/gallery_2t.jpg" alt="" /></span>
                         <span id=" thumb_photos_top_3">
