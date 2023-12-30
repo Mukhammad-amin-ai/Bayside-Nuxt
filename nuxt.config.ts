@@ -5,16 +5,22 @@ export default defineNuxtConfig({
   alias:{
     "@": resolve(__dirname, "/"),
   },
-  css:["~/assets/common.css"],
+  modules: [
+    'nuxt-aos'
+  ],
+  css:["~/assets/main.css"],
   app:{
     head:{
       link:[
         {
           rel:'icon', type:'image/x-icon', href:'/public/favicon.ico'
         },
-        {
-          rel:'stylesheet', href:'./assets/fonts.css'
-        }
+        // {
+        //   rel:'stylesheet', href:'./assets/fonts.css'
+        // },
+        // {
+        //   rel:'stylesheet', href:'./assets/pages.css'
+        // }
       ]
     }
     
