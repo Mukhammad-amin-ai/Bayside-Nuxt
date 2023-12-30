@@ -138,8 +138,8 @@
     left: -1px;
     bottom: 0;
     width: 50%;
-    -webkit-mask: url(../images/home/banner_mask.png);
-    mask: url(../images/home/banner_mask.png);
+    -webkit-mask: url(../assets/images/home/banner_mask.png);
+    mask: url(../assets/images/home/banner_mask.png);
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
     background: linear-gradient(86deg, #001623 0%, #00a3ff 70%) fixed;
