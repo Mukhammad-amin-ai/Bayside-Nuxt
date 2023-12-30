@@ -1,6 +1,6 @@
 <template>
   <div class="page index--page" style="overflow: hidden">
-    <Header />
+    <!-- <Header /> -->
     <Main/>
   </div>
 </template>
