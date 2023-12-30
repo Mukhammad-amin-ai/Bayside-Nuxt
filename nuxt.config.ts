@@ -5,9 +5,6 @@ export default defineNuxtConfig({
   alias:{
     "@": resolve(__dirname, "/"),
   },
-  modules: [
-    'nuxt-aos'
-  ],
   css:["~/assets/main.css"],
   app:{
     head:{

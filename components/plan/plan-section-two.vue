@@ -1,6 +1,17 @@
 <template >
     <!-- <div id="plan_section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"
         data-aos-anchor-placement="top-bottom"> -->
+        <div id="t_1" class="info_block">
+            <div class="title">Участок 1</div>
+            <div class="text-grey">13 соток</div>
+            <div class="text-green">СВОБОДЕН<br>2 126 309₽</div>
+            <div>
+
+            </div>
+        </div>
+
+
+
     <div id="plan_section">
         <div class="plan_section">
             <h2 class="plan_title">Генплан поселка</h2>
@@ -53,7 +64,7 @@
                                             d="M3789.73 1501.95L3775.9 1453.39L3885.54 1422.47L3789.73 1501.95Z"
                                             stroke="white" stroke-miterlimit="10" stroke-linecap="round"
                                             stroke-linejoin="bevel" />
-                                        <g id="g_1">
+                                        <g id="g_1" class='land-free selected-free'>
                                             <path id="l_1"
                                                 d="M326 1781.11L356.5 1711.61L497 1773.11L472 1830.11L453.5 1837.61L326 1781.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -4398,14 +4409,11 @@
                                         </g>
 
                                     </svg>
-
-
-
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
                                             height="100%">
                                             <image id="image0" width="100%" height="100%"
-                                                xlink:href="~/assets/images/plan.jpg" x="0" y="0"></image>
+                                                xlink:href="~/assets/images/fon.jpg" x="0" y="0"></image>
                                         </pattern>
                                     </defs>
                                 </svg>
@@ -4440,6 +4448,15 @@
     </div>
 </template>
 <script setup>
+import { ref } from 'vue'
+import plan from './plan.json'
+const Myplan = ref(plan)
+// console.log(Myplan.value[0]);
+let firstObj = Myplan.value[0]
+console.log(firstObj);
+
+
+
 
 </script>
 <style scoped></style>
