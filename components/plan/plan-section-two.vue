@@ -1268,7 +1268,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_101">
+                                        <g id="g_101" @mouseover='HomeCordinate(101)'>
                                             <path id="l_101"
                                                 d="M1434.24 988.995L1469.19 1077.58L1547.71 1046.6L1512.76 958.016L1434.24 988.995Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1281,7 +1281,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_102">
+                                        <g id="g_102" @mouseover='HomeCordinate(102)'>
                                             <path id="l_102"
                                                 d="M1434.17 988.769L1399.22 900.209L1477.77 869.229L1512.69 957.779L1434.17 988.769Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1294,7 +1294,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_103">
+                                        <g id="g_103" @mouseover='HomeCordinate(103)'>
                                             <path id="l_103"
                                                 d="M1399.22 900.21L1361 803.339L1400.5 778.339V773.839L1434.91 760.891L1477.77 869.23L1399.22 900.21Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1307,7 +1307,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_104">
+                                        <g id="g_104" @mouseover='HomeCordinate(104)'>
                                             <path id="l_104"
                                                 d="M1477.77 869.23L1434.91 760.89L1513.4 729.76L1556.29 838.25L1477.77 869.23Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1320,7 +1320,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_105">
+                                        <g id="g_105" @mouseover='HomeCordinate(105)'>
                                             <path id="l_105"
                                                 d="M1512.69 957.781L1477.77 869.23L1556.29 838.25L1591.21 926.831L1512.69 957.781Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1333,7 +1333,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_106">
+                                        <g id="g_106" @mouseover='HomeCordinate(106)'>
                                             <path id="l_106"
                                                 d="M1547.65 1046.37L1512.69 957.781L1591.21 926.831L1626.17 1015.38L1547.65 1046.37Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1346,7 +1346,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_107">
+                                        <g id="g_107" @mouseover='HomeCordinate(107)'>
                                             <path id="l_107"
                                                 d="M1593.96 1163.81L1547.65 1046.37L1626.17 1015.38L1682.49 1158.14L1593.96 1163.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1359,7 +1359,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_108">
+                                        <g id="g_108" @mouseover='HomeCordinate(108)'>
                                             <path id="l_108"
                                                 d="M1712.14 1156.26L1687.19 1093.02L1765.71 1062.04L1800.64 1150.6L1712.14 1156.26Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1372,7 +1372,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_109">
+                                        <g id="g_109" @mouseover='HomeCordinate(109)'>
                                             <path id="l_109"
                                                 d="M1687.19 1093.02L1652.24 1004.44L1730.76 973.489L1765.71 1062.04L1687.19 1093.02Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1385,7 +1385,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_110">
+                                        <g id="g_110" @mouseover='HomeCordinate(110)'>
                                             <path id="l_110"
                                                 d="M1652.24 1004.44L1617.32 915.889L1695.84 884.899L1730.76 973.489L1652.24 1004.44Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1398,7 +1398,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_111">
+                                        <g id="g_111" @mouseover='HomeCordinate(111)'>
                                             <path id="l_111"
                                                 d="M1582.73 827.331L1617.67 915.886L1696.19 884.899L1661.24 796.344L1582.73 827.331Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1411,7 +1411,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_112">
+                                        <g id="g_112" @mouseover='HomeCordinate(112)'>
                                             <path id="l_112"
                                                 d="M1582.37 827.33L1539.65 719.28L1618.03 688.01L1660.89 796.35L1582.37 827.33Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1423,8 +1423,8 @@
                                                     d="M1595.18 755.615V765.444H1593.94V757.165L1591.44 758.078V756.957L1594.99 755.615H1595.18ZM1602.92 755.615V765.444H1601.68V757.165L1599.17 758.078V756.957L1602.72 755.615H1602.92ZM1612.98 764.423V765.444H1606.58V764.551L1609.78 760.986C1610.17 760.547 1610.48 760.175 1610.69 759.871C1610.91 759.562 1611.06 759.287 1611.15 759.045C1611.24 758.799 1611.28 758.548 1611.28 758.293C1611.28 757.971 1611.22 757.68 1611.08 757.421C1610.95 757.156 1610.76 756.946 1610.51 756.789C1610.25 756.633 1609.94 756.554 1609.58 756.554C1609.14 756.554 1608.78 756.639 1608.49 756.81C1608.2 756.975 1607.99 757.208 1607.85 757.508C1607.7 757.808 1607.63 758.152 1607.63 758.542H1606.39C1606.39 757.991 1606.51 757.488 1606.75 757.031C1606.99 756.575 1607.35 756.212 1607.83 755.943C1608.3 755.67 1608.88 755.534 1609.58 755.534C1610.2 755.534 1610.72 755.644 1611.16 755.863C1611.6 756.078 1611.94 756.382 1612.17 756.776C1612.41 757.165 1612.53 757.622 1612.53 758.146C1612.53 758.432 1612.48 758.723 1612.38 759.018C1612.28 759.309 1612.15 759.6 1611.98 759.891C1611.82 760.182 1611.62 760.469 1611.4 760.751C1611.18 761.033 1610.94 761.31 1610.69 761.583L1608.07 764.423H1612.98Z"
                                                     fill="#000F72" />
                                             </g>
-                                        </g>
-                                        <g id="g_113">
+                                        </g> 
+                                        <g id="g_113" @mouseover='HomeCordinate(113)'>
                                             <path id="l_113"
                                                 d="M1696.49 656.969L1739.35 765.509L1660.89 796.349L1618.03 688.009L1696.49 656.969Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1437,7 +1437,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_114">
+                                        <g id="g_114" @mouseover='HomeCordinate(114)'>
                                             <path id="l_114"
                                                 d="M1739.35 765.51L1774.27 853.95L1695.84 884.9L1660.89 796.35L1739.35 765.51Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1450,7 +1450,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_115">
+                                        <g id="g_115" @mouseover='HomeCordinate(115)'>
                                             <path id="l_115"
                                                 d="M1774.27 853.95L1809.25 942.53L1730.76 973.49L1695.84 884.9L1774.27 853.95Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1463,7 +1463,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_116">
+                                        <g id="g_116" @mouseover='HomeCordinate(116)'>
                                             <path id="l_116"
                                                 d="M1809.25 942.529L1844.23 1031.12L1765.71 1062.04L1730.76 973.489L1809.25 942.529Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1476,7 +1476,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_117">
+                                        <g id="g_117" @mouseover='HomeCordinate(117)'>
                                             <path id="l_117"
                                                 d="M1867.34 1089.62L1888.31 1142.66L1888.14 1145.12L1800.64 1150.6L1765.71 1062.04L1844.23 1031.12L1867.34 1089.62Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1489,7 +1489,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_118">
+                                        <g id="g_118" @mouseover='HomeCordinate(118)'>
                                             <path id="l_118"
                                                 d="M1234.5 2125.61L1193.5 2103.61L1255.5 1997.11L1319.5 2029.11L1270.5 2134.11L1239 2118.61L1234.5 2125.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1501,7 +1501,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_119">
+                                        <g id="g_119" @mouseover='HomeCordinate(119)'>
                                             <path id="l_119"
                                                 d="M1319.5 2029.11L1255.5 1997.11L1318 1888.11L1377 1920.11L1319.5 2029.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1513,7 +1513,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_120">
+                                        <g id="g_120" @mouseover='HomeCordinate(120)'>
                                             <path id="l_120"
                                                 d="M1319.5 2029.61L1388 2064.61L1340 2167.61L1270.5 2134.11L1319.5 2029.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1525,7 +1525,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_121">
+                                        <g id="g_121" @mouseover='HomeCordinate(121)'>
                                             <path id="g_121_2"
                                                 d="M1380.5 2060.61L1319.5 2029.11L1377 1920.11L1436.5 1952.61L1380.5 2060.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1537,7 +1537,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_122">
+                                        <g id="g_122" @mouseover='HomeCordinate(122)'>
                                             <path id="l_122"
                                                 d="M1388.5 2065.11L1461 2103.61L1413.5 2202.61L1340 2167.61L1388.5 2065.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1549,7 +1549,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_123">
+                                        <g id="g_123" @mouseover='HomeCordinate(123)'>
                                             <path id="Vector 123"
                                                 d="M1439 2091.11L1380.5 2060.61L1436.5 1952.61L1496 1985.61L1439 2091.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1561,7 +1561,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_124">
+                                        <g id="g_124" @mouseover='HomeCordinate(124)'>
                                             <path id="g_124_2"
                                                 d="M1461 2103.11L1531 2128.61L1486.5 2239.11L1413.5 2202.61L1461 2103.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1573,7 +1573,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_125">
+                                        <g id="g_125" @mouseover='HomeCordinate(125)'>
                                             <path id="l_125"
                                                 d="M1461 2103.11L1439 2091.11L1496 1985.61L1554.5 2018.11L1505.5 2119.11L1461 2103.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1585,7 +1585,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_126">
+                                        <g id="g_126" @mouseover='HomeCordinate(126)'>
                                             <path id="l_126"
                                                 d="M1531.5 2128.61L1635.5 2169.11L1589.5 2287.11L1486.5 2239.11L1531.5 2128.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1597,7 +1597,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_127">
+                                        <g id="g_127" @mouseover='HomeCordinate(127)'>
                                             <path id="l_127"
                                                 d="M1505.5 2119.11L1554.5 2018.11L1619.5 2053.61L1580 2147.11L1531.5 2128.11L1505.5 2119.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1609,7 +1609,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_128">
+                                        <g id="g_128" @mouseover='HomeCordinate(128)'>
                                             <path id="l_128"
                                                 d="M1580 2146.61L1619.5 2053.61L1716.5 2107.11L1635.5 2169.61L1580 2146.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1621,7 +1621,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_129">
+                                        <g id="g_129" @mouseover='HomeCordinate(129)'>
                                             <path id="l_129"
                                                 d="M1628 2188.61L1704 2225.11L1657 2320.61L1589.5 2287.61L1628 2188.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1633,7 +1633,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_130">
+                                        <g id="g_130" @mouseover='HomeCordinate(130)'>
                                             <path id="l_130"
                                                 d="M1717 2107.11L1768 2135.11L1704 2225.11L1628 2188.61L1635.5 2169.61L1717 2107.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1645,7 +1645,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_131">
+                                        <g id="g_131" @mouseover='HomeCordinate(131)'>
                                             <path id="l_131"
                                                 d="M1704 2225.11L1779.5 2264.11L1725 2353.11L1657 2320.61L1704 2225.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1657,7 +1657,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_132">
+                                        <g id="g_132" @mouseover='HomeCordinate(132)'>
                                             <path id="l_132"
                                                 d="M1768 2135.11L1824.5 2167.11L1829.5 2194.11L1779.5 2264.11L1704 2225.11L1768 2135.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -1669,7 +1669,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_133">
+                                        <g id="g_133" @mouseover='HomeCordinate(133)'>
                                             <path id="l_133"
                                                 d="M1375.61 1891.69L1418.9 1813.25L1501.72 1867.62L1465.3 1921.76L1440.81 1927.63L1375.61 1891.69Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1682,7 +1682,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_134">
+                                        <g id="g_134" @mouseover='HomeCordinate(134)'>
                                             <path id="l_134"
                                                 d="M1418.9 1813.25L1455.75 1746.47L1546.82 1800.69L1501.72 1867.62L1418.9 1813.25Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1695,7 +1695,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_135">
+                                        <g id="g_135" @mouseover='HomeCordinate(135)'>
                                             <path id="l_135"
                                                 d="M1455.75 1746.47L1492.65 1679.6L1586.4 1741.93L1546.82 1800.69L1455.75 1746.47Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1708,7 +1708,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_136">
+                                        <g id="g_136" @mouseover='HomeCordinate(136)'>
                                             <path id="l_136"
                                                 d="M1492.65 1679.6L1526.07 1619.02L1625.51 1683.88L1586.4 1741.93L1492.65 1679.6Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1721,7 +1721,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_137">
+                                        <g id="g_137" @mouseover='HomeCordinate(137)'>
                                             <path id="l_137"
                                                 d="M1526.07 1619.02L1553.43 1569.44L1667.81 1621.12L1625.51 1683.88L1526.07 1619.02Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1734,7 +1734,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_138">
+                                        <g id="g_138" @mouseover='HomeCordinate(138)'>
                                             <path id="l_138"
                                                 d="M1553.43 1569.44L1573.53 1533.02L1706.07 1548.49L1709.65 1558.95L1667.81 1621.12L1553.43 1569.44Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1747,7 +1747,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_139">
+                                        <g id="g_139" @mouseover='HomeCordinate(139)'>
                                             <path id="l_139"
                                                 d="M1678.78 1513.91V1425.53L1579.68 1424.76L1579.11 1490.98L1590.31 1503.59L1678.78 1513.91Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1760,7 +1760,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_140">
+                                        <g id="g_140" @mouseover='HomeCordinate(140)'>
                                             <path id="l_140"
                                                 d="M1579.68 1424.76L1678.78 1425.53L1678.75 1381.76L1678.72 1337.09L1580.36 1342.19L1579.68 1424.76Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1773,7 +1773,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_141">
+                                        <g id="g_141" @mouseover='HomeCordinate(141)'>
                                             <path id="l_141"
                                                 d="M1654.94 1338.33L1580.44 1342.19V1207.26L1646.18 1203.15L1654.94 1338.33Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1786,7 +1786,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_142">
+                                        <g id="g_142" @mouseover='HomeCordinate(142)'>
                                             <path id="l_142"
                                                 d="M1717.92 1335.07L1654.94 1338.33L1646.18 1203.15L1709.36 1199.04L1717.92 1335.07Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1799,7 +1799,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_143">
+                                        <g id="g_143" @mouseover='HomeCordinate(143)'>
                                             <path id="l_143"
                                                 d="M1780.91 1331.81L1717.92 1335.07L1709.36 1199.04L1772.49 1195.04L1780.91 1331.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1812,7 +1812,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_144">
+                                        <g id="g_144" @mouseover='HomeCordinate(144)'>
                                             <path id="l_144"
                                                 d="M1885.19 1187.81L1879.07 1276.51L1867.99 1327.31L1780.91 1331.81L1772.49 1195.04L1885.19 1187.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1825,7 +1825,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_145">
+                                        <g id="g_145" @mouseover='HomeCordinate(145)'>
                                             <path id="l_145"
                                                 d="M1678.78 1513.91V1433.81L1734.39 1454.5L1776.83 1470.32L1740.34 1521.11L1678.78 1513.91Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1838,7 +1838,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_146">
+                                        <g id="g_146" @mouseover='HomeCordinate(146)'>
                                             <path id="l_146"
                                                 d="M1678.78 1433.81V1425.53L1678.75 1381.76L1678.72 1337.09L1867.99 1327.31L1837.32 1386.15L1799.65 1361.49L1756.36 1423.32L1734.39 1454.5L1678.78 1433.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1851,7 +1851,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_147">
+                                        <g id="g_147" @mouseover='HomeCordinate(147)'>
                                             <path id="l_147"
                                                 d="M1734.39 1454.5L1756.36 1423.32L1799.65 1361.49L1837.32 1386.15L1795.54 1444.29L1776.83 1470.32L1734.39 1454.5Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1864,7 +1864,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_148">
+                                        <g id="g_148" @mouseover='HomeCordinate(148)'>
                                             <path id="l_148"
                                                 d="M1604.65 1924.37L1557.57 1991.83L1492.99 1956.29L1487.64 1934.04L1530.72 1870.11L1606.69 1921.42L1604.65 1924.37Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1877,7 +1877,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_149">
+                                        <g id="g_149" @mouseover='HomeCordinate(149)'>
                                             <path id="l_149"
                                                 d="M1530.72 1870.11L1579.48 1797.69L1656.3 1850.38L1650.54 1858.6L1606.69 1921.42L1530.72 1870.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1890,7 +1890,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_150">
+                                        <g id="g_150" @mouseover='HomeCordinate(150)'>
                                             <path id="l_150"
                                                 d="M1579.48 1797.69L1627.89 1725.86L1704.71 1781.05L1697.71 1791.08L1656.3 1850.38L1579.48 1797.69Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1903,7 +1903,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_151">
+                                        <g id="g_151" @mouseover='HomeCordinate(151)'>
                                             <path id="l_151"
                                                 d="M1628 1726.11L1675 1655.61L1752.5 1712.11L1704.5 1780.61L1628 1726.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1916,7 +1916,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_152">
+                                        <g id="g_152" @mouseover='HomeCordinate(152)'>
                                             <path id="l_152"
                                                 d="M1675.32 1655.42L1733.57 1568.96L1753.27 1617.66L1794.12 1652.72L1752.73 1712.28L1675.32 1655.42Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1929,7 +1929,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_153">
+                                        <g id="g_153" @mouseover='HomeCordinate(153)'>
                                             <path id="l_153"
                                                 d="M1558 1991.61L1605 1924.61L1694 1979.11L1660 2031.11L1637.5 2035.61L1558 1991.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1942,7 +1942,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_154">
+                                        <g id="g_154" @mouseover='HomeCordinate(154)'>
                                             <path id="l_154"
                                                 d="M1604.65 1924.37L1606.69 1921.42L1650.54 1858.6L1737.14 1914.25L1694.45 1979.16L1604.65 1924.37Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1955,7 +1955,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_155">
+                                        <g id="g_155" @mouseover='HomeCordinate(155)'>
                                             <path id="l_155"
                                                 d="M1656.3 1850.38L1697.71 1791.08L1779.29 1850.13L1737.14 1914.25L1650.54 1858.6L1656.3 1850.38Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1968,7 +1968,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_156">
+                                        <g id="g_156" @mouseover='HomeCordinate(156)'>
                                             <path id="l_156"
                                                 d="M1704.71 1781.05L1744.48 1724.04L1823.43 1782.95L1779.29 1850.13L1697.71 1791.08L1704.71 1781.05Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1981,7 +1981,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_157">
+                                        <g id="g_157" @mouseover='HomeCordinate(157)'>
                                             <path id="l_157"
                                                 d="M1752.73 1712.28L1794.12 1652.72L1862.35 1711.29L1858.21 1730.05L1823.43 1782.95L1744.48 1724.04L1752.73 1712.28Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -1994,7 +1994,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_158">
+                                        <g id="g_158" @mouseover='HomeCordinate(158)'>
                                             <path id="l_158"
                                                 d="M1792.25 1611.11L1776.03 1597.19L1764.84 1572.42L1764.98 1541.89L1820 1463.4L1873.01 1507.17L1840.78 1548.66L1792.25 1611.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2007,7 +2007,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_159">
+                                        <g id="g_159" @mouseover='HomeCordinate(159)'>
                                             <path id="l_159"
                                                 d="M1935.59 1425.78L1888.23 1487.38L1873.01 1507.17L1820 1463.4L1862.38 1402.94L1876.38 1375.75L1946.14 1412.04L1935.59 1425.78Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2020,7 +2020,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_160">
+                                        <g id="g_160" @mouseover='HomeCordinate(160)'>
                                             <path id="Vector 160"
                                                 d="M1982.9 1364.21L1946.14 1412.04L1876.38 1375.75L1894.95 1339.69L1911.7 1281.78L1996.26 1346.84L1982.9 1364.21Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2033,7 +2033,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_161">
+                                        <g id="g_161" @mouseover='HomeCordinate(161)'>
                                             <path id="l_161"
                                                 d="M1996.26 1346.84L1911.7 1281.78L1916.89 1199.66L2033.16 1298.96L1996.26 1346.84Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2046,7 +2046,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_162">
+                                        <g id="g_162" @mouseover='HomeCordinate(162)'>
                                             <path id="l_162"
                                                 d="M1858.78 1668.23L1792.25 1611.11L1840.78 1548.66L1921.19 1619.39L1884.2 1667.69L1858.78 1668.23Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2059,7 +2059,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_163">
+                                        <g id="g_163" @mouseover='HomeCordinate(163)'>
                                             <path id="l_163"
                                                 d="M1873.01 1507.17L1888.23 1487.38L1968.39 1557.74L1921.19 1619.39L1840.78 1548.66L1873.01 1507.17Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2072,7 +2072,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_164">
+                                        <g id="g_164" @mouseover='HomeCordinate(164)'>
                                             <path id="l_164"
                                                 d="M2015.62 1496.05L1968.39 1557.74L1888.23 1487.38L1935.59 1425.78L2015.62 1496.05Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2085,7 +2085,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_165">
+                                        <g id="g_165" @mouseover='HomeCordinate(165)'>
                                             <path id="Vector 165"
                                                 d="M1946.14 1412.04L1982.9 1364.21L2063.01 1434.17L2015.62 1496.05L1935.59 1425.78L1946.14 1412.04Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2098,7 +2098,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_166">
+                                        <g id="g_166" @mouseover='HomeCordinate(166)'>
                                             <path id="l_166"
                                                 d="M1982.9 1364.21L1996.26 1346.84L2033.16 1298.96L2098.7 1354.97L2103.43 1381.36L2063.01 1434.17L1982.9 1364.21Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2111,7 +2111,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_167">
+                                        <g id="g_167" @mouseover='HomeCordinate(167)'>
                                             <path id="l_167"
                                                 d="M1761 2103.61L1689 2064.11L1683.5 2042.11L1720.49 1985.59L1807.5 2038.11L1761 2103.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2124,7 +2124,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_168">
+                                        <g id="g_168" @mouseover='HomeCordinate(168)'>
                                             <path id="l_168"
                                                 d="M1807.7 2037.92L1720.67 1985.68L1767.16 1914.9L1850.3 1981.23L1807.7 2037.92Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2137,7 +2137,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_169">
+                                        <g id="g_169" @mouseover='HomeCordinate(169)'>
                                             <path id="l_169"
                                                 d="M1767.16 1914.9L1810.79 1848.49L1892.88 1924.62L1850.3 1981.23L1767.16 1914.9Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2150,7 +2150,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_170">
+                                        <g id="g_170" @mouseover='HomeCordinate(170)'>
                                             <path id="l_170"
                                                 d="M1892.88 1924.62L1810.79 1848.49L1850.1 1788.62L1935.48 1867.96L1892.88 1924.62Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2163,7 +2163,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_171">
+                                        <g id="g_171" @mouseover='HomeCordinate(171)'>
                                             <path id="l_171"
                                                 d="M1935.48 1867.96L1850.1 1788.62L1877.63 1746.69L1900.47 1744L1964.4 1798.85L1979.22 1811.58L1935.48 1867.96Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2176,7 +2176,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_172">
+                                        <g id="g_172" @mouseover='HomeCordinate(172)'>
                                             <path id="l_172"
                                                 d="M1761.15 2103.8L1842.31 2148.39L1867.85 2143.32L1900.3 2102.7L1807.7 2037.92L1761.15 2103.8Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2189,7 +2189,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_173">
+                                        <g id="g_173" @mouseover='HomeCordinate(173)'>
                                             <path id="l_173"
                                                 d="M1807.7 2037.92L1850.3 1981.23L1944.55 2047.39L1900.3 2102.7L1807.7 2037.92Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2202,7 +2202,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_174">
+                                        <g id="g_174" @mouseover='HomeCordinate(174)'>
                                             <path id="l_174"
                                                 d="M1850.3 1981.23L1892.88 1924.62L1987.58 1993.51L1944.55 2047.39L1850.3 1981.23Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2215,7 +2215,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_175">
+                                        <g id="g_175" @mouseover='HomeCordinate(175)'>
                                             <path id="l_175"
                                                 d="M1893 1924.61L1935.5 1868.11L2028 1942.11L1987.5 1993.61L1893 1924.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2228,7 +2228,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_176">
+                                        <g id="g_176" @mouseover='HomeCordinate(176)'>
                                             <path id="l_176"
                                                 d="M1935.48 1867.96L1979.22 1811.58L2057.54 1878.79L2059.84 1903.14L2028.51 1942.31L1935.48 1867.96Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2241,7 +2241,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_177">
+                                        <g id="g_177" @mouseover='HomeCordinate(177)'>
                                             <path id="l_177"
                                                 d="M1905.86 1708.65L1903.56 1684.3L1940.44 1636.14L2022.87 1699.01L2019.33 1703.52L1971.37 1764.89L1905.86 1708.65Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2254,7 +2254,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_178">
+                                        <g id="g_178" @mouseover='HomeCordinate(178)'>
                                             <path id="l_178"
                                                 d="M2066.67 1641.58L2022.87 1699.01L1940.44 1636.14L1987.67 1574.46L2069.96 1637.25L2066.67 1641.58Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2267,7 +2267,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_179">
+                                        <g id="g_179" @mouseover='HomeCordinate(179)'>
                                             <path id="l_179"
                                                 d="M2115.03 1578.14L2069.96 1637.25L1987.67 1574.46L2034.92 1512.75L2117.07 1575.48L2115.03 1578.14Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2280,7 +2280,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_180">
+                                        <g id="g_180" @mouseover='HomeCordinate(180)'>
                                             <path id="l_180"
                                                 d="M2163.22 1515.02L2117.07 1575.48L2034.92 1512.75L2082.26 1450.9L2164.35 1513.51L2163.22 1515.02Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2293,7 +2293,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_181">
+                                        <g id="g_181" @mouseover='HomeCordinate(181)'>
                                             <path id="l_181"
                                                 d="M2082.26 1450.9L2122.8 1398L2146.07 1395.54L2211.58 1451.49L2164.35 1513.51L2082.26 1450.9Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2306,7 +2306,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_182">
+                                        <g id="g_182" @mouseover='HomeCordinate(182)'>
                                             <path id="l_182"
                                                 d="M2054.88 1828.27L2051.16 1825.27L2047.14 1829.95L1971.37 1764.89L2019.33 1703.52L2102.05 1765.74L2054.88 1828.27Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2319,7 +2319,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_183">
+                                        <g id="g_183" @mouseover='HomeCordinate(183)'>
                                             <path id="l_183"
                                                 d="M2022.87 1699.01L2066.67 1641.58L2148.9 1703.44L2102.05 1765.74L2019.33 1703.52L2022.87 1699.01Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2332,7 +2332,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_184">
+                                        <g id="g_184" @mouseover='HomeCordinate(184)'>
                                             <path id="l_184"
                                                 d="M2069.96 1637.25L2115.03 1578.14L2196.47 1640.22L2148.9 1703.44L2066.67 1641.58L2069.96 1637.25Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2345,7 +2345,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_185">
+                                        <g id="g_185" @mouseover='HomeCordinate(185)'>
                                             <path id="l_185"
                                                 d="M2117.07 1575.48L2163.22 1515.02L2244.2 1576.78L2196.47 1640.22L2115.03 1578.14L2117.07 1575.48Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2358,7 +2358,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_186">
+                                        <g id="g_186" @mouseover='HomeCordinate(186)'>
                                             <path id="l_186"
                                                 d="M2226.66 1463.03L2253.78 1483.72L2286.21 1502.4L2286.24 1520.91L2244.2 1576.78L2163.22 1515.02L2164.35 1513.51L2211.58 1451.49L2226.66 1463.03Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2371,7 +2371,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_187">
+                                        <g id="g_187" @mouseover='HomeCordinate(187)'>
                                             <path id="l_187"
                                                 d="M1814.5 2261.61L1873 2181.61L1929 2227.11L1854.5 2283.61L1814.5 2261.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
@@ -2383,7 +2383,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_188">
+                                        <g id="g_188" @mouseover='HomeCordinate(188)'>
                                             <path id="l_188"
                                                 d="M1873.01 2183.14L1916.8 2126.56L1979.65 2189.24L1928.62 2228.78L1926.89 2226.71L1894.8 2200.46L1873.01 2183.14Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2396,7 +2396,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_189">
+                                        <g id="g_189" @mouseover='HomeCordinate(189)'>
                                             <path id="l_189"
                                                 d="M1958.22 2074.97L2038.63 2143.54L1979.65 2189.24L1916.8 2126.56L1958.22 2074.97Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2409,7 +2409,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_190">
+                                        <g id="g_190" @mouseover='HomeCordinate(190)'>
                                             <path id="l_190"
                                                 d="M2038.63 2143.54L1958.22 2074.97L1972.62 2057.03L2014.62 2093.03L2039.77 2063.12L2088.58 2104.85L2038.63 2143.54Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2422,7 +2422,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_191">
+                                        <g id="g_191" @mouseover='HomeCordinate(191)'>
                                             <path id="l_191"
                                                 d="M1972.62 2057.03L2018.88 1999.57L2025.65 1991.18L2076.39 2033.08L2127.08 2075.03L2088.58 2104.85L2039.77 2063.12L2014.62 2093.03L1972.62 2057.03Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2435,7 +2435,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_192">
+                                        <g id="g_192" @mouseover='HomeCordinate(192)'>
                                             <path id="l_192"
                                                 d="M2076.39 2033.08L2025.65 1991.18L2092.07 1908.41L2151.4 1959.32L2076.39 2033.08Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2448,7 +2448,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_193">
+                                        <g id="g_193" @mouseover='HomeCordinate(193)'>
                                             <path id="l_193"
                                                 d="M2127.08 2075.03L2076.39 2033.08L2151.4 1959.32L2210.73 2010.23L2127.08 2075.03Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2461,7 +2461,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_194">
+                                        <g id="g_194" @mouseover='HomeCordinate(194)'>
                                             <path id="l_194"
                                                 d="M2165.09 1917.51L2074.69 1844.32L2117.32 1787.82L2207.81 1860.73L2165.09 1917.51Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2474,7 +2474,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_195">
+                                        <g id="g_195" @mouseover='HomeCordinate(195)'>
                                             <path id="l_195"
                                                 d="M2207.81 1860.73L2117.32 1787.82L2159.93 1731.22L2250.47 1804.01L2207.81 1860.73Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2487,7 +2487,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_196">
+                                        <g id="g_196" @mouseover='HomeCordinate(196)'>
                                             <path id="l_196"
                                                 d="M2250.47 1804.01L2159.93 1731.22L2202.53 1674.58L2293.13 1747.32L2250.47 1804.01Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2500,7 +2500,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_197">
+                                        <g id="g_197" @mouseover='HomeCordinate(197)'>
                                             <path id="l_197"
                                                 d="M2293.13 1747.32L2202.53 1674.58L2245.14 1617.94L2335.82 1690.57L2293.13 1747.32Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2513,7 +2513,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_198">
+                                        <g id="g_198" @mouseover='HomeCordinate(198)'>
                                             <path id="l_198"
                                                 d="M2335.82 1690.57L2245.14 1617.94L2286.84 1562.5L2378.45 1633.9L2335.82 1690.57Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2526,7 +2526,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_199">
+                                        <g id="g_199" @mouseover='HomeCordinate(199)'>
                                             <path id="l_199"
                                                 d="M2407.93 1550.2L2421.11 1577.24L2378.45 1633.9L2286.84 1562.5L2309.51 1532.39L2339.08 1524.03L2397.59 1550.48L2407.93 1550.2Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2539,7 +2539,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_200">
+                                        <g id="g_200" @mouseover='HomeCordinate(200)'>
                                             <path id="l_200"
                                                 d="M2253.25 1988.89L2165.09 1917.51L2207.81 1860.73L2295.85 1932.28L2253.25 1988.89Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2552,7 +2552,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_201">
+                                        <g id="g_201" @mouseover='HomeCordinate(201)'>
                                             <path id="l_210"
                                                 d="M2295.85 1932.28L2207.81 1860.73L2250.47 1804.01L2338.45 1875.64L2295.85 1932.28Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2565,7 +2565,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_202">
+                                        <g id="g_202" @mouseover='HomeCordinate(202)'>
                                             <path id="l_202"
                                                 d="M2338.45 1875.64L2250.47 1804.01L2293.13 1747.32L2381.06 1819L2338.45 1875.64Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2578,7 +2578,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_203">
+                                        <g id="g_203" @mouseover='HomeCordinate(203)'>
                                             <path id="Vector 203"
                                                 d="M2381.06 1819L2293.13 1747.32L2335.82 1690.57L2423.72 1762.31L2381.06 1819Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2591,7 +2591,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_204">
+                                        <g id="g_204" @mouseover='HomeCordinate(204)'>
                                             <path id="l_204"
                                                 d="M2423.72 1762.31L2335.82 1690.57L2378.45 1633.9L2466.27 1705.76L2423.72 1762.31Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2604,7 +2604,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_205">
+                                        <g id="g_205" @mouseover='HomeCordinate(205)'>
                                             <path id="l_205"
                                                 d="M2502.84 1657.18L2466.27 1705.76L2378.45 1633.9L2421.11 1577.24L2508.9 1649.12L2502.84 1657.18Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2617,7 +2617,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_206">
+                                        <g id="g_206" @mouseover='HomeCordinate(206)'>
                                             <path id="l_206"
                                                 d="M2510.94 1561.99L2535.72 1585.54L2537.22 1611.48L2508.9 1649.12L2421.11 1577.24L2407.93 1550.2L2481.18 1532.65L2510.94 1561.99Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2630,7 +2630,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_207">
+                                        <g id="g_207" @mouseover='HomeCordinate(207)'>
                                             <path id="l_207"
                                                 d="M2288.42 2017.37L2285.5 1993.14L2317.88 1950.11L2426.53 2032.03L2382.11 2090.73L2302.28 2028.6L2288.42 2017.37Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2643,7 +2643,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_208">
+                                        <g id="g_208" @mouseover='HomeCordinate(208)'>
                                             <path id="l_208"
                                                 d="M2426.53 2032.03L2317.88 1950.11L2360.48 1893.47L2469.13 1975.7L2426.53 2032.03Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2656,7 +2656,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_209">
+                                        <g id="g_209" @mouseover='HomeCordinate(209)'>
                                             <path id="l_209"
                                                 d="M2469.13 1975.7L2360.48 1893.47L2403.11 1836.86L2511.91 1919.18L2469.13 1975.7Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2669,7 +2669,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_210">
+                                        <g id="g_210" @mouseover='HomeCordinate(210)'>
                                             <path id="l_210_2"
                                                 d="M2511.91 1919.18L2403.11 1836.86L2445.72 1780.23L2554.85 1862.43L2511.91 1919.18Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2682,7 +2682,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_211">
+                                        <g id="g_211" @mouseover='HomeCordinate(211)'>
                                             <path id="l_211"
                                                 d="M2554.85 1862.43L2445.72 1780.23L2488.32 1723.59L2597.43 1806.16L2554.85 1862.43Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2695,7 +2695,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_212">
+                                        <g id="g_212" @mouseover='HomeCordinate(212)'>
                                             <path id="l_212"
                                                 d="M2614.35 1783.8L2597.43 1806.16L2488.32 1723.59L2530.93 1666.95L2623.96 1766.03L2614.35 1783.8Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2708,7 +2708,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_213">
+                                        <g id="g_213" @mouseover='HomeCordinate(213)'>
                                             <path id="l_213"
                                                 d="M2530.93 1666.95L2561.14 1626.82L2576.99 1624.83L2657.81 1703.46L2623.96 1766.03L2530.93 1666.95Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2721,7 +2721,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_214">
+                                        <g id="g_214" @mouseover='HomeCordinate(214)'>
                                             <path id="l_214"
                                                 d="M2623.96 1766.03L2657.81 1703.46L2730.17 1773.91L2673.37 1840.95L2614.35 1783.8L2623.96 1766.03Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2734,7 +2734,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_215">
+                                        <g id="g_215" @mouseover='HomeCordinate(215)'>
                                             <path id="l_215"
                                                 d="M2760.53 1803.47L2796.73 1838.71L2738.48 1904.02L2673.37 1840.95L2730.17 1773.91L2760.53 1803.47Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2747,7 +2747,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_216">
+                                        <g id="g_216" @mouseover='HomeCordinate(216)'>
                                             <path id="l_216"
                                                 d="M2802.88 1966.41L2738.48 1904.02L2796.73 1838.71L2864.34 1904.5L2802.88 1966.41Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2760,7 +2760,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_217">
+                                        <g id="g_217" @mouseover='HomeCordinate(217)'>
                                             <path id="l_217"
                                                 d="M2869.55 2031.01L2802.88 1966.41L2864.34 1904.5L2929.99 1968.39L2869.55 2031.01Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2773,7 +2773,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_218">
+                                        <g id="g_218" @mouseover='HomeCordinate(218)'>
                                             <path id="l_218"
                                                 d="M2935.6 2094.99L2869.55 2031.01L2929.99 1968.39L2996.66 2033.25L2935.6 2094.99Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2786,7 +2786,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_219">
+                                        <g id="g_219" @mouseover='HomeCordinate(219)'>
                                             <path id="l_219"
                                                 d="M3000.26 2157.63L2935.6 2094.99L2996.66 2033.25L3055.11 2090.14L3054.34 2112.76L3000.26 2157.63Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2799,7 +2799,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_220">
+                                        <g id="g_220" @mouseover='HomeCordinate(220)'>
                                             <path id="l_220"
                                                 d="M2585.07 1593.31L2526.05 1537.27L2530.22 1521.28L2622.6 1494.89L2654.26 1526.67L2585.07 1593.31Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2812,7 +2812,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_221">
+                                        <g id="g_221" @mouseover='HomeCordinate(221)'>
                                             <path id="l_221"
                                                 d="M2713.14 1585.74L2645.96 1652.7L2585.07 1593.31L2654.26 1526.67L2713.14 1585.74Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2825,7 +2825,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_222">
+                                        <g id="g_222" @mouseover='HomeCordinate(222)'>
                                             <path id="l_222"
                                                 d="M2773.46 1646.26L2706.82 1712.08L2645.96 1652.7L2713.14 1585.74L2773.46 1646.26Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2838,7 +2838,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_223">
+                                        <g id="g_223" @mouseover='HomeCordinate(223)'>
                                             <path id="l_223"
                                                 d="M2833.64 1706.64L2769.32 1773.11L2706.82 1712.08L2773.46 1646.26L2833.64 1706.64Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2851,7 +2851,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_224">
+                                        <g id="g_224" @mouseover='HomeCordinate(224)'>
                                             <path id="l_224"
                                                 d="M2780.94 1784.48L2769.32 1773.11L2833.64 1706.64L2895.12 1768.32L2832.17 1834.54L2780.94 1784.48Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2864,7 +2864,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_225">
+                                        <g id="g_225" @mouseover='HomeCordinate(225)'>
                                             <path id="l_225"
                                                 d="M2958.14 1831.56L2895.04 1895.94L2832.17 1834.54L2895.12 1768.32L2958.14 1831.56Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2877,7 +2877,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_226">
+                                        <g id="g_226" @mouseover='HomeCordinate(226)'>
                                             <path id="l_226"
                                                 d="M3021.69 1895.31L2959.02 1958.41L2895.04 1895.94L2958.14 1831.56L3021.69 1895.31Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2890,7 +2890,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_227">
+                                        <g id="g_227" @mouseover='HomeCordinate(227)'>
                                             <path id="l_227"
                                                 d="M3086.32 1960.17L3023.65 2021.57L2959.02 1958.41L3021.69 1895.31L3086.32 1960.17Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2903,7 +2903,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_228">
+                                        <g id="g_228" @mouseover='HomeCordinate(228)'>
                                             <path id="l_228"
                                                 d="M3023.65 2021.57L3086.32 1960.17L3155.12 2029.17L3101.26 2073.84L3076.06 2072.76L3023.65 2021.57Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2916,7 +2916,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_229">
+                                        <g id="g_229" @mouseover='HomeCordinate(229)'>
                                             <path id="l_229"
                                                 d="M3432.74 1798.88L3360 1859.23L3286.19 1781.28L3366.3 1716.73L3432.74 1798.88Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2929,7 +2929,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_230">
+                                        <g id="g_230" @mouseover='HomeCordinate(230)'>
                                             <path id="l_230"
                                                 d="M3366.3 1716.73L3286.19 1781.28L3214.76 1706.3L3321 1624.77L3366.3 1716.73Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2942,7 +2942,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_231">
+                                        <g id="g_231" @mouseover='HomeCordinate(231)'>
                                             <path id="l_231"
                                                 d="M3321 1624.61L3214.5 1706.11L3159 1647.11L3276 1553.61L3321 1624.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2955,7 +2955,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_232">
+                                        <g id="g_232" @mouseover='HomeCordinate(232)'>
                                             <path id="l_232"
                                                 d="M3221.25 1597.56L3159.06 1647.68L3080.28 1564.77L3149.73 1508.81L3221.25 1597.56Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2968,7 +2968,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_233">
+                                        <g id="g_233" @mouseover='HomeCordinate(233)'>
                                             <path id="l_233"
                                                 d="M3149.73 1508.81L3080.28 1564.77L3013.36 1494.32L3088.96 1433.38L3149.73 1508.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2981,7 +2981,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_234">
+                                        <g id="g_234" @mouseover='HomeCordinate(234)'>
                                             <path id="l_234"
                                                 d="M3088.96 1433.38L3013.36 1494.32L2954.45 1432.33L3035.49 1367.05L3088.96 1433.38Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -2994,7 +2994,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_235">
+                                        <g id="g_235" @mouseover='HomeCordinate(235)'>
                                             <path id="l_235"
                                                 d="M2954.45 1432.33L2917.37 1393.3L2903.14 1346.95L2981.35 1299.84L3035.49 1367.05L2954.45 1432.33Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3007,7 +3007,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_236">
+                                        <g id="g_236" @mouseover='HomeCordinate(236)'>
                                             <path id="l_236"
                                                 d="M3124 1295.61L3035.5 1366.61L2981.5 1299.61L3057 1254.11L3108 1268.61L3124 1295.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3020,7 +3020,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_237">
+                                        <g id="g_237" @mouseover='HomeCordinate(237)'>
                                             <path id="l_237"
                                                 d="M3167.05 1370.45L3088.96 1433.38L3035.49 1367.05L3123.88 1295.84L3167.05 1370.45Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3033,7 +3033,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_238">
+                                        <g id="g_238" @mouseover='HomeCordinate(238)'>
                                             <path id="l_238"
                                                 d="M3216 1455.11L3150 1508.11L3089.5 1433.11L3167 1370.61L3216 1455.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3046,7 +3046,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_239">
+                                        <g id="g_239" @mouseover='HomeCordinate(239)'>
                                             <path id="l_239"
                                                 d="M3276.01 1553.48L3221.25 1597.56L3149.73 1508.81L3216.15 1455.29L3239.11 1495.03L3276.01 1553.48Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3059,7 +3059,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_240">
+                                        <g id="g_240" @mouseover='HomeCordinate(240)'>
                                             <path id="l_230_2"
                                                 d="M2890 1304.11L2865 1221.97L2968.5 1179.11L2993.5 1242.11L2890 1304.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3072,7 +3072,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_241">
+                                        <g id="g_241" @mouseover='HomeCordinate(241)'>
                                             <path id="l_231_2"
                                                 d="M2864.85 1222.2L2836.39 1129.56L2933.16 1090.84L2935.69 1097.13L2968.6 1179.28L2864.85 1222.2Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3085,7 +3085,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_242">
+                                        <g id="g_242" @mouseover='HomeCordinate(242)'>
                                             <path id="l_232_2"
                                                 d="M2836.39 1129.56L2808.35 1038.17L2897.76 1002.37L2933.16 1090.84L2836.39 1129.56Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3098,7 +3098,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_243">
+                                        <g id="g_243" @mouseover='HomeCordinate(243)'>
                                             <path id="l_233_2"
                                                 d="M2808.35 1038.17L2776.38 934.11L2857.45 901.66L2897.76 1002.37L2808.35 1038.17Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3111,7 +3111,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_244">
+                                        <g id="g_244" @mouseover='HomeCordinate(244)'>
                                             <path id="l_244"
                                                 d="M2776.38 934.109L2748.43 842.719L2817.2 801.109L2857.45 901.659L2776.38 934.109Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3124,7 +3124,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_245">
+                                        <g id="g_245" @mouseover='HomeCordinate(245)'>
                                             <path id="l_245"
                                                 d="M2857.45 901.66L2817.2 801.11L2895.26 753.86L2939.46 868.83L2857.45 901.66Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3137,7 +3137,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_246">
+                                        <g id="g_246" @mouseover='HomeCordinate(246)'>
                                             <path id="l_246"
                                                 d="M2897.76 1002.37L2857.45 901.661L2939.46 868.831L2978.74 969.971L2897.76 1002.37Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3150,7 +3150,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_247">
+                                        <g id="g_247" @mouseover='HomeCordinate(247)'>
                                             <path id="l_247"
                                                 d="M2935.69 1097.13L2933.16 1090.84L2897.76 1002.37L2978.74 969.97L3015.11 1064.11L2935.69 1097.13Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3163,7 +3163,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_248">
+                                        <g id="g_248" @mouseover='HomeCordinate(248)'>
                                             <path id="l_248"
                                                 d="M2993.94 1242.61L2968.6 1179.28L2935.69 1097.13L3015.11 1064.11L3050.46 1155.64L3039.01 1215.45L2993.94 1242.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3176,7 +3176,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_249">
+                                        <g id="g_249" @mouseover='HomeCordinate(249)'>
                                             <path id="l_249"
                                                 d="M3089 1137.61L3060.5 1063.61L3157.77 1022.07L3200 1117.61L3141.5 1151.61L3089 1137.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3189,7 +3189,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_250">
+                                        <g id="g_250" @mouseover='HomeCordinate(250)'>
                                             <path id="l_250"
                                                 d="M3060.67 1064.22L3027.98 979.78L3121.75 938.68L3158.06 1021.56L3060.67 1064.22Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3202,7 +3202,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_251">
+                                        <g id="g_251" @mouseover='HomeCordinate(251)'>
                                             <path id="l_251"
                                                 d="M3027.98 979.781L2993.43 890.631L3083.43 851.201L3121.75 938.681L3027.98 979.781Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3215,7 +3215,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_252">
+                                        <g id="g_252" @mouseover='HomeCordinate(252)'>
                                             <path id="l_252"
                                                 d="M2993.43 890.63L2960.38 804.54L3046.46 766.81L3083.43 851.2L2993.43 890.63Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3228,7 +3228,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_253">
+                                        <g id="g_253" @mouseover='HomeCordinate(253)'>
                                             <path id="l_253"
                                                 d="M2960.38 804.539L2932.14 731.519L3010.46 684.099L3046.46 766.809L2960.38 804.539Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3241,7 +3241,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_254">
+                                        <g id="g_254" @mouseover='HomeCordinate(254)'>
                                             <path id="l_254"
                                                 d="M3046.46 766.81L3010.46 684.1L3104.06 627.46L3142.93 724.55L3046.46 766.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3254,7 +3254,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_255">
+                                        <g id="g_255" @mouseover='HomeCordinate(255)'>
                                             <path id="l_255"
                                                 d="M3083.43 851.199L3046.46 766.809L3142.93 724.549L3177.23 810.239L3083.43 851.199Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3267,7 +3267,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_256">
+                                        <g id="g_256" @mouseover='HomeCordinate(256)'>
                                             <path id="l_256"
                                                 d="M3121.75 938.679L3083.43 851.199L3177.23 810.239L3212.43 898.959L3121.75 938.679Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3280,7 +3280,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_257">
+                                        <g id="g_257" @mouseover='HomeCordinate(257)'>
                                             <path id="l_257"
                                                 d="M3158.06 1021.56L3121.75 938.68L3212.43 898.96L3246.02 982.08L3158.06 1021.56Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3293,7 +3293,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_258">
+                                        <g id="g_258" @mouseover='HomeCordinate(258)'>
                                             <path id="l_258"
                                                 d="M3200.39 1118.2L3158.06 1021.56L3246.02 982.079L3281.06 1069.58L3200.39 1118.2Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3306,7 +3306,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_259">
+                                        <g id="g_259" @mouseover='HomeCordinate(259)'>
                                             <path id="l_259"
                                                 d="M3478.86 1760.61L3432.74 1798.88L3366.3 1716.73L3455.59 1644.76L3478.86 1760.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3319,7 +3319,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_260">
+                                        <g id="g_260" @mouseover='HomeCordinate(260)'>
                                             <path id="l_260"
                                                 d="M3455.59 1644.76L3366.3 1716.73L3321 1624.77L3379.73 1585.71L3436.17 1548.18L3455.59 1644.76Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3332,7 +3332,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_261">
+                                        <g id="g_261" @mouseover='HomeCordinate(261)'>
                                             <path id="l_261"
                                                 d="M3379.73 1585.71L3321 1624.77L3276.01 1553.48L3239.11 1495.03L3275.7 1473.86L3319.44 1453.62L3379.73 1585.71Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3345,7 +3345,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_262">
+                                        <g id="g_262" @mouseover='HomeCordinate(262)'>
                                             <path id="l_262"
                                                 d="M3348.95 1440.1L3319.44 1453.62L3275.7 1473.86L3218.81 1375.16L3304.13 1337.8L3348.95 1440.1Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3358,7 +3358,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_263">
+                                        <g id="g_263" @mouseover='HomeCordinate(263)'>
                                             <path id="l__263"
                                                 d="M3304.13 1337.8L3218.81 1375.16L3165.24 1283L3261.64 1240.77L3304.13 1337.8Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3371,7 +3371,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_264">
+                                        <g id="g_264" @mouseover='HomeCordinate(264)'>
                                             <path id="Vector 264"
                                                 d="M3261.64 1240.77L3165.24 1283L3146.36 1249.92L3155.54 1194.87L3223.57 1153.88L3261.64 1240.77Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3384,7 +3384,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_265">
+                                        <g id="g_265" @mouseover='HomeCordinate(265)'>
                                             <path id="l_265"
                                                 d="M3336.68 1207.88L3261.64 1240.77L3223.57 1153.88L3297.07 1109.58L3336.68 1207.88Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3397,7 +3397,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_266">
+                                        <g id="g_266" @mouseover='HomeCordinate(266)'>
                                             <path id="l_266"
                                                 d="M3376.08 1306.27L3304.13 1337.8L3261.64 1240.77L3336.68 1207.88L3376.08 1306.27Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3410,7 +3410,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_267">
+                                        <g id="g_267" @mouseover='HomeCordinate(267)'>
                                             <path id="l_267"
                                                 d="M3408.93 1412.63L3348.95 1440.1L3304.13 1337.8L3376.08 1306.27L3399.52 1365.89L3408.93 1412.63Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3423,7 +3423,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_268">
+                                        <g id="g_268" @mouseover='HomeCordinate(268)'>
                                             <path id="l_268"
                                                 d="M3436.17 1548.18L3379.73 1585.71L3319.44 1453.62L3348.95 1440.1L3408.93 1412.63L3436.17 1548.18Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3436,7 +3436,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_269">
+                                        <g id="g_269" @mouseover='HomeCordinate(269)'>
                                             <path id="l_269"
                                                 d="M3699.67 1576.64L3763.48 1523.75L3738.96 1437.6L3639.15 1466.04L3699.67 1576.64Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3449,7 +3449,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_270">
+                                        <g id="g_270" @mouseover='HomeCordinate(270)'>
                                             <path id="l_270"
                                                 d="M3639.15 1466.04L3738.96 1437.6L3715.4 1354.95L3596.86 1388.73L3639.15 1466.04Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3462,7 +3462,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_271">
+                                        <g id="g_271" @mouseover='HomeCordinate(271)'>
                                             <path id="l_271"
                                                 d="M3596.86 1388.73L3715.4 1354.95L3693.12 1276.77L3556.81 1315.63L3596.86 1388.73Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3475,7 +3475,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_272">
+                                        <g id="g_272" @mouseover='HomeCordinate(272)'>
                                             <path id="l_272"
                                                 d="M3556.81 1315.63L3693.12 1276.77L3669.82 1194.99L3537.59 1232.63L3556.81 1315.63Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3488,7 +3488,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_273">
+                                        <g id="g_273" @mouseover='HomeCordinate(273)'>
                                             <path id="l_273"
                                                 d="M3537.59 1232.63L3669.82 1194.99L3646.55 1113.18L3518.37 1149.69L3537.59 1232.63Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3501,7 +3501,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_274">
+                                        <g id="g_274" @mouseover='HomeCordinate(274)'>
                                             <path id="l_274"
                                                 d="M3518.37 1149.69L3646.55 1113.18L3623.22 1031.4L3499.12 1066.75L3518.37 1149.69Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3514,7 +3514,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_275">
+                                        <g id="g_275" @mouseover='HomeCordinate(275)'>
                                             <path id="l_275"
                                                 d="M3499.12 1066.75L3623.22 1031.4L3599.89 949.62L3479.9 983.81L3499.12 1066.75Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3527,7 +3527,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_276">
+                                        <g id="g_276" @mouseover='HomeCordinate(276)'>
                                             <path id="l_276"
                                                 d="M3472.84 953.419L3591.39 919.63L3569.85 844.03L3455.07 876.709L3472.84 953.419Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3540,7 +3540,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_277">
+                                        <g id="g_277" @mouseover='HomeCordinate(277)'>
                                             <path id="l_277"
                                                 d="M3455.07 876.71L3569.85 844.031L3548.22 768.261L3437.27 799.841L3455.07 876.71Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3553,7 +3553,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_278">
+                                        <g id="g_278" @mouseover='HomeCordinate(278)'>
                                             <path id="l_278"
                                                 d="M3437.27 799.839L3548.22 768.259L3528.66 699.519L3421.11 730.159L3437.27 799.839Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3566,7 +3566,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_279">
+                                        <g id="g_279" @mouseover='HomeCordinate(279)'>
                                             <path id="l_279"
                                                 d="M3421.11 730.16L3528.66 699.52L3508.65 629.3L3404.59 658.95L3421.11 730.16Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3579,7 +3579,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_280">
+                                        <g id="g_280" @mouseover='HomeCordinate(280)'>
                                             <path id="l_280"
                                                 d="M3404.59 658.949L3508.65 629.299L3487.95 556.569L3387.52 585.168L3404.59 658.949Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3592,7 +3592,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_281">
+                                        <g id="g_281" @mouseover='HomeCordinate(281)'>
                                             <path id="l_v"
                                                 d="M3387.52 585.169L3487.95 556.57L3466.44 481.189L3369.78 508.72L3387.52 585.169Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3605,7 +3605,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_282">
+                                        <g id="g_282" @mouseover='HomeCordinate(282)'>
                                             <path id="l_282"
                                                 d="M3369.78 508.72L3466.44 481.19L3440.47 390L3354.33 442.19L3369.78 508.72Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3618,7 +3618,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_283">
+                                        <g id="g_283" @mouseover='HomeCordinate(283)'>
                                             <path id="l_283"
                                                 d="M3775.9 1453.39L3747.18 1352.62L3855.97 1319.54L3885.54 1422.47L3775.9 1453.39Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3631,7 +3631,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_284">
+                                        <g id="g_284" @mouseover='HomeCordinate(284)'>
                                             <path id="l_284"
                                                 d="M3747.18 1352.62L3723 1267.75L3832.33 1236.54L3855.97 1319.54L3747.18 1352.62Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3644,7 +3644,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_285">
+                                        <g id="g_285" @mouseover='HomeCordinate(285)'>
                                             <path id="l_285"
                                                 d="M3723 1267.75L3699.76 1186.17L3809.03 1154.82L3832.33 1236.54L3723 1267.75Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3657,7 +3657,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_286">
+                                        <g id="g_286" @mouseover='HomeCordinate(286)'>
                                             <path id="Vector 286"
                                                 d="M3699.76 1186.17L3676.43 1104.31L3785.76 1073.21L3809.03 1154.82L3699.76 1186.17Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3670,7 +3670,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_287">
+                                        <g id="g_287" @mouseover='HomeCordinate(287)'>
                                             <path id="l_287"
                                                 d="M3676.43 1104.31L3653.18 1022.72L3762.49 991.51L3785.76 1073.21L3676.43 1104.31Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3683,7 +3683,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_288">
+                                        <g id="g_288" @mouseover='HomeCordinate(288)'>
                                             <path id="l_288"
                                                 d="M3653.18 1022.72L3629.88 940.95L3739.19 909.82L3762.49 991.51L3653.18 1022.72Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3696,7 +3696,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_289">
+                                        <g id="g_289" @mouseover='HomeCordinate(289)'>
                                             <path id="l_289"
                                                 d="M3762.49 991.509L3739.19 909.819L3848.55 878.529L3871.82 960.219L3762.49 991.509Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3709,7 +3709,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_290">
+                                        <g id="g_290" @mouseover='HomeCordinate(290)'>
                                             <path id="l_290"
                                                 d="M3785.76 1073.21L3762.49 991.511L3871.82 960.221L3895.09 1041.86L3785.76 1073.21Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3722,7 +3722,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_291">
+                                        <g id="g_291" @mouseover='HomeCordinate(291)'>
                                             <path id="l_291"
                                                 d="M3809.03 1154.82L3785.76 1073.21L3895.09 1041.86L3918.39 1123.61L3809.03 1154.82Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3735,7 +3735,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_292">
+                                        <g id="g_292" @mouseover='HomeCordinate(292)'>
                                             <path id="l_292"
                                                 d="M3832.33 1236.54L3809.03 1154.82L3918.39 1123.61L3941.67 1205.25L3832.33 1236.54Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3748,7 +3748,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_293">
+                                        <g id="g_293" @mouseover='HomeCordinate(293)'>
                                             <path id="l_293"
                                                 d="M3855.97 1319.54L3832.33 1236.54L3941.67 1205.25L3951.7 1240.96L3964.63 1287L3855.97 1319.54Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3761,7 +3761,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_294">
+                                        <g id="g_294" @mouseover='HomeCordinate(294)'>
                                             <path id="l_294"
                                                 d="M3885.54 1422.47L3855.97 1319.54L3964.63 1287L3998.98 1328.38L3933.62 1382.58L3885.54 1422.47Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3774,7 +3774,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_295">
+                                        <g id="g_295" @mouseover='HomeCordinate(295)'>
                                             <path id="l_295"
                                                 d="M3621.38 911.099L3598.14 829.509L3707.33 798.139L3730.63 879.829L3621.38 911.099Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3787,7 +3787,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_296">
+                                        <g id="g_296" @mouseover='HomeCordinate(296)'>
                                             <path id="l_296"
                                                 d="M3598.14 829.509L3574.83 747.739L3684.05 716.439L3707.33 798.139L3598.14 829.509Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3800,7 +3800,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_297">
+                                        <g id="g_297" @mouseover='HomeCordinate(297)'>
                                             <path id="l_297"
                                                 d="M3574.83 747.74L3551.56 666.07L3660.75 634.75L3684.05 716.439L3574.83 747.74Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3813,7 +3813,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_298">
+                                        <g id="g_298" @mouseover='HomeCordinate(298)'>
                                             <path id="l_298"
                                                 d="M3551.56 666.07L3528.26 584.29L3637.54 553.05L3660.75 634.75L3551.56 666.07Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3826,7 +3826,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_299">
+                                        <g id="g_299" @mouseover='HomeCordinate(299)'>
                                             <path id="l_299"
                                                 d="M3528.26 584.289L3505.02 502.708L3614.26 471.409L3637.54 553.049L3528.26 584.289Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3839,7 +3839,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_300">
+                                        <g id="g_300" @mouseover='HomeCordinate(300)'>
                                             <path id="l_300"
                                                 d="M3505.02 502.71L3481.72 420.931L3590.99 389.721L3614.26 471.411L3505.02 502.71Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3852,7 +3852,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_301">
+                                        <g id="g_301" @mouseover='HomeCordinate(301)'>
                                             <path id="l_301"
                                                 d="M3481.72 420.929L3468.14 373.279L3584.05 303.089L3609.81 287.499L3635.33 377.049L3590.99 389.719L3481.72 420.929Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3865,7 +3865,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_302">
+                                        <g id="g_302" @mouseover='HomeCordinate(302)'>
                                             <path id="l_302"
                                                 d="M3635.33 377.05L3609.81 287.5L3707.44 228.43L3741.34 346.75L3700.35 358.43L3635.33 377.05Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3878,7 +3878,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_303">
+                                        <g id="g_303" @mouseover='HomeCordinate(303)'>
                                             <path id="l_303"
                                                 d="M3614.26 471.41L3590.99 389.72L3635.33 377.05L3700.35 358.43L3723.54 440.12L3614.26 471.41Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3891,7 +3891,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_304">
+                                        <g id="g_304" @mouseover='HomeCordinate(304)'>
                                             <path id="l_304"
                                                 d="M3637.54 553.05L3614.26 471.41L3723.54 440.12L3746.9 521.81L3637.54 553.05Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3904,7 +3904,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_305">
+                                        <g id="g_305" @mouseover='HomeCordinate(305)'>
                                             <path id="l_305"
                                                 d="M3661.3 634.609L3638 552.919L3747.42 521.709L3770.66 603.319L3661.3 634.609Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3917,7 +3917,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_306">
+                                        <g id="g_306" @mouseover='HomeCordinate(306)'>
                                             <path id="l_306"
                                                 d="M3684.05 716.439L3660.75 634.749L3770.17 603.539L3793.41 685.149L3684.05 716.439Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3930,7 +3930,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_307">
+                                        <g id="g_307" @mouseover='HomeCordinate(307)'>
                                             <path id="l_307"
                                                 d="M3707.33 798.14L3684.05 716.44L3793.41 685.15L3816.69 766.84L3707.33 798.14Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3943,7 +3943,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_308">
+                                        <g id="g_308" @mouseover='HomeCordinate(308)'>
                                             <path id="l_308"
                                                 d="M3730.28 879.609L3707 797.909L3816.36 766.619L3839.64 848.309L3730.28 879.609Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3956,7 +3956,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_309">
+                                        <g id="g_309" @mouseover='HomeCordinate(309)'>
                                             <path id="l_309"
                                                 d="M4068.69 1270.59L4058.37 1279.15L3998.98 1328.38L3964.63 1287L3951.7 1240.96L4008.28 1197.93L4068.69 1270.59Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3969,7 +3969,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_310">
+                                        <g id="g_310" @mouseover='HomeCordinate(310)'>
                                             <path id="l_310"
                                                 d="M4134.08 1216.33L4068.69 1270.59L4008.28 1197.93L3996.01 1183.11L4061.43 1128.97L4134.08 1216.33Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3982,7 +3982,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_311">
+                                        <g id="g_311" @mouseover='HomeCordinate(311)'>
                                             <path id="l_311"
                                                 d="M4061.5 1129.11L3996 1183.11L3958.5 1136.61L3942.5 1079.11L3989 1041.61L4061.5 1129.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -3995,7 +3995,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_312">
+                                        <g id="g_312" @mouseover='HomeCordinate(312)'>
                                             <path id="l_312"
                                                 d="M4199.31 1162.22L4134.08 1216.33L4061.43 1128.97L4126.8 1074.71L4199.31 1162.22Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4008,7 +4008,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_313">
+                                        <g id="g_313" @mouseover='HomeCordinate(313)'>
                                             <path id="l_313"
                                                 d="M4126.8 1074.71L4061.43 1128.97L3988.81 1041.46L4054.14 987.21L4126.8 1074.71Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4021,7 +4021,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_314">
+                                        <g id="g_314" @mouseover='HomeCordinate(314)'>
                                             <path id="l_314"
                                                 d="M4264.67 1107.99L4216.94 1147.59L4199.31 1162.22L4126.8 1074.71L4192.14 1020.43L4264.67 1107.99Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4034,7 +4034,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_315">
+                                        <g id="g_315" @mouseover='HomeCordinate(315)'>
                                             <path id="l_315"
                                                 d="M4192 1020.61L4126.5 1074.61L4054 987.109L4119.5 933.109L4192 1020.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4047,7 +4047,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_316">
+                                        <g id="g_316" @mouseover='HomeCordinate(316)'>
                                             <path id="l_316"
                                                 d="M4329.87 1054.38L4264.5 1108.11L4192.5 1020.61L4257.34 966.819L4329.87 1054.38Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4060,7 +4060,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_317">
+                                        <g id="g_317" @mouseover='HomeCordinate(317)'>
                                             <path id="l_317"
                                                 d="M4257.56 966.289L4192.14 1020.43L4119.6 932.979L4184.96 878.719L4257.56 966.289Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4073,7 +4073,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_318">
+                                        <g id="g_318" @mouseover='HomeCordinate(318)'>
                                             <path id="l_318"
                                                 d="M4371.28 1019.55L4330.04 1053.76L4257.56 966.289L4328.68 907.329L4371.28 1019.55Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4086,7 +4086,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_319">
+                                        <g id="g_319" @mouseover='HomeCordinate(319)'>
                                             <path id="l_319"
                                                 d="M4328.68 907.329L4257.56 966.289L4184.96 878.719L4223.66 874.809L4291.8 849.019L4311.67 861.938L4328.68 907.329Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4099,7 +4099,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_320">
+                                        <g id="g_320" @mouseover='HomeCordinate(320)'>
                                             <path id="l_320"
                                                 d="M3934.5 1024.11L3904 918.919L4013.33 887.649L4034.5 962.109L3975.5 1011.61L3934.5 1024.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4112,7 +4112,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_321">
+                                        <g id="g_321" @mouseover='HomeCordinate(321)'>
                                             <path id="l_321"
                                                 d="M3904.25 918.75L3880.98 837.06L3990.31 805.79L4013.58 887.479L3904.25 918.75Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4125,7 +4125,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_322">
+                                        <g id="g_322" @mouseover='HomeCordinate(322)'>
                                             <path id="l_322"
                                                 d="M3880.98 837.06L3857.59 755.42L3994.16 716.38L4017.27 798.14L3990.31 805.79L3880.98 837.06Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4138,7 +4138,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_323">
+                                        <g id="g_323" @mouseover='HomeCordinate(323)'>
                                             <path id="l_323"
                                                 d="M3857.59 755.419L3834.23 673.81L3971.17 635L3971.71 636.959L3994.16 716.38L3857.59 755.419Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4151,7 +4151,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_324">
+                                        <g id="g_324" @mouseover='HomeCordinate(324)'>
                                             <path id="l_324"
                                                 d="M3834.23 673.81L3811.19 592.28L3948.1 553.51L3971.17 635L3834.23 673.81Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4164,7 +4164,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_325">
+                                        <g id="g_325" @mouseover='HomeCordinate(325)'>
                                             <path id="l_325"
                                                 d="M3811.19 592.281L3787.72 510.141L3921.82 471.871L3948.1 553.511L3811.19 592.281Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4177,7 +4177,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_326">
+                                        <g id="g_326" @mouseover='HomeCordinate(326)'>
                                             <path id="l_326"
                                                 d="M3787.72 510.14L3754.69 394.03L3780.01 388.73L3858.16 415.63L3908.78 433.09L3921.82 471.87L3787.72 510.14Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4190,7 +4190,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_327">
+                                        <g id="g_327" @mouseover='HomeCordinate(327)'>
                                             <path id="l_327"
                                                 d="M3948.1 553.509L3921.82 471.869L3908.78 433.089L4059.13 484.849L4071.52 517.589L3948.1 553.509Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4203,7 +4203,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_328">
+                                        <g id="g_328" @mouseover='HomeCordinate(328)'>
                                             <path id="l_328"
                                                 d="M3971.71 636.96L3971.17 635L3948.1 553.511L4071.52 517.591L4102.25 598.631L3971.71 636.96Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4216,7 +4216,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_329">
+                                        <g id="g_329" @mouseover='HomeCordinate(329)'>
                                             <path id="l_329"
                                                 d="M3995.07 719.56L3994.16 716.38L3971.71 636.96L4102.25 598.63L4109.42 617.57L4133.06 679.87L3995.07 719.56Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4229,7 +4229,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_330">
+                                        <g id="g_330" @mouseover='HomeCordinate(330)'>
                                             <path id="l_330"
                                                 d="M4017.27 798.14L3995.07 719.56L4133.06 679.87L4162.26 756.92L4062.22 785.32L4017.27 798.14Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4242,7 +4242,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_331">
+                                        <g id="g_331" @mouseover='HomeCordinate(331)'>
                                             <path id="l_331"
                                                 d="M4097.97 910.39L4062.22 785.32L4162.26 756.92L4191.14 833.14L4097.97 910.39Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4255,7 +4255,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_332">
+                                        <g id="g_332" @mouseover='HomeCordinate(332)'>
                                             <path id="l_332"
                                                 d="M4035.01 962.57L4013.58 887.479L3990.31 805.79L4017.27 798.14L4062.22 785.32L4097.97 910.39L4035.01 962.57Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4268,7 +4268,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_333">
+                                        <g id="g_333" @mouseover='HomeCordinate(333)'>
                                             <path id="l_333"
                                                 d="M3787.46 358.23L3741.34 346.75L3707.44 228.43L3726.32 217L3824.17 250.74L3787.46 358.23Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4281,7 +4281,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_334">
+                                        <g id="g_334" @mouseover='HomeCordinate(334)'>
                                             <path id="l_334"
                                                 d="M3867.79 385.669L3787.46 358.229L3824.17 250.74L3904.67 278.49L3867.79 385.669Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4294,7 +4294,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_335">
+                                        <g id="g_335" @mouseover='HomeCordinate(335)'>
                                             <path id="l_335"
                                                 d="M3947.99 413.621L3867.79 385.67L3904.67 278.491L3908.13 279.681L3984.75 306.101L3947.99 413.621Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4307,7 +4307,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_336">
+                                        <g id="g_336" @mouseover='HomeCordinate(336)'>
                                             <path id="l_336"
                                                 d="M4028.35 441.06L3947.99 413.62L3984.75 306.1L4065.31 333.88L4028.35 441.06Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4320,7 +4320,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_337">
+                                        <g id="g_337" @mouseover='HomeCordinate(337)'>
                                             <path id="l_337"
                                                 d="M4083.09 460.189L4028.35 441.059L4065.31 333.879L4114.07 350.689L4154.52 395.529L4083.09 460.189Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4333,7 +4333,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_338">
+                                        <g id="g_338" @mouseover='HomeCordinate(338)'>
                                             <path id="l_338"
                                                 d="M4108.14 526.32L4083.09 460.189L4154.52 395.53L4198.91 444.74L4214.53 485.959L4108.14 526.32Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4346,7 +4346,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_339">
+                                        <g id="g_339" @mouseover='HomeCordinate(339)'>
                                             <path id="l_339"
                                                 d="M4138.19 605.689L4108.14 526.319L4214.53 485.959L4244.75 565.689L4138.19 605.689Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4359,7 +4359,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_340">
+                                        <g id="g_340" @mouseover='HomeCordinate(340)'>
                                             <path id="l_340"
                                                 d="M4168.3 685.15L4138.19 605.689L4244.75 565.689L4274.74 644.84L4168.3 685.15Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4372,7 +4372,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_341">
+                                        <g id="g_341" @mouseover='HomeCordinate(341)'>
                                             <path id="l_341"
                                                 d="M4198.32 764.57L4168.3 685.15L4274.74 644.84L4304.78 724.12L4198.32 764.57Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4385,7 +4385,7 @@
                                                     fill="#000F72" />
                                             </g>
                                         </g>
-                                        <g id="g_342">
+                                        <g id="g_342" @mouseover='HomeCordinate(342)'>
                                             <path id="l_342"
                                                 d="M4248.63 832.21L4220.88 824.271L4198.32 764.571L4304.78 724.121L4333.58 800.121L4248.63 832.21Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
@@ -4408,7 +4408,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <div id="t_1" class="active" style='margin-left:20px'>
+                            <div id="t_1" class="info_block active" style='top:375px,left:116px'>
                                 <div class="title">Участок {{ uchastok }}</div>
                                 <div class="text-grey">{{ sotki }} соток</div>
                                 <!-- there is cahnge -->
@@ -4449,8 +4449,10 @@ let data = ref(plan)
 let choosedHomeClass = ref('')
 let uchastok = ref('')
 let sotki = ref('')
-let stat = ref('')
+let stat = ref('ПРОДАН')
 let priceF = ref('0')
+
+
 let getHomeId = () => {
     for (var i = 0; i <= data.value.length; i++) {
         if (!data.value[i]) continue;
@@ -4461,14 +4463,23 @@ let getHomeId = () => {
 }
 
 let HomeCordinate = (id) => {
-    // console.log(id);
+
     let catchedData = data.value[id - 1]
-    // console.log(catchedData);
+    
     if (catchedData !== null) {
+
         uchastok.value = catchedData.number
         sotki.value = catchedData.size
         stat.value = catchedData.status
         priceF.value = catchedData.price
+
+        if(catchedData.status === 'free'){
+            stat.value = 'СВОБОДЕН'
+        }else if (catchedData.status === 'occupied'){
+            stat.value = 'ЗАБРОНИРОВАН'
+        }else if (catchedData.status === "sold"){
+            stat.value = "ПРОДАН"
+        }
     }
     // let home = document.getElementById(`g_${id}`)
     // console.log(home);

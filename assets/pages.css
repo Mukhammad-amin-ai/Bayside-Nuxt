@@ -968,7 +968,7 @@
     font-size: 14px;
     line-height: 16px;
     border-radius: 8px;
-    z-index: 10000;
+    z-index: 100000;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity 0.7s ease-in-out;
