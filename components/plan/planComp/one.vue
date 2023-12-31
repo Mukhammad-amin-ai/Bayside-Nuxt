@@ -1,6 +1,8 @@
 <template >
-    <g id="g_1" @mouseover='HomeCordinate(1)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_1" d="M326 1781.11L356.5 1711.61L497 1773.11L472 1830.11L453.5 1837.61L326 1781.11Z" fill="#FF0000"
+    <g id="g_1" @mouseover='HomeCordinate(1)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'
+        @touchstart="HomeCordinate(1)" @touchcancel="mouseLiveHandle">
+        <path id="l_1" :class="{ [planStore.pathClass]: 1 === hoveredId }"
+            d="M326 1781.11L356.5 1711.61L497 1773.11L472 1830.11L453.5 1837.61L326 1781.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group">
             <circle id="n_1" cx="411.625" cy="1777.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -8,8 +10,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_2" @mouseover='HomeCordinate(2)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_2" d="M363 1696.62L418.5 1571.61L478.5 1596.6L423 1721.61L363 1696.62Z" fill="#FF0000"
+    <g id="g_2" @mouseover='HomeCordinate(2)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'
+        @touchstart="HomeCordinate(2)" @touchcancel="mouseLiveHandle">
+        <path id="l_2" :class="{ [planStore.pathClass]: 2 === hoveredId }" d="M363 1696.62L418.5 1571.61L478.5 1596.6L423 1721.61L363 1696.62Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_2">
             <circle id="n_2" cx="420.625" cy="1648.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -18,8 +21,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_3" @mouseover='HomeCordinate(3)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_3" d="M423 1721.61L451 1659.11L532 1695.11L504.5 1758.11L423 1721.61Z" fill="#FF0000" fill-opacity="0.1"
+    <g id="g_3" @touchstart="HomeCordinate(3)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(3)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_3" :class="{ [planStore.pathClass]: 3 === hoveredId }" d="M423 1721.61L451 1659.11L532 1695.11L504.5 1758.11L423 1721.61Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
         <g id="Group_3">
             <circle id="n_3" cx="477.625" cy="1706.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -28,8 +32,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_4" @mouseover='HomeCordinate(4)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_4" d="M451 1659.11L479 1596.61L559.5 1632.61L532 1695.11L451 1659.11Z" fill="#FF0000" fill-opacity="0.1"
+    <g id="g_4" @touchstart="HomeCordinate(4)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(4)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_4" :class="{ [planStore.pathClass]: 4 === hoveredId }" d="M451 1659.11L479 1596.61L559.5 1632.61L532 1695.11L451 1659.11Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
         <g id="Group_4">
             <circle id="n_4" cx="504.625" cy="1646.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -38,8 +43,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_5" @mouseover='HomeCordinate(5)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_5" d="M498 1841.11L521 1789.11L589 1819.61L560 1885.11L504.5 1860.61L498 1841.11Z" fill="#FF0000"
+    <g id="g_5" @touchstart="HomeCordinate(5)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(5)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_5" :class="{ [planStore.pathClass]: 5 === hoveredId }" d="M498 1841.11L521 1789.11L589 1819.61L560 1885.11L504.5 1860.61L498 1841.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_5">
             <circle id="n_5" cx="542.625" cy="1836.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -48,8 +54,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_6" @mouseover='HomeCordinate(6)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_6" d="M589 1819.61L521 1789.11L544.5 1736.61L563 1729.11L618 1752.61L589 1819.61Z" fill="#FF0000"
+    <g id="g_6" @touchstart="HomeCordinate(6)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(6)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_6" :class="{ [planStore.pathClass]: 6 === hoveredId }"  d="M589 1819.61L521 1789.11L544.5 1736.61L563 1729.11L618 1752.61L589 1819.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_6">
             <circle id="n_6" cx="569.625" cy="1771.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -58,8 +65,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_7" @mouseover='HomeCordinate(7)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_7" d="M560 1885.11L589 1819.61L657 1849.61L625.5 1914.61L560 1885.11Z" fill="#FF0000" fill-opacity="0.1"
+    <g id="g_7" @touchstart="HomeCordinate(7)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(7)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_7" :class="{ [planStore.pathClass]: 7 === hoveredId }" d="M560 1885.11L589 1819.61L657 1849.61L625.5 1914.61L560 1885.11Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
         <g id="Group_7">
             <circle id="n_7" cx="608.625" cy="1866.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -67,8 +75,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_8" @mouseover='HomeCordinate(8)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_8" d="M589 1819.61L618 1752.61L686.5 1781.61L657 1849.61L589 1819.61Z" fill="#FF0000" fill-opacity="0.1"
+    <g id="g_8" @touchstart="HomeCordinate(8)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(8)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_8" :class="{ [planStore.pathClass]: 8 === hoveredId }" d="M589 1819.61L618 1752.61L686.5 1781.61L657 1849.61L589 1819.61Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
         <g id="Group_8">
             <circle id="n_8" cx="637.625" cy="1801.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -77,8 +86,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_9" @mouseover='HomeCordinate(9)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_9" d="M626 1915.11L657 1849.61L726.5 1880.61L701 1932.11L681.5 1939.11L626 1915.11Z" fill="#FF0000"
+    <g id="g_9" @touchstart="HomeCordinate(9)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(9)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_9" :class="{ [planStore.pathClass]: 8 === hoveredId }"  d="M626 1915.11L657 1849.61L726.5 1880.61L701 1932.11L681.5 1939.11L626 1915.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_9">
             <circle id="n_9" cx="677.625" cy="1896.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B" stroke-width="1.58654" />
@@ -87,8 +97,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_10" @mouseover='HomeCordinate(10)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_10" d="M657 1849.61L686.5 1781.61L748 1807.11L754.5 1823.11L726.5 1880.61L657 1849.61Z" fill="#FF0000"
+    <g id="g_10" @touchstart="HomeCordinate(10)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(10)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_10" :class="{ [planStore.pathClass]: 10 === hoveredId }" d="M657 1849.61L686.5 1781.61L748 1807.11L754.5 1823.11L726.5 1880.61L657 1849.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_10">
             <circle id="n_10" cx="706.625" cy="1830.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -98,8 +109,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_11" @mouseover='HomeCordinate(11)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_11" d="M636.5 1729.61L575 1703.61L567.5 1685.11L586.5 1642.11L664 1681.11L636.5 1729.61Z" fill="#FF0000"
+    <g id="g_11" @touchstart="HomeCordinate(11)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(11)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_11" :class="{ [planStore.pathClass]: 11 === hoveredId }" d="M636.5 1729.61L575 1703.61L567.5 1685.11L586.5 1642.11L664 1681.11L636.5 1729.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_11">
             <circle id="n_11" cx="612.625" cy="1688.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -109,8 +121,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_12" @mouseover='HomeCordinate(12)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_12" d="M586.5 1641.61L620 1593.61L691.5 1633.11L664 1681.11L586.5 1641.61Z" fill="#FF0000"
+    <g id="g_12" @touchstart="HomeCordinate(12)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(12)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_12" :class="{ [planStore.pathClass]: 12 === hoveredId }" d="M586.5 1641.61L620 1593.61L691.5 1633.11L664 1681.11L586.5 1641.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_12">
             <circle id="n_12" cx="639.625" cy="1635.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -120,8 +133,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_13" @mouseover='HomeCordinate(13)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_13" d="M620 1593.61L644 1557.61L665 1551.11L724.5 1576.11L691.5 1633.11L620 1593.61Z" fill="#FF0000"
+    <g id="g_13" @touchstart="HomeCordinate(13)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(13)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_13" :class="{ [planStore.pathClass]: 13 === hoveredId }" d="M620 1593.61L644 1557.61L665 1551.11L724.5 1576.11L691.5 1633.11L620 1593.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_13">
             <circle id="n_13" cx="671.625" cy="1586.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -131,8 +145,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_14" @mouseover='HomeCordinate(14)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_14" d="M636.5 1729.61L678.5 1657.11L730 1683.61L693 1753.11L636.5 1729.61Z" fill="#FF0000"
+    <g id="g_14" @touchstart="HomeCordinate(14)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(14)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_14" :class="{ [planStore.pathClass]: 14 === hoveredId }" d="M636.5 1729.61L678.5 1657.11L730 1683.61L693 1753.11L636.5 1729.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_14">
             <circle id="n_14" cx="683.625" cy="1706.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -142,8 +157,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_15" @mouseover='HomeCordinate(15)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_15" d="M678 1656.61L724.5 1576.11L775 1597.11L729.5 1683.61L678 1656.61Z" fill="#FF0000"
+    <g id="g_15" @touchstart="HomeCordinate(15)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(15)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_15" :class="{ [planStore.pathClass]: 15 === hoveredId }" d="M678 1656.61L724.5 1576.11L775 1597.11L729.5 1683.61L678 1656.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_15">
             <circle id="n_15" cx="725.625" cy="1632.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -153,8 +169,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_16" @mouseover='HomeCordinate(16)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_16" d="M693 1754.11L721 1701.61L797 1737.11L778 1776.11L760 1782.61L693 1754.11Z" fill="#FF0000"
+    <g id="g_16" @touchstart="HomeCordinate(16)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(16)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_16" :class="{ [planStore.pathClass]: 16 === hoveredId }" d="M693 1754.11L721 1701.61L797 1737.11L778 1776.11L760 1782.61L693 1754.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_16">
             <circle id="n_16" cx="745.625" cy="1743.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -164,8 +181,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_17" @mouseover='HomeCordinate(17)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_17" d="M721 1700.61L748 1648.61L822.5 1684.61L797 1736.11L721 1700.61Z" fill="#FF0000"
+    <g id="g_17" @touchstart="HomeCordinate(17)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(17)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_17" :class="{ [planStore.pathClass]: 17 === hoveredId }" d="M721 1700.61L748 1648.61L822.5 1684.61L797 1736.11L721 1700.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_17">
             <circle id="n_17" cx="771.625" cy="1690.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -175,8 +193,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_18" @mouseover='HomeCordinate(18)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_18" d="M748 1648.61L775 1597.11L836.5 1623.11L843 1642.11L822.5 1684.61L748 1648.61Z" fill="#FF0000"
+    <g id="g_18" @touchstart="HomeCordinate(18)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(18)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_18" :class="{ [planStore.pathClass]: 18 === hoveredId }" d="M748 1648.61L775 1597.11L836.5 1623.11L843 1642.11L822.5 1684.61L748 1648.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_18">
             <circle id="n_18" cx="796.625" cy="1638.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -186,8 +205,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_19" @mouseover='HomeCordinate(19)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_19" d="M719 1956.61L752 1890.11L813.5 1916.11L782.5 1983.61L719 1956.61Z" fill="#FF0000"
+    <g id="g_19" @touchstart="HomeCordinate(19)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(19)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_19" :class="{ [planStore.pathClass]: 19 === hoveredId }" d="M719 1956.61L752 1890.11L813.5 1916.11L782.5 1983.61L719 1956.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_19">
             <circle id="n_19" cx="766.625" cy="1935.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -197,8 +217,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_20" @mouseover='HomeCordinate(20)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_20" d="M752 1890.61L780.5 1833.61L798.5 1828.11L845 1848.11L813.5 1916.61L752 1890.61Z" fill="#FF0000"
+    <g id="g_20" @touchstart="HomeCordinate(20)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(20)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_20" :class="{ [planStore.pathClass]: 20 === hoveredId }" d="M752 1890.61L780.5 1833.61L798.5 1828.11L845 1848.11L813.5 1916.61L752 1890.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_20">
             <circle id="n_20" cx="799.625" cy="1871.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -208,8 +229,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_21" @mouseover='HomeCordinate(21)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_21" d="M782.5 1983.61L813.5 1916.11L874 1940.11L843 2007.11L782.5 1983.61Z" fill="#FF0000"
+    <g id="g_21" @touchstart="HomeCordinate(21)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(21)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_21" :class="{ [planStore.pathClass]: 21 === hoveredId }" d="M782.5 1983.61L813.5 1916.11L874 1940.11L843 2007.11L782.5 1983.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_21">
             <circle id="n_21" cx="827.625" cy="1961.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -219,8 +241,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_22" @mouseover='HomeCordinate(22)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_22" d="M813.5 1916.11L845 1848.11L904.5 1872.61L874 1940.11L813.5 1916.11Z" fill="#FF0000"
+    <g id="g_22" @touchstart="HomeCordinate(22)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(22)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_22" :class="{ [planStore.pathClass]: 22 === hoveredId }" d="M813.5 1916.11L845 1848.11L904.5 1872.61L874 1940.11L813.5 1916.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_22">
             <circle id="n_22" cx="857.625" cy="1895.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -230,8 +253,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_23" @mouseover='HomeCordinate(23)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_23" d="M843 2007.11L874 1940.11L935 1966.11L904 2031.61L843 2007.11Z" fill="#FF0000" fill-opacity="0.1"
+    <g id="g_23" @touchstart="HomeCordinate(23)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(23)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_23" :class="{ [planStore.pathClass]: 23 === hoveredId }" d="M843 2007.11L874 1940.11L935 1966.11L904 2031.61L843 2007.11Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
         <g id="Group_23">
             <circle id="n_23" cx="888.625" cy="1986.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -241,8 +265,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_24" @mouseover='HomeCordinate(24)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_24" d="M874 1940.11L904.5 1872.61L963.5 1897.61L935 1966.11L874 1940.11Z" fill="#FF0000"
+    <g id="g_24" @touchstart="HomeCordinate(24)" @touchcancel="mouseLiveHandle" @mousemove='mouseMoveHandle'
+        @mouseleave='mouseLiveHandle'>
+        <path id="l_24" :class="{ [planStore.pathClass]: 24 === hoveredId }" d="M874 1940.11L904.5 1872.61L963.5 1897.61L935 1966.11L874 1940.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_24">
             <circle id="n_24" cx="917.625" cy="1919.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -252,8 +277,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_25" @mouseover='HomeCordinate(25)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_25" d="M904 2031.61L935 1966.11L996 1992.11L975 2045.61L959 2053.11L904 2031.61Z" fill="#FF0000"
+    <g id="g_25" @touchstart="HomeCordinate(25)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(25)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_25" :class="{ [planStore.pathClass]: 25 === hoveredId }" d="M904 2031.61L935 1966.11L996 1992.11L975 2045.61L959 2053.11L904 2031.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_25">
             <circle id="n_25" cx="950.625" cy="2010.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -263,8 +289,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_26" @mouseover='HomeCordinate(26)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_26" d="M935 1965.61L963.5 1897.61L1012.5 1917.61L1018.5 1934.11L996 1991.61L935 1965.61Z" fill="#FF0000"
+    <g id="g_26" @touchstart="HomeCordinate(26)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(26)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_26" :class="{ [planStore.pathClass]: 26 === hoveredId }" d="M935 1965.61L963.5 1897.61L1012.5 1917.61L1018.5 1934.11L996 1991.61L935 1965.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_26">
             <circle id="n_26" cx="978.625" cy="1944.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -274,8 +301,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_27" @mouseover='HomeCordinate(27)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_27" d="M803.5 1787.61L823.5 1746.61L901 1778.11L879.5 1831.61L809 1802.11L803.5 1787.61Z" fill="#FF0000"
+    <g id="g_27" @touchstart="HomeCordinate(27)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(27)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_27" :class="{ [planStore.pathClass]: 27 === hoveredId }" d="M803.5 1787.61L823.5 1746.61L901 1778.11L879.5 1831.61L809 1802.11L803.5 1787.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_27">
             <circle id="n_27" cx="851.625" cy="1788.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -285,8 +313,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_28" @mouseover='HomeCordinate(28)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_28" d="M823.5 1746.61L847.5 1696.61L928.5 1733.61L907.5 1780.61L823.5 1746.61Z" fill="#FF0000"
+    <g id="g_28" @touchstart="HomeCordinate(28)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(28)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_28" :class="{ [planStore.pathClass]: 28 === hoveredId }" d="M823.5 1746.61L847.5 1696.61L928.5 1733.61L907.5 1780.61L823.5 1746.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_28">
             <circle id="n_28" cx="875.625" cy="1738.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -296,8 +325,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_29" @mouseover='HomeCordinate(29)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_29" d="M847.5 1696.61L874 1643.11L950 1685.11L928.5 1733.61L847.5 1696.61Z" fill="#FF0000"
+    <g id="g_29" @touchstart="HomeCordinate(29)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(29)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_29" :class="{ [planStore.pathClass]: 29 === hoveredId }" d="M847.5 1696.61L874 1643.11L950 1685.11L928.5 1733.61L847.5 1696.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_29">
             <circle id="n_29" cx="900.625" cy="1687.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -307,8 +337,9 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_30" @mouseover='HomeCordinate(30)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_30" d="M879.5 1831.61L901 1778.11L978.5 1809.61L956.5 1864.11L879.5 1831.61Z" fill="#FF0000"
+    <g id="g_30" @touchstart="HomeCordinate(30)" @touchcancel="mouseLiveHandle" @mouseover='HomeCordinate(30)'
+        @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_30" :class="{ [planStore.pathClass]: 30 === hoveredId }" d="M879.5 1831.61L901 1778.11L978.5 1809.61L956.5 1864.11L879.5 1831.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_30">
             <circle id="n_30" cx="930.625" cy="1820.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -323,15 +354,19 @@
 import { usePlanStore } from '~/stores/store';
 
 const planStore = usePlanStore()
-
-let HomeCordinate = (id)=>{
+let hoveredId = null
+let HomeCordinate = (id) => {
     planStore.showInfo(id)
+    hoveredId = id;
 }
 
-let mouseLiveHandle = ()=>{
+let mouseLiveHandle = () => {
     planStore.hideInfo()
 }
 
+let mouseMoveHandle = () => {
+
+}
 
 </script>
 <style scoped></style>

@@ -119,7 +119,7 @@
 import { ref, onMounted } from 'vue'
 // import { usePlanStore } from 'store';
 import { usePlanStore } from '~/stores/store';
-import plan from './plan.json'
+// import plan from './plan.json'
 import One from './planComp/one.vue';
 import Two from './planComp/two.vue';
 import Three from './planComp/three.vue';
