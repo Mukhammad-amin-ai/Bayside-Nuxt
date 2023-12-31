@@ -4411,9 +4411,8 @@
                             <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': handleClass }" :style="{ top: top + 'px', left: left + 'px' }">
                                 <div class="title">Участок {{ uchastok }}</div>
                                 <div class="text-grey">{{ sotki }} соток</div>
-                                <!-- there is cahnge -->
-                                <div class="text-green">{{ stat }}<br>
-                                <span>
+                                <div class="text-green" :style="{ color: setColor }">{{ stat }}<br>
+                                <span :style="{display:setPriceDisplay}">
                                     {{ priceF }}
                                 </span>
                                 </div>
@@ -4457,31 +4456,26 @@ let stat = ref('')
 let priceF = ref('0')
 let top= ref('')
 let left = ref('')
+let setColor = ref('')
+let setPriceDisplay = ref('')
 let handleClass =ref(false)
 
 
 const boxRef = ref(null);
 
 
-let getHomeId = () => {
-    for (var i = 0; i <= data.value.length; i++) {
-        if (!data.value[i]) continue;
-        // console.log(data.value[i]);
-        let land = document.getElementById('g_' + data.value[i].number);
-        // console.log(land);
-    }
-}
+// let getHomeId = () => {
+//     for (var i = 0; i <= data.value.length; i++) {
+//         if (!data.value[i]) continue;
+//         // console.log(data.value[i]);
+//         let land = document.getElementById('g_' + data.value[i].number);
+//         // console.log(land);
+//     }
+// }
 
 let mouseMoveHandle = (event)=>{
-    // const box = boxRef.value;
-    // console.log(box);
-    // if (box) {
-    //  const boxRect = box.getBoundingClientRect();
      left.value = event.clientX + 50
-    //  console.log(left.value);
      top.value = event.clientY - 100
-    //  console.log(top.value);
-    // }
 }
 
 let mouseLiveHandle = ()=>{
@@ -4506,19 +4500,18 @@ let HomeCordinate = (id) => {
 
         if(catchedData.status === 'free'){
             stat.value = 'СВОБОДЕН'
+            setColor.value = 'green'
         }else if (catchedData.status === 'occupied'){
             stat.value = 'ЗАБРОНИРОВАН'
+            setColor.value = 'yellow'
         }else if (catchedData.status === "sold"){
             stat.value = "ПРОДАН"
+            setColor.value = 'red'
+            setPriceDisplay.value = 'none'
         }
-    }
     // let home = document.getElementById(`g_${id}`)
     // console.log(home);
 }
-
-
-
-
 
 </script>
 <style scoped></style>
