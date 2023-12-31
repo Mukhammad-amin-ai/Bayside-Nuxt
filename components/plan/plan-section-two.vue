@@ -4509,6 +4509,7 @@ let HomeCordinate = (id) => {
             setColor.value = 'red'
             setPriceDisplay.value = 'none'
         }
+    }
     // let home = document.getElementById(`g_${id}`)
     // console.log(home);
 }
