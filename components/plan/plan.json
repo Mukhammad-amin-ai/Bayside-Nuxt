@@ -1984,5 +1984,16 @@
     "size": "25",
     "price": "10 259 109",
     "status": "free"
-  }
+  },
+  { "number": "332", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "333", "size": "10", "price": "2 533 800", "status": "occupied" },
+  { "number": "334", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "335", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "336", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "337", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "338", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "339", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "340", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "341", "size": "9", "price": "2 712 649", "status": "free" },
+  { "number": "342", "size": "9", "price": "2 712 649", "status": "free" }
 ]
