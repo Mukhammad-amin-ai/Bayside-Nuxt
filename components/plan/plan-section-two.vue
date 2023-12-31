@@ -4408,7 +4408,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <div id="t_1" class="info_block active" style='top:375px,left:116px'>
+                            <div id="t_1" class="info_block active" style='top:375px;left:116px'>
                                 <div class="title">Участок {{ uchastok }}</div>
                                 <div class="text-grey">{{ sotki }} соток</div>
                                 <!-- there is cahnge -->
