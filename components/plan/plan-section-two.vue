@@ -144,7 +144,7 @@ let left = ref('')
 
 
 onMounted(() => {
-    for (let i = 0; i < 342; i++) {
+    for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('l_' + i)
         if (houses) {
