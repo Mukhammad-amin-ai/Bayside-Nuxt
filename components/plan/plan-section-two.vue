@@ -148,8 +148,17 @@ onMounted(() => {
             houses.addEventListener('touchcancel', () => {
                 mouseLeave(dynamic)
             })
-            houses.addEventListener("touchmove", () => {
-                mouseLeave(dynamic)
+            houses.addEventListener("touchmove", (event) => {
+                // mouseLeave(dynamic)
+                let touch = event.touches[0];
+                mobileTop.value = touch.clientY - 100
+                mobileLeft.value = touch.clientX
+                if(mobileLeft.value >= 279){
+                    mobileLeft.value = touch.clientX - 100
+                }else{
+                    mobileLeft.value = touch.clientX + 50
+                }
+                planStore.mouseMove(mobileTop.value, mobileLeft.value)
             })
             window.addEventListener('touchstart', (event) => {
                 let touch = event.touches[0];
