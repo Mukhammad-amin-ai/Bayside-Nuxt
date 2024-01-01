@@ -28,7 +28,7 @@
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                                         viewBox="0 0 4713 2653" fill="none">
                                         <path id="Vector 113" d="M1813 2315.61L1755.5 2362.61L1789.5 2302.11L1813 2315.61Z"
                                             stroke="white" />
@@ -66,7 +66,8 @@
                                         <Nine />
                                         <Ten />
                                         <Eleven />
-                                    </svg>
+                                    </svg> -->
+                                    <Svg />
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
                                             height="100%">
@@ -78,6 +79,7 @@
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block" :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
+                                <!-- :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }"> -->
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
@@ -130,11 +132,52 @@ import Eight from './planComp/eight.vue';
 import Nine from './planComp/nine.vue';
 import Ten from './planComp/ten.vue';
 import Eleven from './planComp/eleven.vue';
+import Svg from './svg.vue'
+
+import plan from '~/static/plan.json'
 
 const planStore = usePlanStore()
 
-let box = ref()
+let top = ref('')
+let left = ref('')
 
 
+
+onMounted(() => {
+    for (let i = 0; i < 342; i++) {
+        let houses = document.getElementById('g_' + i);
+        let dynamic = document.getElementById('l_' + i)
+        if (houses) {
+            houses.addEventListener('mouseover', () => {
+                planStore.showInfo(i)
+                let data = plan[i - 1]
+                // console.log(data);
+                if (dynamic) {
+                    if(data.status === 'free'){
+                        dynamic.classList.add('selected-free')
+                    }else if (data.status === 'sold'){
+                        dynamic.classList.add('selected-sold')
+                    }else if (data.status === 'occupied'){
+                        dynamic.classList.add('selected-occupied')
+                    }
+                }
+            })
+            houses.addEventListener('mousemove', (event) => {
+                let block = document.getElementById('block_plan')
+                top.value = event.clientY - block.getBoundingClientRect().top
+                left.value = event.clientX - block.getBoundingClientRect().left + 30
+                planStore.mouseMove(top.value, left.value)
+            })
+            houses.addEventListener('mouseleave', () => {
+                planStore.hideInfo()
+                top.value = ''
+                left.value = ''
+                dynamic.classList.remove('selected-free')
+                dynamic.classList.remove('selected-sold')
+                dynamic.classList.remove('selected-occupied')
+            })
+        }
+    }
+})
 </script>
 <style scoped></style>
