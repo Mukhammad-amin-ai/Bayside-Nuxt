@@ -390,7 +390,7 @@ let hoveredId = ref('')
 
 let top = ref('')
 let left = ref('')
-let box = ref('')
+// let box = ref('')
 
 
 let HomeCordinate = (id) => {
@@ -400,13 +400,13 @@ let HomeCordinate = (id) => {
 
 let mouseLiveHandle = () => {
     planStore.hideInfo()
+    top.value = ''
+    left.value = ''
+    planStore.pathClass = ''
 }
 
 let mouseMoveHandle = (event) => {
     let block = document.getElementById('block_plan')
-
-    // top.value = event.clientY ? event.clientY : e.touches[0].clientY;
-    // left.value = event.clientX ? event.clientX : e.touches[0].clientY
     top.value = event.clientY - block.getBoundingClientRect().top 
     left.value = event.clientX - block.getBoundingClientRect().left + 30
     // console.log();

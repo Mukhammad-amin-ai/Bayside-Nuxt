@@ -502,12 +502,25 @@ import { usePlanStore } from '~/stores/store';
 
 const planStore = usePlanStore()
 
+
+let top = ref('')
+let left = ref('')
+
 let HomeCordinate = (id) => {
     planStore.showInfo(id)
 }
 
 let mouseLiveHandle = () => {
     planStore.hideInfo()
+}
+
+let mouseMoveHandle = (event) => {
+    let block = document.getElementById('block_plan')
+    top.value = event.clientY - block.getBoundingClientRect().top + 50
+    left.value = event.clientX - block.getBoundingClientRect().left - 120
+    // console.log();
+
+    planStore.mouseMove(top.value, left.value)
 }
 
 </script>
