@@ -123,16 +123,22 @@ onMounted(() => {
             houses.addEventListener('mousemove', (event) => {
                 let block = document.getElementById('block_plan')
                 top.value = event.clientY - block.getBoundingClientRect().top
-
                 left.value = event.clientX - block.getBoundingClientRect().left
                 if (left.value >= 1320) {
                     left.value = event.clientX - block.getBoundingClientRect().left - 150
                 } else {
                     left.value = event.clientX - block.getBoundingClientRect().left + 30
                 }
-                if(window.innerWidth <= 400){
-                    left.value = ''
-                    top.value = ''
+                if (window.innerWidth <= 380) {
+                    left.value = event.clientX 
+                    if (left.value >= 100) {
+                        left.value = event.clientX + 50
+                    }else{
+                        left.value = event.clientX + 50
+                    }
+                    if(left.value >= 300){
+                        left.value = event.clientX - 100
+                    }
                 }
                 planStore.mouseMove(top.value, left.value)
             })
@@ -149,24 +155,15 @@ onMounted(() => {
                 mouseLeave(dynamic)
             })
             houses.addEventListener("touchmove", (event) => {
-                // mouseLeave(dynamic)
-                let touch = event.touches[0];
-                mobileTop.value = touch.clientY - 100
-                mobileLeft.value = touch.clientX
-                if(mobileLeft.value >= 279){
-                    mobileLeft.value = touch.clientX - 100
-                }else{
-                    mobileLeft.value = touch.clientX + 50
-                }
-                planStore.mouseMove(mobileTop.value, mobileLeft.value)
+                mouseLeave(dynamic)
             })
             window.addEventListener('touchstart', (event) => {
                 let touch = event.touches[0];
                 mobileTop.value = touch.clientY - 100
                 mobileLeft.value = touch.clientX
-                if(mobileLeft.value >= 279){
+                if (mobileLeft.value >= 279) {
                     mobileLeft.value = touch.clientX - 100
-                }else{
+                } else {
                     mobileLeft.value = touch.clientX + 50
                 }
                 planStore.mouseMove(mobileTop.value, mobileLeft.value)
