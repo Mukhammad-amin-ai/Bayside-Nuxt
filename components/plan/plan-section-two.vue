@@ -36,7 +36,6 @@
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block" :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
-                                <!-- :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }"> -->
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
@@ -87,6 +86,9 @@ const planStore = usePlanStore()
 let top = ref('')
 let left = ref('')
 
+let mobileLeft = ref('')
+let mobileTop = ref('')
+
 let mouseMover = (i, data, dynamic) => {
     if (dynamic) {
         if (data.status === 'free') {
@@ -98,7 +100,7 @@ let mouseMover = (i, data, dynamic) => {
         }
     }
 }
- 
+
 let mouseLeave = (dynamic) => {
     planStore.hideInfo()
     top.value = ''
@@ -121,7 +123,17 @@ onMounted(() => {
             houses.addEventListener('mousemove', (event) => {
                 let block = document.getElementById('block_plan')
                 top.value = event.clientY - block.getBoundingClientRect().top
-                left.value = event.clientX - block.getBoundingClientRect().left + 30
+
+                left.value = event.clientX - block.getBoundingClientRect().left
+                if (left.value >= 1320) {
+                    left.value = event.clientX - block.getBoundingClientRect().left - 150
+                } else {
+                    left.value = event.clientX - block.getBoundingClientRect().left + 30
+                }
+                if(window.innerWidth <= 400){
+                    left.value = ''
+                    top.value = ''
+                }
                 planStore.mouseMove(top.value, left.value)
             })
             houses.addEventListener('mouseleave', () => {
@@ -136,11 +148,19 @@ onMounted(() => {
             houses.addEventListener('touchcancel', () => {
                 mouseLeave(dynamic)
             })
-            houses.addEventListener("touchmove", (event) => {
-                let block = document.getElementById('block_plan')
-                top.value = event.clientY - block.getBoundingClientRect().top
-                left.value = event.clientX - block.getBoundingClientRect().left + 30
-                planStore.mouseMove(top.value, left.value)
+            houses.addEventListener("touchmove", () => {
+                mouseLeave(dynamic)
+            })
+            window.addEventListener('touchstart', (event) => {
+                let touch = event.touches[0];
+                mobileTop.value = touch.clientY - 100
+                mobileLeft.value = touch.clientX
+                if(mobileLeft.value >= 279){
+                    mobileLeft.value = touch.clientX - 100
+                }else{
+                    mobileLeft.value = touch.clientX + 50
+                }
+                planStore.mouseMove(mobileTop.value, mobileLeft.value)
             })
         }
     }
