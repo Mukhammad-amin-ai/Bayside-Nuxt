@@ -933,10 +933,11 @@
     stroke: rgba(39, 199, 107, 0);
 }
 .selected-free {
-    fill: rgba(39, 199, 107, 0.4); 
-     stroke: rgba(39, 199, 107, 1);
-    /* fill: rgba(39, 199, 107, 1);
-    stroke: rgba(39, 199, 107, 1); */
+    /* fill: rgba(39, 199, 107, 0.4); 
+     stroke: rgba(39, 199, 107, 1); */
+    fill: #27c76b;
+    stroke: #27c76b;
+    stroke-width: 5px;
 }
 .land-occupied {
     fill: rgba(241, 193, 0, 0);
@@ -949,14 +950,18 @@
 .selected-occupied {
     fill: rgba(241, 193, 0, 1);
     stroke: rgba(241, 159, 0, 1);
+    stroke-width: 5px;
 }
 .land-sold {
     fill: rgba(255, 12, 28, 0);
     stroke: rgba(255, 58, 61, 0);
 }
 .selected-sold {
-    fill: rgba(150, 149, 153, 1);
-    stroke: rgba(96, 100, 111, 1);
+    /* fill: rgba(150, 149, 153, 1);
+    stroke: rgba(96, 100, 111, 1); */
+    fill:#000;
+    stroke: #000;
+    stroke-width: 5px;
 }
 .number-sold {
     fill: rgba(189, 189, 190, 1);
