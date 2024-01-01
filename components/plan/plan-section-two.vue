@@ -77,7 +77,7 @@
                                 </svg>
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block" :class="{ 'active': planStore.class }"
-                                :style="{ top: planStore.top + '%', left: planStore.left + '%' }">
+                                :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>

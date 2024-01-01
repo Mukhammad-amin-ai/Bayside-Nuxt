@@ -1,6 +1,7 @@
 <template >
-    <g id="g_1" @mouseover='HomeCordinate(1)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'
-        @touchstart="HomeCordinate(1)" @touchmove="mouseLiveHandle" @touchend="mouseLiveHandle" @touchcancel="mouseLiveHandle">
+    <g id="g_1" ref="box" @mouseover='HomeCordinate(1)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'
+        @touchstart="HomeCordinate(1)" @touchmove="mouseLiveHandle" @touchend="mouseLiveHandle"
+        @touchcancel="mouseLiveHandle">
         <path id="l_1" :class="{ [planStore.pathClass]: 1 === planStore.hoveredId }"
             d="M326 1781.11L356.5 1711.61L497 1773.11L472 1830.11L453.5 1837.61L326 1781.11Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
@@ -11,7 +12,8 @@
         </g>
     </g>
     <g id="g_2" @mouseover='HomeCordinate(2)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'
-        @touchstart="HomeCordinate(2)" @touchmove="mouseLiveHandle" @touchend="mouseLiveHandle" @touchcancel="mouseLiveHandle">
+        @touchstart="HomeCordinate(2)" @touchmove="mouseLiveHandle" @touchend="mouseLiveHandle"
+        @touchcancel="mouseLiveHandle">
         <path id="l_2" :class="{ [planStore.pathClass]: 2 === planStore.hoveredId }"
             d="M363 1696.62L418.5 1571.61L478.5 1596.6L423 1721.61L363 1696.62Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
@@ -288,7 +290,8 @@
         </g>
     </g>
     <g id="g_24" @touchstart="HomeCordinate(24)" @touchcancel="mouseLiveHandle" @mousemove='mouseMoveHandle'
-        @mouseleave='mouseLiveHandle'  @mouseover='HomeCordinate(24)' @touchmove="mouseLiveHandle" @touchend="mouseLiveHandle">
+        @mouseleave='mouseLiveHandle' @mouseover='HomeCordinate(24)' @touchmove="mouseLiveHandle"
+        @touchend="mouseLiveHandle">
         <path id="l_24" :class="{ [planStore.pathClass]: 24 === planStore.hoveredId }"
             d="M874 1940.11L904.5 1872.61L963.5 1897.61L935 1966.11L874 1940.11Z" fill="#FF0000" fill-opacity="0.1"
             stroke="white" />
@@ -400,9 +403,12 @@ let mouseLiveHandle = () => {
 }
 
 let mouseMoveHandle = (event) => {
-    top.value = event.clientY  / 7
-    left.value = event.clientX /  15
-    planStore.mouseMove(top.value,left.value)
+
+    // top.value = event.clientY ? event.clientY : e.touches[0].clientY;
+    // left.value = event.clientX ? event.clientX : e.touches[0].clientY
+    top.value = event.clientY - 100
+    left.value = event.clientX - 50
+    planStore.mouseMove(top.value, left.value)
 }
 
 </script>
