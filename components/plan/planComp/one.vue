@@ -385,8 +385,9 @@ import { usePlanStore } from '~/stores/store';
 const planStore = usePlanStore()
 let hoveredId = ref('')
 
-
-
+let top = ref('')
+let left = ref('')
+let box = ref('')
 
 
 let HomeCordinate = (id) => {
@@ -398,8 +399,10 @@ let mouseLiveHandle = () => {
     planStore.hideInfo()
 }
 
-let mouseMoveHandle = () => {
-
+let mouseMoveHandle = (event) => {
+    top.value = event.clientY + 50
+    left.value = event.clientX - 50
+    planStore.mouseMove(top.value,left.value)
 }
 
 </script>

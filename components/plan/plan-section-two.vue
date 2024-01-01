@@ -23,7 +23,7 @@
                             <img src="~assets/images/swipe.svg" alt="">
                         </div>
                         <div id="plan_wrap">
-                            <div id="plan_pan" data-transform="1 0 0 1 0 0">
+                            <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box">
                                 <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -59,7 +59,7 @@
                                         <Two />
                                         <Three />
                                         <Four />
-                                        <Five/>
+                                        <Five />
                                         <Six />
                                         <Seven />
                                         <Eight />
@@ -77,7 +77,7 @@
                                 </svg>
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block" :class="{ 'active': planStore.class }"
-                                style="top:345px;left:116px">
+                                :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
@@ -134,83 +134,25 @@ import Eleven from './planComp/eleven.vue';
 
 const planStore = usePlanStore()
 
+let box = ref()
 
-// let data = ref(plan)
-// let choosedHomeClass = ref('')
-// let uchastok = ref('')
-// let sotki = ref('')
-// let stat = ref('')
-// let priceF = ref('0')
-// let top = ref('')
-// let left = ref('')
-// let setColor = ref('')
-// let setPriceDisplay = ref('')
-// let handleClass = ref(false)
+// const rect = () => box.value.getBoundingClientRect();
+
+// planStore.top =  planStore.top - rect.top
+// planStore.left =  planStore.left - rect.left
 
 
-// uchastok.value = planStore.name
+onMounted(() => {
+    watch(box, (newBox) => {
+        const rect = newBox.getBoundingClientRect();
 
-// // const boxRef = ref(null);
-
-// let planFunc = () => {
-//     console.log(planStore.name);
-// }
-
-// let getHomeId = () => {
-//     for (var i = 0; i <= data.value.length; i++) {
-//         if (!data.value[i]) continue;
-//         // console.log(data.value[i]);
-//         let land = document.getElementById('g_' + data.value[i].number);
-//         // console.log(land);
-//     }
-// }
-
-
-
-
-// let mouseMoveHandle = (event) => {
-//     left.value = event.clientX + 50
-//     top.value = event.clientY - 100
-// }
-
-// let mouseLiveHandle = () => {
-//     handleClass.value = false
-//     left.value = ''
-//     top.value = ''
-// }
-
-// let HomeCordinate = (id) => {
-
-//     let catchedData = data.value[id - 1]
-//     if (id) {
-//         handleClass.value = true
-//     }
-
-//     if (catchedData !== null) {
-
-//         uchastok.value = catchedData.number
-//         sotki.value = catchedData.size
-//         stat.value = catchedData.status
-//         priceF.value = catchedData.price
-
-//         if (catchedData.status === 'free') {
-//             stat.value = 'СВОБОДЕН'
-//             setColor.value = 'green'
-//             setPriceDisplay.value = 'block'
-
-//         } else if (catchedData.status === 'occupied') {
-//             stat.value = 'ЗАБРОНИРОВАН'
-//             setColor.value = 'yellow'
-//             setPriceDisplay.value = 'block'
-//         } else if (catchedData.status === "sold") {
-//             stat.value = "ПРОДАН"
-//             setColor.value = 'red'
-//             setPriceDisplay.value = 'none'
-//         }
-//     }
-//     // let home = document.getElementById(`g_${id}`)
-//     // console.log(home);
-// }
+        // Check if rect is not null or undefined before subtracting its properties
+        if (rect) {
+            planStore.top = planStore.top - rect.top;
+            planStore.left = planStore.left - rect.left;
+        }
+    });
+})
 
 
 </script>

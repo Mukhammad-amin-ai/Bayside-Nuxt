@@ -14,7 +14,9 @@ export const usePlanStore = defineStore('plan', {
             setPriceDisplay: "",
             color: "",
             pathClass: "",
-            hoveredId: ""
+            hoveredId: "",
+            top:"",
+            left:""
         };
     },
     actions: {
@@ -53,7 +55,10 @@ export const usePlanStore = defineStore('plan', {
                 }
             }
         },
-
+        mouseMove(top,left){
+            this.top = top
+            this.left = left
+        },
         hideInfo() {
             this.class = false
             this.pathClass = ''
