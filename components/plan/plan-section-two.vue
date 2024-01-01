@@ -129,7 +129,7 @@ onMounted(() => {
                 } else {
                     left.value = event.clientX - block.getBoundingClientRect().left + 30
                 }
-                if (window.innerWidth <= 380) {
+                if (window.innerWidth <= 1170) {
                     left.value = event.clientX 
                     if (left.value >= 100) {
                         left.value = event.clientX + 50
