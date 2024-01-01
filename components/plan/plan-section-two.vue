@@ -1,8 +1,4 @@
 <template >
-    <!-- <div id="plan_section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"
-        data-aos-anchor-placement="top-bottom"> -->
-
-
     <div id="plan_section">
         <div class="plan_section">
             <h2 class="plan_title">Генплан поселка</h2>
@@ -28,45 +24,6 @@
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                        viewBox="0 0 4713 2653" fill="none">
-                                        <path id="Vector 113" d="M1813 2315.61L1755.5 2362.61L1789.5 2302.11L1813 2315.61Z"
-                                            stroke="white" />
-                                        <path id="Vector 114"
-                                            d="M1789.5 2302.11L1814 2261.11L1854.5 2283.61L1813 2315.61L1789.5 2302.11Z"
-                                            stroke="white" />
-                                        <path id="Vector 218"
-                                            d="M2090.54 1310.78L2085.52 1093.02L2418.87 1009.15L2604.63 1476.83L2402.04 1525.36L2296.5 1475.9L2268.04 1462.58L2090.54 1310.78Z"
-                                            stroke="white" stroke-miterlimit="10" stroke-linecap="round"
-                                            stroke-linejoin="bevel" />
-                                        <path id="Vector 219"
-                                            d="M2614.35 1783.8L3000.26 2157.63L2784.83 2336.3L2681.87 2324L2382.11 2090.73L2614.35 1783.8Z"
-                                            stroke="white" stroke-miterlimit="10" stroke-linecap="round"
-                                            stroke-linejoin="bevel" />
-                                        <path id="Vector 220"
-                                            d="M2715.29 829.66L2892.23 1407.95L2604.63 1476.83L2418.87 1009.15L2715.29 829.66Z"
-                                            stroke="white" stroke-miterlimit="10" stroke-linecap="round"
-                                            stroke-linejoin="bevel" />
-                                        <path id="Vector 221"
-                                            d="M2892.23 1407.95L3338.18 1877.34L3155.12 2029.17L2604.63 1476.83L2892.23 1407.95Z"
-                                            stroke="white" stroke-miterlimit="10" stroke-linecap="round"
-                                            stroke-linejoin="bevel" />
-                                        <path id="Vector 480"
-                                            d="M3789.73 1501.95L3775.9 1453.39L3885.54 1422.47L3789.73 1501.95Z"
-                                            stroke="white" stroke-miterlimit="10" stroke-linecap="round"
-                                            stroke-linejoin="bevel" />
-                                        <One />
-                                        <Two />
-                                        <Three />
-                                        <Four />
-                                        <Five />
-                                        <Six />
-                                        <Seven />
-                                        <Eight />
-                                        <Nine />
-                                        <Ten />
-                                        <Eleven />
-                                    </svg> -->
                                     <Svg />
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
@@ -121,17 +78,6 @@
 import { ref, onMounted } from 'vue'
 import { usePlanStore } from '~/stores/store';
 
-import One from './planComp/one.vue';
-import Two from './planComp/two.vue';
-import Three from './planComp/three.vue';
-import Four from './planComp/four.vue';
-import Five from './planComp/five.vue';
-import Six from './planComp/six.vue';
-import Seven from './planComp/seven.vue';
-import Eight from './planComp/eight.vue';
-import Nine from './planComp/nine.vue';
-import Ten from './planComp/ten.vue';
-import Eleven from './planComp/eleven.vue';
 import Svg from './svg.vue'
 
 import plan from '~/static/plan.json'
@@ -152,7 +98,7 @@ let mouseMover = (i, data, dynamic) => {
         }
     }
 }
-
+ 
 let mouseLeave = (dynamic) => {
     planStore.hideInfo()
     top.value = ''
@@ -161,10 +107,6 @@ let mouseLeave = (dynamic) => {
     dynamic.classList.remove('selected-sold')
     dynamic.classList.remove('selected-occupied')
 }
-
-
-
-
 
 onMounted(() => {
     for (let i = 0; i < 343; i++) {

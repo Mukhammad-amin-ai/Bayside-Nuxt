@@ -544,7 +544,8 @@
                                             </g>
                                         </g>
                                         <g id="g_44">
-                                            <path id="l__44"
+                                            <!-- l__44 -->
+                                            <path id="l_44"
                                                 d="M691 1515.61L685.5 1498.61L715 1446.11L733.5 1433.11L758.5 1436.11L743 1537.61L691 1515.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
                                             <g id="Group_44">
@@ -736,7 +737,8 @@
                                             </g>
                                         </g>
                                         <g id="g_60">
-                                            <path id="g_60_2"
+                                            <!-- g_60_2 -->
+                                            <path id="l_60"
                                                 d="M881.5 1239.61L893.5 1114.11L983 1122.61L966.5 1250.61L881.5 1239.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
                                             <g id="Group_60">
@@ -1498,7 +1500,8 @@
                                             </g>
                                         </g>
                                         <g id="g_121">
-                                            <path id="g_121_2"
+                                            <!-- g_121_2 -->
+                                            <path id="l_121"
                                                 d="M1380.5 2060.61L1319.5 2029.11L1377 1920.11L1436.5 1952.61L1380.5 2060.61Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
                                             <g id="Group_121">
@@ -1522,7 +1525,8 @@
                                             </g>
                                         </g>
                                         <g id="g_123">
-                                            <path id="Vector 123"
+                                            <!-- Vector 123 -->
+                                            <path id="l_123"
                                                 d="M1439 2091.11L1380.5 2060.61L1436.5 1952.61L1496 1985.61L1439 2091.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
                                             <g id="Group_123">
@@ -1534,7 +1538,8 @@
                                             </g>
                                         </g>
                                         <g id="g_124">
-                                            <path id="g_124_2"
+                                            <!-- g_124_2 -->
+                                            <path id="l_124"
                                                 d="M1461 2103.11L1531 2128.61L1486.5 2239.11L1413.5 2202.61L1461 2103.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" />
                                             <g id="Group_124">
@@ -1993,7 +1998,8 @@
                                             </g>
                                         </g>
                                         <g id="g_160">
-                                            <path id="Vector 160"
+                                        <!-- Vector 160 -->
+                                            <path id="l_160"
                                                 d="M1982.9 1364.21L1946.14 1412.04L1876.38 1375.75L1894.95 1339.69L1911.7 1281.78L1996.26 1346.84L1982.9 1364.21Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -2058,7 +2064,8 @@
                                             </g>
                                         </g>
                                         <g id="g_165">
-                                            <path id="Vector 165"
+                                        <!-- Vector 165 -->
+                                            <path id="l_165"
                                                 d="M1946.14 1412.04L1982.9 1364.21L2063.01 1434.17L2015.62 1496.05L1935.59 1425.78L1946.14 1412.04Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -2525,7 +2532,8 @@
                                             </g>
                                         </g>
                                         <g id="g_201">
-                                            <path id="l_210"
+                                            <!-- l_210 -->
+                                            <path id="l_201"
                                                 d="M2295.85 1932.28L2207.81 1860.73L2250.47 1804.01L2338.45 1875.64L2295.85 1932.28Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -2551,7 +2559,8 @@
                                             </g>
                                         </g>
                                         <g id="g_203">
-                                            <path id="Vector 203"
+                                        <!-- Vector 203 -->
+                                            <path id="l_203"
                                                 d="M2381.06 1819L2293.13 1747.32L2335.82 1690.57L2423.72 1762.31L2381.06 1819Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -2642,7 +2651,8 @@
                                             </g>
                                         </g>
                                         <g id="g_210">
-                                            <path id="l_210_2"
+                                        <!-- l_210_2 -->
+                                            <path id="l_210"
                                                 d="M2511.91 1919.18L2403.11 1836.86L2445.72 1780.23L2554.85 1862.43L2511.91 1919.18Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3032,7 +3042,8 @@
                                             </g>
                                         </g>
                                         <g id="g_240">
-                                            <path id="l_230_2"
+                                            <!-- l_230_2 -->
+                                            <path id="l_240"
                                                 d="M2890 1304.11L2865 1221.97L2968.5 1179.11L2993.5 1242.11L2890 1304.11Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3045,7 +3056,8 @@
                                             </g>
                                         </g>
                                         <g id="g_241">
-                                            <path id="l_231_2"
+                                            <!-- l_231_2 -->
+                                            <path id="l_241"
                                                 d="M2864.85 1222.2L2836.39 1129.56L2933.16 1090.84L2935.69 1097.13L2968.6 1179.28L2864.85 1222.2Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3058,7 +3070,8 @@
                                             </g>
                                         </g>
                                         <g id="g_242">
-                                            <path id="l_232_2"
+                                            <!-- l_232_2 -->
+                                            <path id="l_242"
                                                 d="M2836.39 1129.56L2808.35 1038.17L2897.76 1002.37L2933.16 1090.84L2836.39 1129.56Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3071,7 +3084,8 @@
                                             </g>
                                         </g>
                                         <g id="g_243">
-                                            <path id="l_233_2"
+                                            <!-- l_233_2 -->
+                                            <path id="l_243"
                                                 d="M2808.35 1038.17L2776.38 934.11L2857.45 901.66L2897.76 1002.37L2808.35 1038.17Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3331,7 +3345,8 @@
                                             </g>
                                         </g>
                                         <g id="g_263">
-                                            <path id="l__263"
+                                            <!-- l__263 -->
+                                            <path id="l_263"
                                                 d="M3304.13 1337.8L3218.81 1375.16L3165.24 1283L3261.64 1240.77L3304.13 1337.8Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3344,7 +3359,8 @@
                                             </g>
                                         </g>
                                         <g id="g_264">
-                                            <path id="Vector 264"
+                                            <!--  Vector 264-->
+                                            <path id="l_264"
                                                 d="M3261.64 1240.77L3165.24 1283L3146.36 1249.92L3155.54 1194.87L3223.57 1153.88L3261.64 1240.77Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />
@@ -3565,7 +3581,8 @@
                                             </g>
                                         </g>
                                         <g id="g_281">
-                                            <path id="l_v"
+                                        <!-- l_v -->
+                                            <path id="l_281"
                                                 d="M3387.52 585.169L3487.95 556.57L3466.44 481.189L3369.78 508.72L3387.52 585.169Z"
                                                 fill="#FF0000" fill-opacity="0.1" stroke="white" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="bevel" />

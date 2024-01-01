@@ -933,9 +933,10 @@
     stroke: rgba(39, 199, 107, 0);
 }
 .selected-free {
-    fill: rgba(39, 199, 107, 0.4);
-    /* fill: rgba(30, 163, 88, 0.966); */
-    stroke: rgba(39, 199, 107, 1);
+    fill: rgba(39, 199, 107, 0.4); 
+     stroke: rgba(39, 199, 107, 1);
+    /* fill: rgba(39, 199, 107, 1);
+    stroke: rgba(39, 199, 107, 1); */
 }
 .land-occupied {
     fill: rgba(241, 193, 0, 0);
