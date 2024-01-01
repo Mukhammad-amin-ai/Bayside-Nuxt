@@ -1,6 +1,6 @@
 <template>
     <g id="g_31" @mouseover='HomeCordinate(31)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_31" d="M907.5 1780.61L950 1685.11L993.5 1709.11L956 1800.61L907.5 1780.61Z" fill="#FF0000"
+        <path id="l_31"  d="M907.5 1780.61L950 1685.11L993.5 1709.11L956 1800.61L907.5 1780.61Z" fill="#FF0000"
             fill-opacity="0.1" stroke="white" />
         <g id="Group_31">
             <circle id="n_31" cx="950.625" cy="1746.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -21,8 +21,8 @@
                 fill="#000F72" />
         </g>
     </g>
-    <g id="g_33" @mouseover='HomeCordinate(33)' @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
-        <path id="l_33" d="M956.5 1864.11L978.5 1809.61L1055 1841.11L1038 1885.61L1023 1892.11L956.5 1864.11Z"
+    <g id="g_33" @mouseover='HomeCordinate(33)'  @mousemove='mouseMoveHandle' @mouseleave='mouseLiveHandle'>
+        <path id="l_33" :class="{ [planStore.pathClass]: 33 === planStore.hoveredId }"  d="M956.5 1864.11L978.5 1809.61L1055 1841.11L1038 1885.61L1023 1892.11L956.5 1864.11Z"
             fill="#FF0000" fill-opacity="0.1" stroke="white" />
         <g id="Group_33">
             <circle id="n_33" cx="1004.62" cy="1852.46" r="19.8317" fill="#E9F9FE" stroke="#4C935B"
@@ -334,9 +334,12 @@
 import { usePlanStore } from '~/stores/store';
 
 const planStore = usePlanStore()
+let hoveredId = ref('')
+
 
 let HomeCordinate = (id)=>{
     planStore.showInfo(id)
+    // hoveredId.value = id;
 }
 
 let mouseLiveHandle = ()=>{
