@@ -21,7 +21,7 @@ export const usePlanStore = defineStore('plan', {
     },
     actions: {
         showInfo(id) {
-            console.log(id);
+            // console.log(id);
             this.hoveredId = id
             this.class = true
             let catchedData = this.data[id - 1]

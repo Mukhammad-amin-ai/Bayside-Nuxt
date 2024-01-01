@@ -84,7 +84,7 @@
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
                                     <span :style="{ display: planStore.setPriceDisplay }">
-                                        {{ planStore.price }}
+                                        {{ planStore.price }} ₽
                                     </span>
                                 </div>
 
@@ -141,6 +141,29 @@ const planStore = usePlanStore()
 let top = ref('')
 let left = ref('')
 
+let mouseMover = (i, data, dynamic) => {
+    if (dynamic) {
+        if (data.status === 'free') {
+            dynamic.classList.add('selected-free')
+        } else if (data.status === 'sold') {
+            dynamic.classList.add('selected-sold')
+        } else if (data.status === 'occupied') {
+            dynamic.classList.add('selected-occupied')
+        }
+    }
+}
+
+let mouseLeave = (dynamic) => {
+    planStore.hideInfo()
+    top.value = ''
+    left.value = ''
+    dynamic.classList.remove('selected-free')
+    dynamic.classList.remove('selected-sold')
+    dynamic.classList.remove('selected-occupied')
+}
+
+
+
 
 
 onMounted(() => {
@@ -151,16 +174,7 @@ onMounted(() => {
             houses.addEventListener('mouseover', () => {
                 planStore.showInfo(i)
                 let data = plan[i - 1]
-                // console.log(data);
-                if (dynamic) {
-                    if(data.status === 'free'){
-                        dynamic.classList.add('selected-free')
-                    }else if (data.status === 'sold'){
-                        dynamic.classList.add('selected-sold')
-                    }else if (data.status === 'occupied'){
-                        dynamic.classList.add('selected-occupied')
-                    }
-                }
+                mouseMover(i, data, dynamic)
             })
             houses.addEventListener('mousemove', (event) => {
                 let block = document.getElementById('block_plan')
@@ -169,12 +183,22 @@ onMounted(() => {
                 planStore.mouseMove(top.value, left.value)
             })
             houses.addEventListener('mouseleave', () => {
-                planStore.hideInfo()
-                top.value = ''
-                left.value = ''
-                dynamic.classList.remove('selected-free')
-                dynamic.classList.remove('selected-sold')
-                dynamic.classList.remove('selected-occupied')
+                mouseLeave(dynamic)
+            })
+            houses.addEventListener('touchstart', () => {
+                mouseMover(i, data, dynamic)
+            })
+            houses.addEventListener('touchend', () => {
+                mouseLeave(dynamic)
+            })
+            houses.addEventListener('touchcancel', () => {
+                mouseLeave(dynamic)
+            })
+            houses.addEventListener("touchmove", (event) => {
+                let block = document.getElementById('block_plan')
+                top.value = event.clientY - block.getBoundingClientRect().top
+                left.value = event.clientX - block.getBoundingClientRect().left + 30
+                planStore.mouseMove(top.value, left.value)
             })
         }
     }
