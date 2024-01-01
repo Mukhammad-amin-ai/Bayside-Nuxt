@@ -959,8 +959,8 @@
 .selected-sold {
     /* fill: rgba(150, 149, 153, 1);
     stroke: rgba(96, 100, 111, 1); */
-    fill:#000;
-    stroke: #000;
+    fill:#d71818;
+    stroke: #d71818;
     stroke-width: 5px;
 }
 .number-sold {
