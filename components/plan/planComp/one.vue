@@ -400,8 +400,8 @@ let mouseLiveHandle = () => {
 }
 
 let mouseMoveHandle = (event) => {
-    top.value = event.clientY 
-    left.value = event.clientX 
+    top.value = event.clientY  / 7
+    left.value = event.clientX /  15
     planStore.mouseMove(top.value,left.value)
 }
 

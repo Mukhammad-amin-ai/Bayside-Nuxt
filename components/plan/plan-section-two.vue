@@ -77,7 +77,7 @@
                                 </svg>
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block" :class="{ 'active': planStore.class }"
-                                :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
+                                :style="{ top: planStore.top + '%', left: planStore.left + '%' }">
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
@@ -117,9 +117,8 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
-// import { usePlanStore } from 'store';
 import { usePlanStore } from '~/stores/store';
-// import plan from './plan.json'
+
 import One from './planComp/one.vue';
 import Two from './planComp/two.vue';
 import Three from './planComp/three.vue';
@@ -135,24 +134,6 @@ import Eleven from './planComp/eleven.vue';
 const planStore = usePlanStore()
 
 let box = ref()
-
-// const rect = () => box.value.getBoundingClientRect();
-
-// planStore.top =  planStore.top - rect.top
-// planStore.left =  planStore.left - rect.left
-
-
-onMounted(() => {
-    watch(box, (newBox) => {
-        const rect = newBox.getBoundingClientRect();
-
-        // Check if rect is not null or undefined before subtracting its properties
-        if (rect) {
-            planStore.top = planStore.top - rect.top;
-            planStore.left = planStore.left - rect.left;
-        }
-    });
-})
 
 
 </script>
