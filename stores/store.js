@@ -13,14 +13,14 @@ export const usePlanStore = defineStore('plan', {
             size: "",
             setPriceDisplay: "",
             color: "",
-            pathClass: "",
             top:"",
             left:""
+            // pathClass: "",
         };
     },
     actions: {
         showInfo(id) {
-            this.hoveredId = id
+            // this.hoveredId = id
             this.class = true
             let catchedData = this.data[id - 1]
             if (catchedData !== null) {
@@ -32,17 +32,17 @@ export const usePlanStore = defineStore('plan', {
                     this.status = 'СВОБОДЕН'
                     this.color = 'green'
                     this.setPriceDisplay = 'block'
-                    this.pathClass = 'selected-free'
+                    // this.pathClass = 'selected-free'
                 } else if (catchedData.status === 'occupied') {
                     this.status = 'ЗАБРОНИРОВАН'
                     this.color = '#f1c000'
                     this.setPriceDisplay = 'block'
-                    this.pathClass = 'selected-occupied'
+                    // this.pathClass = 'selected-occupied'
                 } else if (catchedData.status === "sold") {
                     this.status = "ПРОДАН"
                     this.color = 'red'
                     this.setPriceDisplay = 'none'
-                    this.pathClass = 'selected-sold'
+                    // this.pathClass = 'selected-sold'
                 }
             }
         },

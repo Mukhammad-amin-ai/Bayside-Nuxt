@@ -24,12 +24,13 @@
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
+                                    <!-- <Svg /> -->
                                     <Svg />
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
                                             height="100%">
                                             <image id="image0" width="100%" height="100%"
-                                                xlink:href="~/assets/images/fon.jpg" x="0" y="0"></image>
+                                                xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
                                         </pattern>
                                     </defs>
                                 </svg>
@@ -89,18 +90,6 @@ let left = ref('')
 let mobileLeft = ref('')
 let mobileTop = ref('')
 
-let mouseMover = (i, data, dynamic) => {
-    if (dynamic) {
-        if (data.status === 'free') {
-            dynamic.classList.add('selected-free')
-        } else if (data.status === 'sold') {
-            dynamic.classList.add('selected-sold')
-        } else if (data.status === 'occupied') {
-            dynamic.classList.add('selected-occupied')
-        }
-    }
-}
-
 let mouseLeave = (dynamic) => {
     planStore.hideInfo()
     top.value = ''
@@ -113,12 +102,22 @@ let mouseLeave = (dynamic) => {
 onMounted(() => {
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
-        let dynamic = document.getElementById('l_' + i)
+        let dynamic = document.getElementById('vector_' + i)
         if (houses) {
             houses.addEventListener('mouseover', () => {
+                // console.log('hello')
                 planStore.showInfo(i)
                 let data = plan[i - 1]
-                mouseMover(i, data, dynamic)
+                // mouseMover(i, data, dynamic)
+                if (dynamic) {
+                    if (data.status === 'free') {
+                        dynamic.classList.add('selected-free')
+                    } else if (data.status === 'sold') {
+                        dynamic.classList.add('selected-sold')
+                    } else if (data.status === 'occupied') {
+                        dynamic.classList.add('selected-occupied')
+                    }
+                }
             })
             houses.addEventListener('mousemove', (event) => {
                 let block = document.getElementById('block_plan')
@@ -130,13 +129,13 @@ onMounted(() => {
                     left.value = event.clientX - block.getBoundingClientRect().left + 30
                 }
                 if (window.innerWidth <= 1170) {
-                    left.value = event.clientX 
+                    left.value = event.clientX
                     if (left.value >= 100) {
                         left.value = event.clientX + 50
-                    }else{
+                    } else {
                         left.value = event.clientX + 50
                     }
-                    if(left.value >= 300){
+                    if (left.value >= 300) {
                         left.value = event.clientX - 100
                     }
                 }
@@ -146,7 +145,18 @@ onMounted(() => {
                 mouseLeave(dynamic)
             })
             houses.addEventListener('touchstart', () => {
-                mouseMover(i, data, dynamic)
+                // mouseMover(i, data, dynamic)
+                planStore.showInfo(i)
+                let data = plan[i - 1]
+                if (dynamic) {
+                    if (data.status === 'free') {
+                        dynamic.classList.add('selected-free')
+                    } else if (data.status === 'sold') {
+                        dynamic.classList.add('selected-sold')
+                    } else if (data.status === 'occupied') {
+                        dynamic.classList.add('selected-occupied')
+                    }
+                }
             })
             houses.addEventListener('touchend', () => {
                 mouseLeave(dynamic)
