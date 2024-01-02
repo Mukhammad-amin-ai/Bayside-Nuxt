@@ -1,7 +1,6 @@
 <template>
   <div class="page index--page" style="overflow: hidden">
-    <!-- <Header /> -->
-    <Main/>
+    <Plan/>
   </div>
 </template>
 
