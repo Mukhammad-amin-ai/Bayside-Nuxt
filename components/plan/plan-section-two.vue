@@ -20,23 +20,23 @@
                         </div>
                         <div id="plan_wrap">
                             <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box">
-                                <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
+                                <!-- <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
-                                    <!-- <Svg /> -->
-                                    <Svg />
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
-                                            height="100%">
-                                            <image id="image0" width="100%" height="100%"
-                                                xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
-                                        </pattern>
-                                    </defs>
-                                </svg>
+                                        height="100%">
+                                        <image id="image0" width="100%" height="100%"
+                                        xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
+                                    </pattern>
+                                </defs>
+                            </svg> -->
+                                <Svg />
                             </div>
-                            <div id="t_1" ref="coordinates" class="info_block" :class="{ 'active': planStore.class }"
+                            <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
+                                <!-- :style="{ top: 345 + 'px', left:116 + 'px' }"> -->
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
@@ -78,7 +78,7 @@
 import { ref, onMounted } from 'vue'
 import { usePlanStore } from '~/stores/store';
 
-import Svg from './svg.vue'
+import Svg from './svg_test.vue'
 
 import plan from '~/static/plan.json'
 
@@ -90,25 +90,14 @@ let left = ref('')
 let mobileLeft = ref('')
 let mobileTop = ref('')
 
-let mouseLeave = (dynamic) => {
-    planStore.hideInfo()
-    top.value = ''
-    left.value = ''
-    dynamic.classList.remove('selected-free')
-    dynamic.classList.remove('selected-sold')
-    dynamic.classList.remove('selected-occupied')
-}
-
 onMounted(() => {
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('vector_' + i)
         if (houses) {
             houses.addEventListener('mouseover', () => {
-                // console.log('hello')
                 planStore.showInfo(i)
                 let data = plan[i - 1]
-                // mouseMover(i, data, dynamic)
                 if (dynamic) {
                     if (data.status === 'free') {
                         dynamic.classList.add('selected-free')
@@ -142,10 +131,14 @@ onMounted(() => {
                 planStore.mouseMove(top.value, left.value)
             })
             houses.addEventListener('mouseleave', () => {
-                mouseLeave(dynamic)
+                planStore.hideInfo()
+                top.value = ''
+                left.value = ''
+                dynamic.classList.remove('selected-free')
+                dynamic.classList.remove('selected-sold')
+                dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener('touchstart', () => {
-                // mouseMover(i, data, dynamic)
                 planStore.showInfo(i)
                 let data = plan[i - 1]
                 if (dynamic) {
