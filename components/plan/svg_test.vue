@@ -1,6 +1,6 @@
 <template>
-    <svg width="100%" id="block_plan" height="100%" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="1920_1080" clip-path="url(#clip0_1502_21437)">
+    <svg width="100%" height="100%" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <g id="1920_1080" clip-path="url(#clip0_1502_21437)"> -->
             <path id="Vector 113" d="M740.896 941.591L717.488 960.724L731.329 936.095L740.896 941.591Z" stroke="white"
                 stroke-width="0.407086" />
             <path id="Vector 114" d="M731.332 936.095L741.306 919.405L757.793 928.564L740.899 941.591L731.332 936.095Z"
@@ -4156,13 +4156,14 @@
                     fill="#000F72" />
             </g>
         </g>
-    </g>
-    <defs>
+    <!-- </g> -->
+    <!-- <defs>
         <clipPath id="clip0_1502_21437">
-            <rect width="1080" height="1920" fill="white" transform="matrix(0 -1 1 0 0 1080)" />
+            <rect id="img-map" width="1080" height="1920" fill="url(#pattern0)"  rx='4' transform="matrix(0 -1 1 0 0 1080)" />
         </clipPath>
-    </defs>
-</svg></template>
+    </defs> -->
+</svg>
+</template>
 <script setup>
 
 </script>

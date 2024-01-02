@@ -86,13 +86,13 @@ const planStore = usePlanStore()
 let top = ref('')
 let left = ref('')
 
-// let mobileLeft = ref('')
-// let mobileTop = ref('')
+
 
 onMounted(() => {
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('l_' + i)
+        // let dynamic = document.getElementById('vector_' + i)
         if (houses) {
             houses.addEventListener('mouseover', () => {
                 planStore.showInfo(i)
@@ -116,15 +116,39 @@ onMounted(() => {
                 } else {
                     left.value = event.clientX - block.getBoundingClientRect().left + 30
                 }
+                // Mobile logic of appearing modal 
                 if (window.innerWidth <= 1170) {
-                    left.value = event.clientX
-                    if (left.value >= 100) {
-                        left.value = event.clientX + 50
-                    } else {
-                        left.value = event.clientX + 50
+                    if(left.value >= 800){
+                        left.value = event.clientX - 120
                     }
-                    if (left.value >= 300) {
+                }
+                if (window.innerWidth <= 1024) {
+                    if(top.value >= 420){
+                        top.value = top.value - 80
+                    }
+                    if(left.value >= 650){
                         left.value = event.clientX - 100
+                    }
+                }
+                if (window.innerWidth <= 770) {
+                    if(top.value >= 350){
+                        top.value = top.value - 80
+                    }
+                }
+                if (window.innerWidth <= 500) {
+                    if(left.value >= 350){
+                        left.value = event.clientX - 100
+                    }
+                    if(top.value >= 150){
+                        top.value = top.value - 80
+                    }
+                }
+                if (window.innerWidth <= 375) {
+                    if(left.value >= 250){
+                        left.value = event.clientX - 100
+                    }
+                    if(top.value >= 100){
+                        top.value = top.value - 80
                     }
                 }
                 planStore.mouseMove(top.value, left.value)
@@ -151,25 +175,29 @@ onMounted(() => {
                 }
             })
             houses.addEventListener('touchend', () => {
-                mouseLeave(dynamic)
+                planStore.hideInfo()
+                top.value = ''
+                left.value = ''
+                dynamic.classList.remove('selected-free')
+                dynamic.classList.remove('selected-sold')
+                dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener('touchcancel', () => {
-                mouseLeave(dynamic)
+                planStore.hideInfo()
+                top.value = ''
+                left.value = ''
+                dynamic.classList.remove('selected-free')
+                dynamic.classList.remove('selected-sold')
+                dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener("touchmove", (event) => {
-                mouseLeave(dynamic)
+                planStore.hideInfo()
+                top.value = ''
+                left.value = ''
+                dynamic.classList.remove('selected-free')
+                dynamic.classList.remove('selected-sold')
+                dynamic.classList.remove('selected-occupied')
             })
-            // window.addEventListener('touchstart', (event) => {
-            //     let touch = event.touches[0];
-            //     mobileTop.value = touch.clientY - 100
-            //     mobileLeft.value = touch.clientX
-            //     if (mobileLeft.value >= 279) {
-            //         mobileLeft.value = touch.clientX - 100
-            //     } else {
-            //         mobileLeft.value = touch.clientX + 50
-            //     }
-            //     planStore.mouseMove(mobileTop.value, mobileLeft.value)
-            // })
         }
     }
 })
