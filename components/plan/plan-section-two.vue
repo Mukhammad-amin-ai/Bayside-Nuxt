@@ -20,19 +20,19 @@
                         </div>
                         <div id="plan_wrap">
                             <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box">
-                                <!-- <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
+                                <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
+                                    <Svg />
                                     <defs>
                                         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%"
-                                        height="100%">
-                                        <image id="image0" width="100%" height="100%"
-                                        xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
-                                    </pattern>
-                                </defs>
-                            </svg> -->
-                                <Svg />
+                                            height="100%">
+                                            <image id="image0" width="100%" height="100%"
+                                                xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
+                                        </pattern>
+                                    </defs>
+                                </svg>
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
@@ -44,7 +44,6 @@
                                         {{ planStore.price }} ₽
                                     </span>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -78,7 +77,7 @@
 import { ref, onMounted } from 'vue'
 import { usePlanStore } from '~/stores/store';
 
-import Svg from './svg_test.vue'
+import Svg from './svg_old.vue'
 
 import plan from '~/static/plan.json'
 
@@ -93,7 +92,7 @@ let mobileTop = ref('')
 onMounted(() => {
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
-        let dynamic = document.getElementById('vector_' + i)
+        let dynamic = document.getElementById('l_' + i)
         if (houses) {
             houses.addEventListener('mouseover', () => {
                 planStore.showInfo(i)
