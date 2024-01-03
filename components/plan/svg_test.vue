@@ -2472,7 +2472,7 @@
                     </g>
                 </g>
                 <g id="g_201">
-                    <path id="vector_210"
+                    <path id="vector_201"
                         d="M937.461 785.542L901.621 756.415L918.987 733.326L954.803 762.485L937.461 785.542Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_201">
@@ -2496,7 +2496,7 @@
                     </g>
                 </g>
                 <g id="g_203">
-                    <path id="Vector 203"
+                    <path id="Vector_203"
                         d="M972.147 739.428L936.352 710.248L953.73 687.146L989.513 716.35L972.147 739.428Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_203">
@@ -2583,7 +2583,7 @@
                     </g>
                 </g>
                 <g id="g_210">
-                    <path id="vector_210_2"
+                    <path id="vector_210"
                         d="M1025.42 780.21L981.125 746.699L998.471 723.645L1042.9 757.108L1025.42 780.21Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_210">

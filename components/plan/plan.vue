@@ -37,7 +37,6 @@
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
-                                <!-- :style="{ top: 345 + 'px', left:116 + 'px' }"> -->
                                 <div class="title">Участок {{ planStore.number }}</div>
                                 <div class="text-grey">{{ planStore.size }} соток</div>
                                 <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
@@ -86,8 +85,6 @@ const planStore = usePlanStore()
 
 let top = ref('')
 let left = ref('')
-
-
 
 onMounted(() => {
     for (let i = 0; i < 343; i++) {
