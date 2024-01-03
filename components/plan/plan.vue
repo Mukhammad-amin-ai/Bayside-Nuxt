@@ -141,6 +141,19 @@ onMounted(() => {
                         top.value = top.value - 50
                     }
                 }
+                if (window.innerWidth <= 425) {
+                    if (left.value >= 350) {
+                        left.value = event.clientX - 80
+                    }
+                    if (left.value <= 200) {
+                        left.value = event.clientX + 20
+                    }
+                    if (top.value >= 180) {
+                        top.value = top.value - 50
+                    }
+                }
+
+
                 if (window.innerWidth <= 375) {
                     if (left.value >= 250) {
                         left.value = event.clientX - 80
