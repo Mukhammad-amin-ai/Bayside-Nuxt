@@ -1,27 +1,5 @@
 <template>
-    <!-- <svg width="100%" height="100%" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="1920_1080" clip-path="url(#clip0_1502_21437)">
-            <path id="Vector 113" d="M740.896 941.591L717.488 960.724L731.329 936.095L740.896 941.591Z" stroke="white"
-                stroke-width="0.407086" />
-            <path id="Vector 114" d="M731.332 936.095L741.306 919.405L757.793 928.564L740.899 941.591L731.332 936.095Z"
-                stroke="white" stroke-width="0.407086" />
-            <path id="Vector 218"
-                d="M853.88 532.538L851.836 443.891L987.538 409.749L1063.16 600.135L980.687 619.891L937.723 599.756L926.137 594.334L853.88 532.538Z"
-                stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="bevel" />
-            <path id="Vector 219"
-                d="M1067.12 725.099L1224.21 877.28L1136.52 950.014L1094.6 945.007L972.574 850.046L1067.12 725.099Z"
-                stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="bevel" />
-            <path id="Vector 220" d="M1108.21 336.681L1180.24 572.095L1063.16 600.135L987.539 409.749L1108.21 336.681Z"
-                stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="bevel" />
-            <path id="Vector 221" d="M1180.24 572.095L1361.78 763.178L1287.26 824.985L1063.16 600.135L1180.24 572.095Z"
-                stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="bevel" />
-            <path id="Vector 480" d="M1545.6 610.361L1539.97 590.593L1584.6 578.006L1545.6 610.361Z" stroke="white"
-                stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" /> -->
-    <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%" viewbox="0 0 1920 1082" fill="none"
+    <!-- <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%" viewbox="0 0 1920 1082" fill="none"
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
         <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +23,7 @@
                     stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="bevel" />
                 <path id="Vector 480" d="M1545.6 610.361L1539.97 590.593L1584.6 578.006L1545.6 610.361Z" stroke="white"
-                    stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
+                    stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" /> -->
                 <g id="g_1">
                     <path id="vector_1" 
                         d="M135.562 724.003L147.979 695.71L205.174 720.746L194.997 743.95L187.466 747.003L135.562 724.003Z"
@@ -552,7 +530,7 @@
                     </g>
                 </g>
                 <g id="g_44">
-                    <path id="vector__44"
+                    <path id="vector_44"
                         d="M284.149 615.922L281.91 609.001L293.919 587.629L301.45 582.337L311.627 583.558L305.318 624.877L284.149 615.922Z"
                         stroke="white" stroke-width="0.407086" />
                     <g id="Group_44">
@@ -1957,7 +1935,7 @@
                     </g>
                 </g>
                 <g id="g_160">
-                    <path id="Vector 160"
+                    <path id="vector_160"
                         d="M810.062 554.288L795.098 573.759L766.699 558.986L774.259 544.307L781.077 520.732L815.501 547.217L810.062 554.288Z"
                         stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
                         stroke-linejoin="bevel" />
@@ -2020,7 +1998,7 @@
                     </g>
                 </g>
                 <g id="g_165">
-                    <path id="Vector 165"
+                    <path id="vector_165"
                         d="M795.1 573.76L810.064 554.289L842.676 582.769L823.384 607.959L790.805 579.354L795.1 573.76Z"
                         stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
                         stroke-linejoin="bevel" />
@@ -2496,7 +2474,7 @@
                     </g>
                 </g>
                 <g id="g_203">
-                    <path id="Vector_203"
+                    <path id="vector_203"
                         d="M972.147 739.428L936.352 710.248L953.73 687.146L989.513 716.35L972.147 739.428Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_203">
@@ -2954,7 +2932,7 @@
                     </g>
                 </g>
                 <g id="g_240">
-                    <path id="vector_230_2"
+                    <path id="vector_240"
                         d="M1179.33 529.823L1169.15 496.385L1211.29 478.937L1221.46 504.583L1179.33 529.823Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_240">
@@ -2966,7 +2944,7 @@
                     </g>
                 </g>
                 <g id="g_241">
-                    <path id="vector_231_2"
+                    <path id="vector_241"
                         d="M1169.09 496.479L1157.5 458.766L1196.9 443.004L1197.93 445.564L1211.32 479.006L1169.09 496.479Z"
                         stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
                         stroke-linejoin="bevel" />
@@ -2979,7 +2957,7 @@
                     </g>
                 </g>
                 <g id="g_242">
-                    <path id="vector_232_2"
+                    <path id="vector_242"
                         d="M1157.51 458.767L1146.09 421.563L1182.49 406.989L1196.9 443.004L1157.51 458.767Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_242">
@@ -2991,7 +2969,7 @@
                     </g>
                 </g>
                 <g id="g_243">
-                    <path id="vector_233_2"
+                    <path id="vector_243"
                         d="M1146.09 421.562L1133.08 379.201L1166.08 365.991L1182.49 406.988L1146.09 421.562Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_243">
@@ -3237,7 +3215,7 @@
                     </g>
                 </g>
                 <g id="g_263">
-                    <path id="vector__263"
+                    <path id="vector_263"
                         d="M1347.92 543.538L1313.19 558.747L1291.38 521.229L1330.62 504.038L1347.92 543.538Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_263">
@@ -3249,7 +3227,7 @@
                     </g>
                 </g>
                 <g id="g_264">
-                    <path id="Vector 264"
+                    <path id="vector_264"
                         d="M1330.62 504.038L1291.38 521.229L1283.69 507.763L1287.43 485.353L1315.12 468.667L1330.62 504.038Z"
                         stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
                         stroke-linejoin="bevel" />
@@ -3456,7 +3434,7 @@
                     </g>
                 </g>
                 <g id="g_281">
-                    <path id="vector_v" d="M1381.87 237.153L1422.75 225.51L1413.99 194.824L1374.64 206.031L1381.87 237.153Z"
+                    <path id="vector_281" d="M1381.87 237.153L1422.75 225.51L1413.99 194.824L1374.64 206.031L1381.87 237.153Z"
                         stroke="white" stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round"
                         stroke-linejoin="bevel" />
                     <g id="Group_281">
@@ -3516,7 +3494,7 @@
                     </g>
                 </g>
                 <g id="g_286">
-                    <path id="Vector 286"
+                    <path id="vector_286"
                         d="M1508.97 481.811L1499.48 448.487L1543.98 435.827L1553.46 469.049L1508.97 481.811Z" stroke="white"
                         stroke-width="0.407086" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="bevel" />
                     <g id="Group_286">
@@ -4223,15 +4201,18 @@
                         fill="#000F72" />
                 </g>
             </g>
-        </g>
-    </svg>
-    <defs>
+
+        <!-- </g>
+    </svg> -->
+    
+    <!-- <defs>
         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%" height="100%">
             <image id="image0" width="100%" height="100%" xlink:href="~/assets/images/background_1920_1080.jpg" x="0"
                 y="0"></image>
         </pattern>
     </defs>
-</svg></template>
+</svg> -->
+</template>
 <script setup>
 
 </script>

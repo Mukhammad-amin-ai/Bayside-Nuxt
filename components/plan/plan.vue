@@ -20,7 +20,7 @@
                         </div>
                         <div id="plan_wrap">
                             <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box">
-                                <!-- <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
+                                <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
@@ -32,8 +32,7 @@
                                                 xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
                                         </pattern>
                                     </defs>
-                                </svg> -->
-                                <Svg />
+                                </svg>
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
@@ -90,7 +89,6 @@ onMounted(() => {
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('vector_' + i)
-        // let dynamic = document.getElementById('l_' + i) 
         if (houses) {
             houses.style.fill = 'rgba(255, 255, 255,0.01)'
             houses.addEventListener('mouseover', () => {
