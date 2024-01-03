@@ -936,10 +936,10 @@
     stroke: rgba(39, 199, 107, 0);
 }
 .selected-free {
-    /* fill: rgba(39, 199, 107, 0.4); 
-     stroke: rgba(39, 199, 107, 1); */
-    fill: #27c76b;
-    stroke: #27c76b;
+    fill: rgba(39, 199, 107, 0.4); 
+     stroke: rgba(39, 199, 107, 1);
+    /* fill: #27c76b;
+    stroke: #27c76b; */
     stroke-width: 5px;
 }
 .land-occupied {
@@ -960,10 +960,10 @@
     stroke: rgba(255, 58, 61, 0);
 }
 .selected-sold {
-    /* fill: rgba(150, 149, 153, 1);
-    stroke: rgba(96, 100, 111, 1); */
-    fill:#d71818;
-    stroke: #d71818;
+    fill: rgba(150, 149, 153, 1);
+    stroke: rgba(96, 100, 111, 1);
+    /* fill:#d71818;
+    stroke: #d71818; */
     stroke-width: 5px;
 }
 .number-sold {

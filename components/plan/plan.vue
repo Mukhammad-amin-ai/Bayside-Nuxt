@@ -20,7 +20,7 @@
                         </div>
                         <div id="plan_wrap">
                             <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box">
-                                <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
+                                <!-- <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
@@ -32,7 +32,8 @@
                                                 xlink:href="~/assets/images/background_1920_1080.jpg" x="0" y="0"></image>
                                         </pattern>
                                     </defs>
-                                </svg>
+                                </svg> -->
+                                <Svg />
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': planStore.class }"
                                 :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
@@ -77,7 +78,7 @@
 import { ref, onMounted } from 'vue'
 import { usePlanStore } from '~/stores/store';
 
-import Svg from './svg_old.vue'
+import Svg from './svg_test.vue'
 
 import plan from '~/static/plan.json'
 
@@ -91,9 +92,10 @@ let left = ref('')
 onMounted(() => {
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
-        let dynamic = document.getElementById('l_' + i)
-        // let dynamic = document.getElementById('vector_' + i)
+        let dynamic = document.getElementById('vector_' + i)
+        // let dynamic = document.getElementById('l_' + i) 
         if (houses) {
+            houses.style.fill = 'rgba(255, 255, 255,0.01)'
             houses.addEventListener('mouseover', () => {
                 planStore.showInfo(i)
                 let data = plan[i - 1]
@@ -118,36 +120,36 @@ onMounted(() => {
                 }
                 // Mobile logic of appearing modal 
                 if (window.innerWidth <= 1170) {
-                    if(left.value >= 800){
+                    if (left.value >= 800) {
                         left.value = event.clientX - 120
                     }
                 }
                 if (window.innerWidth <= 1024) {
-                    if(top.value >= 420){
+                    if (top.value >= 420) {
                         top.value = top.value - 80
                     }
-                    if(left.value >= 650){
+                    if (left.value >= 650) {
                         left.value = event.clientX - 100
                     }
                 }
                 if (window.innerWidth <= 770) {
-                    if(top.value >= 350){
+                    if (top.value >= 350) {
                         top.value = top.value - 80
                     }
                 }
                 if (window.innerWidth <= 500) {
-                    if(left.value >= 350){
+                    if (left.value >= 350) {
                         left.value = event.clientX - 100
                     }
-                    if(top.value >= 150){
+                    if (top.value >= 150) {
                         top.value = top.value - 80
                     }
                 }
                 if (window.innerWidth <= 375) {
-                    if(left.value >= 250){
+                    if (left.value >= 250) {
                         left.value = event.clientX - 100
                     }
-                    if(top.value >= 100){
+                    if (top.value >= 100) {
                         top.value = top.value - 80
                     }
                 }
@@ -190,7 +192,7 @@ onMounted(() => {
                 dynamic.classList.remove('selected-sold')
                 dynamic.classList.remove('selected-occupied')
             })
-            houses.addEventListener("touchmove", (event) => {
+            houses.addEventListener("touchmove", () => {
                 planStore.hideInfo()
                 top.value = ''
                 left.value = ''
