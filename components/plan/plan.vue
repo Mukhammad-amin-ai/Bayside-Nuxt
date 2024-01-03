@@ -158,8 +158,9 @@ onMounted(() => {
                     if (left.value >= 250) {
                         left.value = event.clientX - 80
                     }
-                    if (top.value >= 100) {
-                        top.value = top.value - 80
+                    // console.log(top.value);
+                    if (top.value >= 120) {
+                        top.value = top.value - 50
                     }
                 }
                 planStore.mouseMove(top.value, left.value)
