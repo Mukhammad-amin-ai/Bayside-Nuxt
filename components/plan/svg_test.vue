@@ -1473,7 +1473,7 @@
                     </g>
                 </g>
                 <g id="g_123">
-                    <path id="Vector 123" d="M588.647 850.2L564.832 837.784L587.629 793.818L611.851 807.252L588.647 850.2Z"
+                    <path id="vector_123" d="M588.647 850.2L564.832 837.784L587.629 793.818L611.851 807.252L588.647 850.2Z"
                         stroke="white" stroke-width="0.407086" />
                     <g id="Group_123">
                         <circle id="n_123" cx="587.677" cy="823.07" r="8.07323" fill="#E9F9FE" stroke="#4C935B"
@@ -4204,7 +4204,7 @@
 
         <!-- </g>
     </svg> -->
-    
+
     <!-- <defs>
         <pattern id="pattern0" patterncontentunits="userSpaceOnUse" width="100%" height="100%">
             <image id="image0" width="100%" height="100%" xlink:href="~/assets/images/background_1920_1080.jpg" x="0"
