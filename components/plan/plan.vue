@@ -136,13 +136,14 @@ onMounted(() => {
                     if (left.value >= 350) {
                         left.value = event.clientX - 100
                     }
+                    console.log(left.value);
                     if (top.value >= 150) {
                         top.value = top.value - 80
                     }
                 }
                 if (window.innerWidth <= 375) {
                     if (left.value >= 250) {
-                        left.value = event.clientX - 100
+                        left.value = event.clientX - 80
                     }
                     if (top.value >= 100) {
                         top.value = top.value - 80
