@@ -21,7 +21,7 @@
                         <div id="plan_wrap">
                             <div id="plan_pan" ref="svgContent" data-transform="1 0 0 1 0 0">
                                 <svg class="svg-contant" @mousedown="svgMouseDown" @mousemove="svgMouseMove" @wheel="scroll"
-                                    @mouseup="leaveFunc" @mouseleave="leaveFunc" @event.prevent
+                                    @mouseup="leaveFunc" @mouseleave="leaveFunc" @touchstart="svgMouseMove" @touchend="leaveFunc" @touchcancel="leaveFunc" @event.prevent
                                     :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px', cursor: isDown ? 'grab' : 'default' }"
                                     data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -272,15 +272,12 @@ onMounted(() => {
                 }
                 if (zoomed.value === true) {
                     let block = document.getElementById('plan_pan')
-                    top.value = event.clientY - block.getBoundingClientRect().top - 100
+                    top.value = event.clientY - block.getBoundingClientRect().top - 30
                     left.value = event.clientX - block.getBoundingClientRect().left - 100
                     // top.value 
-
-
                     console.log(top.value);
                     console.log(left.value);
-                    // console.log(top.value);
-                    // console.log(top.value);
+                    
                 }
             })
             houses.addEventListener('mouseleave', () => {
