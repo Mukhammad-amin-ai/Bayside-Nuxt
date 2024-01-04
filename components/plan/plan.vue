@@ -202,7 +202,7 @@ let svgMouseMove = (event) => {
 
 let scroll = (event) => {
     svgContent.value.scrollTop += event.deltaY * 1
-    event.preventDefault();
+    // event.preventDefault();
     // console.log(svgContent.value.scrollTop = margin.value );
 }
 
