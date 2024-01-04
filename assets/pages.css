@@ -762,6 +762,7 @@
 }
 #plan_right {
     width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -1049,10 +1050,11 @@
 }
 
 #zoom_block {
-    position: absolute;
-    top: 20px;
+    position: -webkit-sticky;
+    position: sticky !important;
+    top: 100px;
     left: 1%;
-    z-index: 5;
+    z-index: 999999999999;
 }
 #zoom_in,
 #zoom_out {

@@ -11,17 +11,15 @@
                 </div>
                 <div id="plan_right">
                     <div id="plan_block">
-                        <div id="zoom_block">
+                        <div id="zoom_block" class="zoom_block">
                             <img id="zoom_in" @click="zoomIn" src="~/assets/images/zoom_in.svg" alt="" />
                             <img id="zoom_out" @click="zoomOut" src="~/assets/images/zoom_out.svg" alt="" />
                         </div>
                         <div id="swipe_block">
                             <img src="~assets/images/swipe.svg" alt="">
                         </div>
-
                         <div id="plan_wrap">
                             <div id="plan_pan" ref="svgContent" data-transform="1 0 0 1 0 0">
-                                <!-- marginTop:'250px', marginLeft:'250px'  -->
                                 <svg class="svg-contant" @mousedown="svgMouseDown" @mousemove="svgMouseMove" @wheel="scroll"
                                     @mouseup="leaveFunc" @mouseleave="leaveFunc" @event.prevent
                                     :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px', cursor: isDown ? 'grab' : 'default' }"
@@ -142,6 +140,7 @@ let hideInfo = (dynamic) => {
 
 
 // Zooming ============
+let zoomed = ref(false)
 let scale = ref('1.0')
 let isDown = ref(false)
 let startX = ref('');
@@ -151,28 +150,26 @@ let scrollTop = ref('')
 
 
 let zoomIn = () => {
+    zoomed.value = true
     if (scale.value < 1.5) {
         zoom.value += 1;
         scale.value = `1.${zoom.value}`;
-        // console.log(scale.value);
     }
     if (margin.value < 200) {
         margin.value += 40
         marginLeft.value += 40
-        // console.log(margin.value);
     }
 }
 
 let zoomOut = () => {
+    zoomed.value = false
     if (scale.value > 1.0) {
         zoom.value -= 1;
         scale.value = `1.${zoom.value}`;
-        // console.log(scale.value);
     }
     if (margin.value > 0) {
         margin.value -= 40
         marginLeft.value -= 40
-        // console.log(margin.value);
     }
 }
 
@@ -188,7 +185,6 @@ let leaveFunc = () => {
     isDown.value = false
 }
 
-
 let svgMouseMove = (event) => {
     if (!isDown.value) return;
     const x = event.pageX
@@ -197,13 +193,10 @@ let svgMouseMove = (event) => {
     const walkY = (y - startY.value) * 2;
     svgContent.value.scrollLeft = scrollLeft.value - walkX;
     svgContent.value.scrollTop = scrollTop.value - walkY
-    // console.log(  slider.offsetLeft);
 }
 
 let scroll = (event) => {
     svgContent.value.scrollTop += event.deltaY * 1
-    // event.preventDefault();
-    // console.log(svgContent.value.scrollTop = margin.value );
 }
 
 
@@ -211,34 +204,6 @@ let scroll = (event) => {
 
 // ====================
 onMounted(() => {
-    // const slider = document.querySelector('#plan_pan');
-    // let isDown = false;
-    // let startX;
-    // let scrollLeft;
-    // if (slider) {
-    //     slider.addEventListener('mousedown', (e) => {
-    //         isDown = true;
-    //         slider.classList.add('active');
-    //         startX = e.pageX - slider.offsetLeft;
-    //         scrollLeft = slider.scrollLeft;
-    //     });
-    //     slider.addEventListener('mouseleave', () => {
-    //         isDown = false;
-    //         slider.classList.remove('active');
-    //     });
-    //     slider.addEventListener('mouseup', () => {
-    //         isDown = false;
-    //         slider.classList.remove('active');
-    //     });
-    //     slider.addEventListener('mousemove', (e) => {
-    //         if (!isDown) return;
-    //         e.preventDefault();
-    //         const x = e.pageX - slider.offsetLeft;
-    //         const walk = (x - startX) * 2; //scroll-fast
-    //         slider.scrollLeft = scrollLeft - walk;
-    //         console.log(e.pageX);
-    //     });
-    // }
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('vector_' + i)
@@ -246,122 +211,101 @@ onMounted(() => {
             houses.style.fill = 'rgba(255, 255, 255,0.01)'
             houses.addEventListener('mouseover', () => {
                 showInfo(i, dynamic)
-                // let data2 = data.value[id - 1]
-                // if (dynamic) {
-                //     if (data2.status === 'free') {
-                //         dynamic.classList.add('selected-free')
-                //     } else if (data2.status === 'sold') {
-                //         dynamic.classList.add('selected-sold')
-                //     } else if (data2.status === 'occupied') {
-                //         dynamic.classList.add('selected-occupied')
-                //     }
-                // }
             })
             houses.addEventListener('mousemove', (event) => {
-                let block = document.getElementById('block_plan')
-                top.value = event.clientY - block.getBoundingClientRect().top
-                left.value = event.clientX - block.getBoundingClientRect().left
-                if (left.value >= 1320) {
-                    left.value = event.clientX - block.getBoundingClientRect().left - 150
-                } else {
-                    left.value = event.clientX - block.getBoundingClientRect().left + 30
-                }
-                // Mobile logic of appearing modal 
-                if (window.innerWidth <= 1170) {
-                    if (left.value >= 800) {
-                        left.value = event.clientX - 120
+                if (zoomed.value === false) {
+                    let block = document.getElementById('block_plan')
+                    top.value = event.clientY - block.getBoundingClientRect().top
+                    left.value = event.clientX - block.getBoundingClientRect().left
+                    if (left.value >= 1320) {
+                        left.value = event.clientX - block.getBoundingClientRect().left - 150
+                    } else {
+                        left.value = event.clientX - block.getBoundingClientRect().left + 30
+                    }
+                    // Mobile logic of appearing modal 
+                    if (window.innerWidth <= 1170) {
+                        if (left.value >= 800) {
+                            left.value = event.clientX - 120
+                        }
+                    }
+                    if (window.innerWidth <= 1024) {
+                        if (top.value >= 420) {
+                            top.value = top.value - 80
+                        }
+                        if (left.value >= 650) {
+                            left.value = event.clientX - 100
+                        }
+                    }
+                    if (window.innerWidth <= 770) {
+                        if (top.value >= 350) {
+                            top.value = top.value - 80
+                        }
+                    }
+                    if (window.innerWidth <= 500) {
+                        if (left.value >= 350) {
+                            left.value = event.clientX - 80
+                        }
+                        if (top.value >= 200) {
+                            top.value = top.value - 50
+                        }
+                    }
+                    if (window.innerWidth <= 425) {
+                        if (left.value >= 350) {
+                            left.value = event.clientX - 80
+                        }
+                        if (left.value <= 200) {
+                            left.value = event.clientX + 20
+                        }
+                        if (top.value >= 180) {
+                            top.value = top.value - 50
+                        }
+                    }
+                    if (window.innerWidth <= 375) {
+                        if (left.value >= 250) {
+                            left.value = event.clientX - 80
+                        }
+                        // console.log(top.value);
+                        if (top.value >= 120) {
+                            top.value = top.value - 50
+                        }
                     }
                 }
-                if (window.innerWidth <= 1024) {
-                    if (top.value >= 420) {
-                        top.value = top.value - 80
-                    }
-                    if (left.value >= 650) {
-                        left.value = event.clientX - 100
-                    }
-                }
-                if (window.innerWidth <= 770) {
-                    if (top.value >= 350) {
-                        top.value = top.value - 80
-                    }
-                }
-                if (window.innerWidth <= 500) {
-                    if (left.value >= 350) {
-                        left.value = event.clientX - 80
-                    }
-                    if (top.value >= 200) {
-                        top.value = top.value - 50
-                    }
-                }
-                if (window.innerWidth <= 425) {
-                    if (left.value >= 350) {
-                        left.value = event.clientX - 80
-                    }
-                    if (left.value <= 200) {
-                        left.value = event.clientX + 20
-                    }
-                    if (top.value >= 180) {
-                        top.value = top.value - 50
-                    }
-                }
-                if (window.innerWidth <= 375) {
-                    if (left.value >= 250) {
-                        left.value = event.clientX - 80
-                    }
+                if (zoomed.value === true) {
+                    let block = document.getElementById('plan_pan')
+                    top.value = event.clientY - block.getBoundingClientRect().top - 100
+                    left.value = event.clientX - block.getBoundingClientRect().left - 100
+                    // top.value 
+
+
+                    console.log(top.value);
+                    console.log(left.value);
                     // console.log(top.value);
-                    if (top.value >= 120) {
-                        top.value = top.value - 50
-                    }
+                    // console.log(top.value);
                 }
-                // mouseMove(top.value, left.value)
             })
             houses.addEventListener('mouseleave', () => {
                 hideInfo(dynamic)
-                // top.value = ''
-                // left.value = ''
-                // dynamic.classList.remove('selected-free')
-                // dynamic.classList.remove('selected-sold')
-                // dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener('touchstart', () => {
                 showInfo(i, dynamic)
-                // let data = plan[i - 1]
-                // if (dynamic) {
-                //     if (data.status === 'free') {
-                //         dynamic.classList.add('selected-free')
-                //     } else if (data.status === 'sold') {
-                //         dynamic.classList.add('selected-sold')
-                //     } else if (data.status === 'occupied') {
-                //         dynamic.classList.add('selected-occupied')
-                //     }
-                // }
             })
             houses.addEventListener('touchend', () => {
                 hideInfo(dynamic)
-                // planStore.hideInfo()
-                // top.value = ''
-                // left.value = ''
             })
             houses.addEventListener('touchcancel', () => {
                 hideInfo(dynamic)
-                // planStore.hideInfo()
-                // top.value = ''
-                // left.value = ''
-                // dynamic.classList.remove('selected-free')
-                // dynamic.classList.remove('selected-sold')
-                // dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener("touchmove", () => {
                 hideInfo(dynamic)
-                // planStore.hideInfo()
-                // top.value = ''
-                // left.value = ''
-                // dynamic.classList.remove('selected-free')
-                // dynamic.classList.remove('selected-sold')
-                // dynamic.classList.remove('selected-occupied')
             })
         }
     }
 })
 </script>
-<style scoped></style>
+<style scoped>
+.zoom_block {
+    position: sticky;
+    top: 0;
+
+}
+</style>
