@@ -11,7 +11,7 @@
                 </div>
                 <div id="plan_right">
                     <div id="plan_block">
-                        <div id="zoom_block" >
+                        <div id="zoom_block">
                             <img id="zoom_in" @click="zoomIn" src="~/assets/images/zoom_in.svg" alt="" />
                             <img id="zoom_out" @click="zoomOut" src="~/assets/images/zoom_out.svg" alt="" />
                         </div>
@@ -20,12 +20,11 @@
                         </div>
 
                         <div id="plan_wrap">
-                            <div id="plan_pan" @mousedown="scrolling" data-transform="1 0 0 1 0 0" ref="box"
-                                class="svg-container">
+                            <div id="plan_pan" ref="svgContent" data-transform="1 0 0 1 0 0">
                                 <!-- marginTop:'250px', marginLeft:'250px'  -->
-                                <svg ref="svgContent" class="svg-contant" @mousedown="svgMouseDown"
-                                    @mousemove="svgMouseMove" @mouseup="leaveFunc" @mouseleave="leaveFunc" @event.prevent 
-                                    :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px' }"
+                                <svg class="svg-contant" @mousedown="svgMouseDown" @mousemove="svgMouseMove" @wheel="scroll"
+                                    @mouseup="leaveFunc" @mouseleave="leaveFunc" @event.prevent
+                                    :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px', cursor: isDown ? 'grab' : 'default' }"
                                     data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -82,9 +81,6 @@
 import { ref, onMounted } from 'vue'
 import plan from '~/static/plan.json'
 import Svg from './svg_test.vue'
-// import { usePlanStore } from '~/stores/store';
-
-// const planStore = usePlanStore()
 
 let data = ref(plan)
 
@@ -101,6 +97,8 @@ let activeColor = ref('')
 let zoom = ref(1)
 let margin = ref(0)
 let marginLeft = ref(0)
+
+let svgContent = ref('')
 
 
 let showInfo = (id, dynamic) => {
@@ -147,14 +145,16 @@ let hideInfo = (dynamic) => {
 let scale = ref('1.0')
 let isDown = ref(false)
 let startX = ref('');
+let startY = ref('')
 let scrollLeft = ref('');
+let scrollTop = ref('')
+
 
 let zoomIn = () => {
     if (scale.value < 1.5) {
         zoom.value += 1;
         scale.value = `1.${zoom.value}`;
         // console.log(scale.value);
-
     }
     if (margin.value < 200) {
         margin.value += 40
@@ -177,24 +177,33 @@ let zoomOut = () => {
 }
 
 let svgMouseDown = (event) => {
-    const slider = document.querySelector('#plan_pan');
     isDown.value = true
-    startX.value = event.pageX 
-    scrollLeft.value = slider.scrollLeft;
+    startX.value = event.pageX
+    startY.value = event.pageY
+    scrollLeft.value = svgContent.value.scrollLeft;
+    scrollTop.value = svgContent.value.scrollTop
 }
 
-let leaveFunc  = ()=>{
+let leaveFunc = () => {
     isDown.value = false
 }
 
 
 let svgMouseMove = (event) => {
-    const slider = document.querySelector('#plan_pan');
     if (!isDown.value) return;
     const x = event.pageX
-    const walk = (x - startX.value) * 2;
-    slider.scrollLeft = scrollLeft.value - walk;
+    const y = event.pageY;
+    const walkX = (x - startX.value) * 2;
+    const walkY = (y - startY.value) * 2;
+    svgContent.value.scrollLeft = scrollLeft.value - walkX;
+    svgContent.value.scrollTop = scrollTop.value - walkY
     // console.log(  slider.offsetLeft);
+}
+
+let scroll = (event) => {
+    svgContent.value.scrollTop += event.deltaY * 1
+    event.preventDefault();
+    // console.log(svgContent.value.scrollTop = margin.value );
 }
 
 
@@ -228,7 +237,6 @@ onMounted(() => {
     //         const walk = (x - startX) * 2; //scroll-fast
     //         slider.scrollLeft = scrollLeft - walk;
     //         console.log(e.pageX);
-
     //     });
     // }
     for (let i = 0; i < 343; i++) {

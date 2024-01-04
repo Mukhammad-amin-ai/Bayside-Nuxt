@@ -891,7 +891,7 @@
     min-width: 100%;
     height: auto;
     overflow: hidden;
-    transition: .2s linear ease-in-out;
+    /* transition: .2s linear ease-in-out; */
 }
 
 @media only screen and (min-width: 1830px) {
