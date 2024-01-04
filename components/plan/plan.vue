@@ -19,10 +19,10 @@
                             <img src="~assets/images/swipe.svg" alt="">
                         </div>
                         <div id="plan_wrap">
-                            <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box">
-                                <svg data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
-                                    viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box" class="svg-container">
+                                <svg ref="svgContent" class="svg-content" data-transform="1 0 0 1 0 0" id="block_plan"
+                                    width="100%" height="100%" viewbox="0 0 1920 1082" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
                                     <Svg />
                                     <defs>
@@ -34,13 +34,13 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': planStore.class }"
-                                :style="{ top: planStore.top + 'px', left: planStore.left + 'px' }">
-                                <div class="title">Участок {{ planStore.number }}</div>
-                                <div class="text-grey">{{ planStore.size }} соток</div>
-                                <div class="text-green" :style="{ color: planStore.color }">{{ planStore.status }}<br>
-                                    <span :style="{ display: planStore.setPriceDisplay }">
-                                        {{ planStore.price }} ₽
+                            <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': activeClass }"
+                                :style="{ top: top + 'px', left: left + 'px' }">
+                                <div class="title">Участок {{ number }}</div>
+                                <div class="text-grey">{{ size }} соток</div>
+                                <div class="text-green" :style="{ color: activeColor }">{{ stat }}<br>
+                                    <span :style="{ display: priceDisplay }">
+                                        {{ price }} ₽
                                     </span>
                                 </div>
                             </div>
@@ -74,35 +74,106 @@
 </template>
 <script setup>
 import { ref, onMounted } from 'vue'
-import { usePlanStore } from '~/stores/store';
-
-import Svg from './svg_test.vue'
-
 import plan from '~/static/plan.json'
+import Svg from './svg_test.vue'
+// import { usePlanStore } from '~/stores/store';
 
-const planStore = usePlanStore()
+// const planStore = usePlanStore()
+
+let data = ref(plan)
 
 let top = ref('')
 let left = ref('')
+let activeClass = ref(false)
+let number = ref("")
+let stat = ref("")
+let price = ref("")
+let size = ref("")
+let priceDisplay = ref("")
+let activeColor = ref('')
 
+let showInfo = (id,dynamic) => {
+    activeClass.value = true
+    let catchedData = data.value[id - 1]
+    if (catchedData !== null) {
+        number.value = catchedData.number
+        size.value = catchedData.size
+        stat.value = catchedData.status
+        price.value = catchedData.price
+        if (catchedData.status === 'free') {
+           stat.value  = 'СВОБОДЕН'
+            activeColor.value = 'green'
+            priceDisplay.value = 'block'
+            dynamic.classList.add('selected-free')
+
+        } else if (catchedData.status === 'occupied') {
+           stat.value  = 'ЗАБРОНИРОВАН'
+            activeColor.value = '#f1c000'
+            priceDisplay.value = 'block'
+            dynamic.classList.add('selected-occupied')
+
+        } else if (catchedData.status === "sold") {
+           stat.value  = "ПРОДАН"
+            activeColor.value = 'red'
+            priceDisplay.value = 'none'
+            dynamic.classList.add('selected-sold')
+
+        }
+    }
+}
+
+let hideInfo = (dynamic) => {
+    activeClass.value = false
+    top.value = ''
+    left.value = ''
+    dynamic.classList.remove('selected-free')
+    dynamic.classList.remove('selected-sold')
+    dynamic.classList.remove('selected-occupied')
+}
+
+
+// Zooming ============
+// const svgContainer = ref(null);
+// const svgContent = ref(null);
+// const scale = ref(1);
+
+// const zoom = (factor) => {
+//     scale.value *= factor;
+//     svgContent.value.style.transform = `scale(${scale.value})`;
+// };
+
+// const handleWheel = (event) => {
+//     const zoomFactor = event.deltaY > 0 ? 0.9 : 1.1;
+//     zoom(zoomFactor);
+// };
+
+
+// ====================
 onMounted(() => {
+    // svgContainer.value = document.querySelector('.svg-container');
+    // svgContent.value = document.querySelector('.svg-content');
+
+    // if (svgContainer.value) {
+    //     svgContainer.value.addEventListener('wheel', handleWheel);
+    // }
+
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('vector_' + i)
         if (houses) {
             houses.style.fill = 'rgba(255, 255, 255,0.01)'
             houses.addEventListener('mouseover', () => {
-                planStore.showInfo(i)
-                let data = plan[i - 1]
-                if (dynamic) {
-                    if (data.status === 'free') {
-                        dynamic.classList.add('selected-free')
-                    } else if (data.status === 'sold') {
-                        dynamic.classList.add('selected-sold')
-                    } else if (data.status === 'occupied') {
-                        dynamic.classList.add('selected-occupied')
-                    }
-                }
+                showInfo(i,dynamic)
+                // let data2 = data.value[id - 1]
+                // if (dynamic) {
+                //     if (data2.status === 'free') {
+                //         dynamic.classList.add('selected-free')
+                //     } else if (data2.status === 'sold') {
+                //         dynamic.classList.add('selected-sold')
+                //     } else if (data2.status === 'occupied') {
+                //         dynamic.classList.add('selected-occupied')
+                //     }
+                // }
             })
             houses.addEventListener('mousemove', (event) => {
                 let block = document.getElementById('block_plan')
@@ -136,7 +207,6 @@ onMounted(() => {
                     if (left.value >= 350) {
                         left.value = event.clientX - 80
                     }
-                    // console.log(top.value);
                     if (top.value >= 200) {
                         top.value = top.value - 50
                     }
@@ -152,8 +222,6 @@ onMounted(() => {
                         top.value = top.value - 50
                     }
                 }
-
-
                 if (window.innerWidth <= 375) {
                     if (left.value >= 250) {
                         left.value = event.clientX - 80
@@ -163,52 +231,52 @@ onMounted(() => {
                         top.value = top.value - 50
                     }
                 }
-                planStore.mouseMove(top.value, left.value)
+                // mouseMove(top.value, left.value)
             })
             houses.addEventListener('mouseleave', () => {
-                planStore.hideInfo()
-                top.value = ''
-                left.value = ''
-                dynamic.classList.remove('selected-free')
-                dynamic.classList.remove('selected-sold')
-                dynamic.classList.remove('selected-occupied')
+                hideInfo(dynamic)
+                // top.value = ''
+                // left.value = ''
+                // dynamic.classList.remove('selected-free')
+                // dynamic.classList.remove('selected-sold')
+                // dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener('touchstart', () => {
-                planStore.showInfo(i)
-                let data = plan[i - 1]
-                if (dynamic) {
-                    if (data.status === 'free') {
-                        dynamic.classList.add('selected-free')
-                    } else if (data.status === 'sold') {
-                        dynamic.classList.add('selected-sold')
-                    } else if (data.status === 'occupied') {
-                        dynamic.classList.add('selected-occupied')
-                    }
-                }
+                showInfo(i,dynamic)
+                // let data = plan[i - 1]
+                // if (dynamic) {
+                //     if (data.status === 'free') {
+                //         dynamic.classList.add('selected-free')
+                //     } else if (data.status === 'sold') {
+                //         dynamic.classList.add('selected-sold')
+                //     } else if (data.status === 'occupied') {
+                //         dynamic.classList.add('selected-occupied')
+                //     }
+                // }
             })
             houses.addEventListener('touchend', () => {
-                planStore.hideInfo()
-                top.value = ''
-                left.value = ''
-                dynamic.classList.remove('selected-free')
-                dynamic.classList.remove('selected-sold')
-                dynamic.classList.remove('selected-occupied')
+                hideInfo(dynamic)
+                // planStore.hideInfo()
+                // top.value = ''
+                // left.value = ''
             })
             houses.addEventListener('touchcancel', () => {
-                planStore.hideInfo()
-                top.value = ''
-                left.value = ''
-                dynamic.classList.remove('selected-free')
-                dynamic.classList.remove('selected-sold')
-                dynamic.classList.remove('selected-occupied')
+                hideInfo(dynamic)
+                // planStore.hideInfo()
+                // top.value = ''
+                // left.value = ''
+                // dynamic.classList.remove('selected-free')
+                // dynamic.classList.remove('selected-sold')
+                // dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener("touchmove", () => {
-                planStore.hideInfo()
-                top.value = ''
-                left.value = ''
-                dynamic.classList.remove('selected-free')
-                dynamic.classList.remove('selected-sold')
-                dynamic.classList.remove('selected-occupied')
+                hideInfo(dynamic)
+                // planStore.hideInfo()
+                // top.value = ''
+                // left.value = ''
+                // dynamic.classList.remove('selected-free')
+                // dynamic.classList.remove('selected-sold')
+                // dynamic.classList.remove('selected-occupied')
             })
         }
     }
