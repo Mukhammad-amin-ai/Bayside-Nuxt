@@ -11,18 +11,24 @@
                 </div>
                 <div id="plan_right">
                     <div id="plan_block">
-                        <div id="zoom_block">
-                            <img id="zoom_in" src="~/assets/images/zoom_in.svg" alt="" />
-                            <img id="zoom_out" src="~/assets/images/zoom_out.svg" alt="" />
+                        <div id="zoom_block" >
+                            <img id="zoom_in" @click="zoomIn" src="~/assets/images/zoom_in.svg" alt="" />
+                            <img id="zoom_out" @click="zoomOut" src="~/assets/images/zoom_out.svg" alt="" />
                         </div>
                         <div id="swipe_block">
                             <img src="~assets/images/swipe.svg" alt="">
                         </div>
+
                         <div id="plan_wrap">
-                            <div id="plan_pan" data-transform="1 0 0 1 0 0" ref="box" class="svg-container">
-                                <svg ref="svgContent" class="svg-content" data-transform="1 0 0 1 0 0" id="block_plan"
-                                    width="100%" height="100%" viewbox="0 0 1920 1082" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <div id="plan_pan" @mousedown="scrolling" data-transform="1 0 0 1 0 0" ref="box"
+                                class="svg-container">
+                                <!-- marginTop:'250px', marginLeft:'250px'  -->
+                                <svg ref="svgContent" class="svg-contant" @mousedown="svgMouseDown"
+                                    @mousemove="svgMouseMove" @mouseup="leaveFunc" @mouseleave="leaveFunc" @event.prevent 
+                                    :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px' }"
+                                    data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
+                                    viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <rect id="img-map" width="1920" height="1082" rx="4" fill="url(#pattern0)"></rect>
                                     <Svg />
                                     <defs>
@@ -36,7 +42,7 @@
                             </div>
                             <div id="t_1" ref="coordinates" class="info_block " :class="{ 'active': activeClass }"
                                 :style="{ top: top + 'px', left: left + 'px' }">
-                                <div class="title">Участок {{ number }}</div>
+                                <div class="title">Участок {{ setNumber }}</div>
                                 <div class="text-grey">{{ size }} соток</div>
                                 <div class="text-green" :style="{ color: activeColor }">{{ stat }}<br>
                                     <span :style="{ display: priceDisplay }">
@@ -85,35 +91,40 @@ let data = ref(plan)
 let top = ref('')
 let left = ref('')
 let activeClass = ref(false)
-let number = ref("")
+let setNumber = ref("")
 let stat = ref("")
 let price = ref("")
 let size = ref("")
 let priceDisplay = ref("")
 let activeColor = ref('')
 
-let showInfo = (id,dynamic) => {
+let zoom = ref(1)
+let margin = ref(0)
+let marginLeft = ref(0)
+
+
+let showInfo = (id, dynamic) => {
     activeClass.value = true
     let catchedData = data.value[id - 1]
     if (catchedData !== null) {
-        number.value = catchedData.number
+        setNumber.value = catchedData.number
         size.value = catchedData.size
         stat.value = catchedData.status
         price.value = catchedData.price
         if (catchedData.status === 'free') {
-           stat.value  = 'СВОБОДЕН'
+            stat.value = 'СВОБОДЕН'
             activeColor.value = 'green'
             priceDisplay.value = 'block'
             dynamic.classList.add('selected-free')
 
         } else if (catchedData.status === 'occupied') {
-           stat.value  = 'ЗАБРОНИРОВАН'
+            stat.value = 'ЗАБРОНИРОВАН'
             activeColor.value = '#f1c000'
             priceDisplay.value = 'block'
             dynamic.classList.add('selected-occupied')
 
         } else if (catchedData.status === "sold") {
-           stat.value  = "ПРОДАН"
+            stat.value = "ПРОДАН"
             activeColor.value = 'red'
             priceDisplay.value = 'none'
             dynamic.classList.add('selected-sold')
@@ -133,37 +144,100 @@ let hideInfo = (dynamic) => {
 
 
 // Zooming ============
-// const svgContainer = ref(null);
-// const svgContent = ref(null);
-// const scale = ref(1);
+let scale = ref('1.0')
+let isDown = ref(false)
+let startX = ref('');
+let scrollLeft = ref('');
 
-// const zoom = (factor) => {
-//     scale.value *= factor;
-//     svgContent.value.style.transform = `scale(${scale.value})`;
-// };
+let zoomIn = () => {
+    if (scale.value < 1.5) {
+        zoom.value += 1;
+        scale.value = `1.${zoom.value}`;
+        // console.log(scale.value);
 
-// const handleWheel = (event) => {
-//     const zoomFactor = event.deltaY > 0 ? 0.9 : 1.1;
-//     zoom(zoomFactor);
-// };
+    }
+    if (margin.value < 200) {
+        margin.value += 40
+        marginLeft.value += 40
+        // console.log(margin.value);
+    }
+}
+
+let zoomOut = () => {
+    if (scale.value > 1.0) {
+        zoom.value -= 1;
+        scale.value = `1.${zoom.value}`;
+        // console.log(scale.value);
+    }
+    if (margin.value > 0) {
+        margin.value -= 40
+        marginLeft.value -= 40
+        // console.log(margin.value);
+    }
+}
+
+let svgMouseDown = (event) => {
+    const slider = document.querySelector('#plan_pan');
+    isDown.value = true
+    startX.value = event.pageX 
+    scrollLeft.value = slider.scrollLeft;
+}
+
+let leaveFunc  = ()=>{
+    isDown.value = false
+}
+
+
+let svgMouseMove = (event) => {
+    const slider = document.querySelector('#plan_pan');
+    if (!isDown.value) return;
+    const x = event.pageX
+    const walk = (x - startX.value) * 2;
+    slider.scrollLeft = scrollLeft.value - walk;
+    // console.log(  slider.offsetLeft);
+}
+
+
 
 
 // ====================
 onMounted(() => {
-    // svgContainer.value = document.querySelector('.svg-container');
-    // svgContent.value = document.querySelector('.svg-content');
+    // const slider = document.querySelector('#plan_pan');
+    // let isDown = false;
+    // let startX;
+    // let scrollLeft;
+    // if (slider) {
+    //     slider.addEventListener('mousedown', (e) => {
+    //         isDown = true;
+    //         slider.classList.add('active');
+    //         startX = e.pageX - slider.offsetLeft;
+    //         scrollLeft = slider.scrollLeft;
+    //     });
+    //     slider.addEventListener('mouseleave', () => {
+    //         isDown = false;
+    //         slider.classList.remove('active');
+    //     });
+    //     slider.addEventListener('mouseup', () => {
+    //         isDown = false;
+    //         slider.classList.remove('active');
+    //     });
+    //     slider.addEventListener('mousemove', (e) => {
+    //         if (!isDown) return;
+    //         e.preventDefault();
+    //         const x = e.pageX - slider.offsetLeft;
+    //         const walk = (x - startX) * 2; //scroll-fast
+    //         slider.scrollLeft = scrollLeft - walk;
+    //         console.log(e.pageX);
 
-    // if (svgContainer.value) {
-    //     svgContainer.value.addEventListener('wheel', handleWheel);
+    //     });
     // }
-
     for (let i = 0; i < 343; i++) {
         let houses = document.getElementById('g_' + i);
         let dynamic = document.getElementById('vector_' + i)
         if (houses) {
             houses.style.fill = 'rgba(255, 255, 255,0.01)'
             houses.addEventListener('mouseover', () => {
-                showInfo(i,dynamic)
+                showInfo(i, dynamic)
                 // let data2 = data.value[id - 1]
                 // if (dynamic) {
                 //     if (data2.status === 'free') {
@@ -242,7 +316,7 @@ onMounted(() => {
                 // dynamic.classList.remove('selected-occupied')
             })
             houses.addEventListener('touchstart', () => {
-                showInfo(i,dynamic)
+                showInfo(i, dynamic)
                 // let data = plan[i - 1]
                 // if (dynamic) {
                 //     if (data.status === 'free') {

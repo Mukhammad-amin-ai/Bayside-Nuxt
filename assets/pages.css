@@ -883,15 +883,15 @@
     cursor: default;
     width: 100%;
     height: auto;
+    /* cursor: grab; */
 }
+
 #plan_pan {
     width: 100%;
     min-width: 100%;
     height: auto;
     overflow: hidden;
-    /* background-image: url(/assets/images/background_1920_1080.jpg);
-    background-size: cover; */
-    
+    transition: .2s linear ease-in-out;
 }
 
 @media only screen and (min-width: 1830px) {
@@ -936,8 +936,8 @@
     stroke: rgba(39, 199, 107, 0);
 }
 .selected-free {
-    fill: rgba(39, 199, 107, 0.4); 
-     stroke: rgba(39, 199, 107, 1);
+    fill: rgba(39, 199, 107, 0.4);
+    stroke: rgba(39, 199, 107, 1);
     /* fill: #27c76b;
     stroke: #27c76b; */
     stroke-width: 5px;
@@ -1052,7 +1052,7 @@
     position: absolute;
     top: 20px;
     left: 1%;
-    z-index: 100;
+    z-index: 5;
 }
 #zoom_in,
 #zoom_out {
