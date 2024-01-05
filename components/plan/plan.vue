@@ -19,8 +19,8 @@
                             <img src="~assets/images/swipe.svg" alt="">
                         </div>
                         <div id="plan_wrap">
-                            <div id="plan_pan" ref="svgContent" data-transform="1 0 0 1 0 0">
-                                <svg class="svg-contant" @mousedown="svgMouseDown" @mousemove="svgMouseMove" @wheel="scroll"
+                            <div id="plan_pan" class="transition" ref="svgContent" data-transform="1 0 0 1 0 0">
+                                <svg class="transition" @mousedown="svgMouseDown" @mousemove="svgMouseMove" @wheel="scroll"
                                     @mouseup="leaveFunc" @mouseleave="leaveFunc" @touchstart="svgMouseMove"
                                     @touchend="leaveFunc" @touchcancel="leaveFunc" @event.prevent
                                     :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px', cursor: isDown ? 'grab' : 'default' }"
@@ -278,13 +278,9 @@ onMounted(() => {
                     let block = document.getElementById('plan_pan')
                     top.value = event.clientY - block.getBoundingClientRect().top - 30
                     left.value = event.clientX - block.getBoundingClientRect().left - 100
-                    // top.value 
-                    // console.log(left.value);
                     if (left.value < 0) {
                         left.value = left.value + 100
                     }
-                    // console.log(top.value);
-                    // console.log(left.value);
                 }
             })
             houses.addEventListener('mouseleave', () => {
@@ -307,7 +303,7 @@ onMounted(() => {
 })
 </script>
 <style scoped>
-.svg-contant {
-    transition: all .3s linear ease-in-out;
+.transition {
+    transition: all .2s linear ease-in;
 }
 </style>
