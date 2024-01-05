@@ -21,7 +21,8 @@
                         <div id="plan_wrap">
                             <div id="plan_pan" ref="svgContent" data-transform="1 0 0 1 0 0">
                                 <svg class="svg-contant" @mousedown="svgMouseDown" @mousemove="svgMouseMove" @wheel="scroll"
-                                    @mouseup="leaveFunc" @mouseleave="leaveFunc" @touchstart="svgMouseMove" @touchend="leaveFunc" @touchcancel="leaveFunc" @event.prevent
+                                    @mouseup="leaveFunc" @mouseleave="leaveFunc" @touchstart="svgMouseMove"
+                                    @touchend="leaveFunc" @touchcancel="leaveFunc" @event.prevent
                                     :style="{ transform: `scale(${scale})`, marginTop: margin + 'px', marginLeft: marginLeft + 'px', cursor: isDown ? 'grab' : 'default' }"
                                     data-transform="1 0 0 1 0 0" id="block_plan" width="100%" height="100%"
                                     viewbox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +158,10 @@ let zoomIn = () => {
     }
     if (margin.value < 200) {
         margin.value += 40
-        marginLeft.value += 40
+
+    }
+    if (marginLeft.value < 300) {
+        marginLeft.value += 60
     }
 }
 
@@ -169,7 +173,7 @@ let zoomOut = () => {
     }
     if (margin.value > 0) {
         margin.value -= 40
-        marginLeft.value -= 40
+        marginLeft.value -= 60
     }
 }
 
@@ -189,8 +193,8 @@ let svgMouseMove = (event) => {
     if (!isDown.value) return;
     const x = event.pageX
     const y = event.pageY;
-    const walkX = (x - startX.value) * 2;
-    const walkY = (y - startY.value) * 2;
+    const walkX = (x - startX.value) * 1;
+    const walkY = (y - startY.value) * 1;
     svgContent.value.scrollLeft = scrollLeft.value - walkX;
     svgContent.value.scrollTop = scrollTop.value - walkY
 }
@@ -275,9 +279,12 @@ onMounted(() => {
                     top.value = event.clientY - block.getBoundingClientRect().top - 30
                     left.value = event.clientX - block.getBoundingClientRect().left - 100
                     // top.value 
-                    console.log(top.value);
-                    console.log(left.value);
-                    
+                    // console.log(left.value);
+                    if (left.value < 0) {
+                        left.value = left.value + 100
+                    }
+                    // console.log(top.value);
+                    // console.log(left.value);
                 }
             })
             houses.addEventListener('mouseleave', () => {
@@ -300,9 +307,7 @@ onMounted(() => {
 })
 </script>
 <style scoped>
-.zoom_block {
-    position: sticky;
-    top: 0;
-
+.svg-contant {
+    transition: all .3s linear ease-in-out;
 }
 </style>
