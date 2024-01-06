@@ -295,8 +295,72 @@ onMounted(() => {
             houses.addEventListener('touchcancel', () => {
                 hideInfo(dynamic)
             })
-            houses.addEventListener("touchmove", () => {
-                hideInfo(dynamic)
+            houses.addEventListener("touchmove", (event) => {
+                if (zoomed.value === false) {
+                    let block = document.getElementById('block_plan')
+                    top.value = event.clientY - block.getBoundingClientRect().top
+                    left.value = event.clientX - block.getBoundingClientRect().left
+                    if (left.value >= 1320) {
+                        left.value = event.clientX - block.getBoundingClientRect().left - 150
+                    } else {
+                        left.value = event.clientX - block.getBoundingClientRect().left + 30
+                    }
+                    // Mobile logic of appearing modal 
+                    if (window.innerWidth <= 1170) {
+                        if (left.value >= 800) {
+                            left.value = event.clientX - 120
+                        }
+                    }
+                    if (window.innerWidth <= 1024) {
+                        if (top.value >= 420) {
+                            top.value = top.value - 80
+                        }
+                        if (left.value >= 650) {
+                            left.value = event.clientX - 100
+                        }
+                    }
+                    if (window.innerWidth <= 770) {
+                        if (top.value >= 350) {
+                            top.value = top.value - 80
+                        }
+                    }
+                    if (window.innerWidth <= 500) {
+                        if (left.value >= 350) {
+                            left.value = event.clientX - 80
+                        }
+                        if (top.value >= 200) {
+                            top.value = top.value - 50
+                        }
+                    }
+                    if (window.innerWidth <= 425) {
+                        if (left.value >= 350) {
+                            left.value = event.clientX - 80
+                        }
+                        if (left.value <= 200) {
+                            left.value = event.clientX + 20
+                        }
+                        if (top.value >= 180) {
+                            top.value = top.value - 50
+                        }
+                    }
+                    if (window.innerWidth <= 375) {
+                        if (left.value >= 250) {
+                            left.value = event.clientX - 80
+                        }
+                        // console.log(top.value);
+                        if (top.value >= 120) {
+                            top.value = top.value - 50
+                        }
+                    }
+                }
+                if (zoomed.value === true) {
+                    let block = document.getElementById('plan_pan')
+                    top.value = event.clientY - block.getBoundingClientRect().top - 30
+                    left.value = event.clientX - block.getBoundingClientRect().left - 100
+                    if (left.value < 0) {
+                        left.value = left.value + 100
+                    }
+                }
             })
         }
     }
